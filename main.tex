@@ -314,110 +314,115 @@
 %     \end{itemize}
 % \end{frame}
 \begin{frame}{The $p$-center problem: Definition}
-\begin{block}{Definition}
-    \begin{itemize}
-        \item Given \pause
+    \begin{block}{Definition}
         \begin{itemize}
-            \item a set V of locations, \pause
-            \item \emph{$p$} $\in \mathbb{Z}$, and \pause
-            \item \emph{distances} $\emph{d_{ij}}$ from location $i \in V$ to $j \in V$ \pause
+            \item Given \pause
+                  \begin{itemize}
+                      \item a set V of locations, \pause
+                      \item \emph{$p$} $\in \mathbb{Z}$, and \pause
+                      \item \emph{distances} $\emph{d_{ij}}$ from location $i \in V$ to $j \in V$ \pause
+                  \end{itemize}
+            \item we want to
+                  \begin{itemize}
+                      \item \emph{open \textit{p} locations} of V, such that \pause
+                      \item the \emph{maximum distance} of any location to its closest opened location is \emph{minimized}.
+                  \end{itemize}
         \end{itemize}
-        \item we want to
-        \begin{itemize}
-            \item \emph{open \textit{p} locations} of V, such that \pause
-            \item the \emph{maximum distance} of any location to its closest opened location is \emph{minimized}.
-        \end{itemize}
-    \end{itemize}
-\end{block}
+    \end{block}
 \end{frame}
 \begin{frame}{The nesting property}
 
 \end{frame}
 
-% \section{The nested \textit{p}-center problem}
-% \begin{frame}[allowframebreaks]{The nested $p$-center problem: Definition}
-%     %\vspace{-6pt}
-    
-%     \begin{block}{\vspace*{-4ex}}
-%         \begin{itemize}
-%             \item given a set of customer demand points $\mathcal I$,
-%             \item potential facility locations $\mathcal J$, 
-%             \item time periods $\mathcal H = \left \{1,\dots,H \right \}$, 
-%             %\item integers $\mathcal P = \left \{p^1, \dots p^H \right \}$ where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and $p^H \leq \left\lvert \mathcal J \right\rvert$ 
-%             \item integers $\mathcal P = \left \{p^1, \dots p^H \right \}$   
+% \begin{frame}{The nested \textit{p}-center problem: Definition}
+%     \setbeamerfont{item}{size=\footnotesize}
+%     \setbeamerfont{subitem}{size=\footnotesize}
+%     \begin{minipage}{0.48\textwidth}
+%         \begin{block}{Definition I}
 %             \begin{itemize}
-%                 \item where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and
-%                 \item $p^H \leq \left\lvert \mathcal J \right\rvert$
+%                 \item given a set of customer demand points $\mathcal I$, \pause
+%                 \item potential facility locations $\mathcal J$, \pause
+%                 \item time periods $\mathcal H = \left \{1,\dots,H \right \}$, \pause
+%                 %\item integers $\mathcal P = \left \{p^1, \dots p^H \right \}$ where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and $p^H \leq \left\lvert \mathcal J \right\rvert$ 
+%                 \item integers $\mathcal P = \left \{p^1, \dots p^H \right \}$   \pause
+%                 \begin{itemize} 
+%                     \item where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and
+%                     \item $p^H \leq \left\lvert \mathcal J \right\rvert$
+%                 \end{itemize} \pause
+%                 \item distances $d_{ij} \geq 0$ between each $i \in \mathcal I$ and $j \in \mathcal J$ \pause
 %             \end{itemize}
-%             \item distances $d_{ij} \geq 0$ between each $i \in \mathcal I$ and $j \in \mathcal J$
-%         \end{itemize}
-%     \end{block}
-
-%     \begin{block}{\vspace*{-4ex}}
-%         \begin{itemize}
-%             %\item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq \mathcal J$ with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$, for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds
-%             \item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq \mathcal J$
+%         \end{block}
+%     \end{minipage}
+%     \begin{minipage}{0.48\textwidth}
+%         \begin{block}{Definition II}
+%             \vspace*{3pt}
 %             \begin{itemize}
-%                 \item with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$,
-%                 \item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds
-%                 %\item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h \in \mathcal H \setminus \left \{H \right \}$ holds
+%                 %\item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq \mathcal J$ with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$, for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds
+%                 \item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq \mathcal J$ \pause
+%                 \begin{itemize}
+%                     \item with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$,
+%                     \item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds \pause
+%                     %\item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h \in \mathcal H \setminus \left \{H \right \}$ holds
+%                 \end{itemize} 
+%                 %\item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$, where $d_h(\mathcal J^h) = \max_{i \in \mathcal I}\min_{j \in \mathcal J^h} d_{ij}$ for $h \in \mathcal H$
+%                 \item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$, 
+%                 \begin{itemize}
+%                     \item where $d_h(\mathcal J^h) = \max_{i \in \mathcal I}\min_{j \in \mathcal J^h} d_{ij}$ for $h \in \mathcal H$
+%                 \end{itemize}
 %             \end{itemize}
-%             %\item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$, where $d_h(\mathcal J^h) = \max_{i \in \mathcal I}\min_{j \in \mathcal J^h} d_{ij}$ for $h \in \mathcal H$
-%             \item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$, 
-%             \begin{itemize}
-%                 \item where $d_h(\mathcal J^h) = \max_{i \in \mathcal I}\min_{j \in \mathcal J^h} d_{ij}$ for $h \in \mathcal H$
-%             \end{itemize}
-%         \end{itemize}
-%     \end{block} 
+%             \vspace*{3pt}
+%         \end{block}
+%     \end{minipage}
 % \end{frame}
-%\setbeamerfont{block}{size=\huge}
+
 \begin{frame}{The nested \textit{p}-center problem: Definition}
     \setbeamerfont{item}{size=\footnotesize}
     \setbeamerfont{subitem}{size=\footnotesize}
     \begin{minipage}{0.48\textwidth}
         \begin{block}{Definition I}
+            \vspace*{2pt}
             \begin{itemize}
-                \item given a set of customer demand points $\mathcal I$, \pause
-                \item potential facility locations $\mathcal J$, \pause
+                \item given a set of locations $V$, \pause
                 \item time periods $\mathcal H = \left \{1,\dots,H \right \}$, \pause
-                %\item integers $\mathcal P = \left \{p^1, \dots p^H \right \}$ where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and $p^H \leq \left\lvert \mathcal J \right\rvert$ 
+                      %\item integers $\mathcal P = \left \{p^1, \dots p^H \right \}$ where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and $p^H \leq \left\lvert \mathcal J \right\rvert$ 
                 \item integers $\mathcal P = \left \{p^1, \dots p^H \right \}$   \pause
-                \begin{itemize} 
-                    \item where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and
-                    \item $p^H \leq \left\lvert \mathcal J \right\rvert$
-                \end{itemize} \pause
-                \item distances $d_{ij} \geq 0$ between each $i \in \mathcal I$ and $j \in \mathcal J$ \pause
+                      \begin{itemize}
+                          \item where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and
+                          \item $p^H \leq \left\lvert \mathcal J \right\rvert$
+                      \end{itemize} \pause
+                \item distances $d_{ij} \geq 0$ between each $i \in V$ and $j \in V$ \pause
             \end{itemize}
+            \vspace*{2pt}
         \end{block}
     \end{minipage}
     \begin{minipage}{0.48\textwidth}
         \begin{block}{Definition II}
-            \vspace*{3pt}
+            %\vspace*{3pt}
             \begin{itemize}
                 %\item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq \mathcal J$ with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$, for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds
-                \item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq \mathcal J$ \pause
-                \begin{itemize}
-                    \item with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$,
-                    \item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds \pause
-                    %\item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h \in \mathcal H \setminus \left \{H \right \}$ holds
-                \end{itemize} 
-                %\item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$, where $d_h(\mathcal J^h) = \max_{i \in \mathcal I}\min_{j \in \mathcal J^h} d_{ij}$ for $h \in \mathcal H$
-                \item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$, 
-                \begin{itemize}
-                    \item where $d_h(\mathcal J^h) = \max_{i \in \mathcal I}\min_{j \in \mathcal J^h} d_{ij}$ for $h \in \mathcal H$
-                \end{itemize}
+                \item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq V$ \pause
+                      \begin{itemize}
+                          \item with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$,
+                          \item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds \pause
+                                %\item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h \in \mathcal H \setminus \left \{H \right \}$ holds
+                      \end{itemize}
+                      %\item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$, where $d_h(\mathcal J^h) = \max_{i \in \mathcal I}\min_{j \in \mathcal J^h} d_{ij}$ for $h \in \mathcal H$
+                \item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$,
+                      \begin{itemize}
+                          \item where $d_h(\mathcal J) = \max_{i \in \mathcal I}\min_{j \in \mathcal J} d_{ij}$ for $h \in \mathcal H$
+                      \end{itemize}
             \end{itemize}
-            \vspace*{3pt}
+            %\vspace*{3pt}
         \end{block}
     \end{minipage}
 \end{frame}
 
 \begin{frame}{$p$-center problem vs nested $p$-center problem}
     \centering
-%    \vspace{-10pt}
+    %    \vspace{-10pt}
     \begin{figure}
         \includegraphics[width=0.55\linewidth]{images/Rplot01.pdf}
-%        \caption{Feasible solution for the nested and the non-nested $p$-center problem with $p = p^h = 4, 5, 6$}
+        %        \caption{Feasible solution for the nested and the non-nested $p$-center problem with $p = p^h = 4, 5, 6$}
     \end{figure}
 \end{frame}
 
@@ -460,56 +465,98 @@
 %     \begin{minipage}{0.6\textwidth}
 %         %\vspace*{-10pt}
 %         \begin{block}<4->{Mixed Integer Linear Program (MILP) for \textit{p}-center (based on \cite{wiley2013})}
-        
+
 %         \end{block}
 %     \end{minipage}
 %     %}
 % \end{frame}
 \begin{frame}{The nested $p$-center problem: Classical MILP formulation}
-    \vspace*{-10pt}
-    \begin{minipage}[t]{0.45\textwidth}
-        \vspace{25pt}
-        \setbeamerfont{block body}{size=\tiny}
-        \begin{block}<1->{Variables}
-            \vspace*{-10pt}
+    %\vspace*{-23pt}
+    \begin{minipage}[t]{0.40\linewidth}
+        %\vspace{25pt}
+        \setbeamerfont{block body}{size=\footnotesize}
+        \begin{block}<1->{Decision variables}
+            %\vspace*{11pt}
             \begin{alignat*}{2}
                 \onslide<1->{
-                    &x_{ij}^h \ldots \begin{cases}
-                        1 \, \dots \, \text{if \emph{location \textit{i}} is \emph{assigned} to \emph{location \textit{j}} in \emph{time period \textit{h}}}    \\
-                        0 \, \dots \, \text{otherwise}
-                    \end{cases}                                                                                                 \\}
+                 & y_{j}^h \ldots \begin{cases}
+                                          1 \, \dots \, \text{if \emph{location \textit{j}} is \emph{open} in} \\
+                                          \qquad \; \,  \text{\emph{time period \textit{h}}}                   \\
+                                          0 \, \dots \, \text{otherwise}
+                                      \end{cases} \\}
                 \onslide<2->{
-                    &y_{j}^h \ldots \begin{cases}
-                        1 \, \dots \, \text{if \emph{location \textit{j}} is \emph{open} in \emph{time period \textit{h}}}                              \\
-                        0 \, \dots \, \text{otherwise}
-                    \end{cases}                                                                                                 \\}
-                \onslide<3->{
-                    &z^h  \ldots    \text{maximum \emph{distance} between any \emph{customer \textit{i}} and its nearest}         \\
-                    &               \text{\emph{open facility} in period $h$}}
+                 & z^h  \ldots  \,  \text{maximum \emph{distance} between any }                               \\
+                 & \qquad \; \; \,  \text{\emph{customer \textit{i}} and its nearest}                         \\
+                 & \qquad \; \; \,  \text{\emph{open facility in period \textit{h}}}}
             \end{alignat*}
+            \vspace{2pt}
         \end{block}
     \end{minipage}
-    \begin{minipage}[t]{0.45\textwidth}
+    \begin{minipage}[t]{0.59\linewidth}
         %\setbeamerfont{block title}{size=\small}
-        \setbeamerfont{block body}{size=\tiny}
-        \begin{block}<4->{(MILP) for nested \textit{p}-center (based on \cite{wiley2013})}
-            \vspace*{-12pt}
+        \setbeamerfont{block body}{size=\footnotesize}
+        \begin{block}<3->{\nPCY\ based on \cite{GAAR2022}}
             \begin{subequations}
                 \begin{alignat}{4}
-                     & \nPC\  & \min         &  & \sum_{\inH}z^{h}          &                                      &                                               \\
-                     &        & \text{ s.t.} &  & \sum_{j \in V}y_{j}^h        & =     p^{h}                          & \forall \inH                                   \\
-                     &        &              &  & \sum_{j \in V}x_{ij}^h       & =     1                              & \forall i \in V, \inH                             \\
-                     &        &              &  & x_{ij}^h                  & \leq  y_j^{h}                        & \forall i,j \in V, \inH                       \\
-                     &        &              &  & \sum_{j \in V}d_{ij}x_{ij}^h & \leq  z^{h}                          & \forall i \in V, \inH                               \\
-                     &        &              &  & y_{j}^h                   & \geq  y_j^{h-1}                      & \forall \inH \setminus \left \{1 \right \}       \\
-                     &        &              &  & x_{ij}^h,                 & \in   \left \{\text{0, 1}\right \}\  & \;\; \forall i,j \in V, \inH                           \\
-                     &        &              &  & y_{j}^h,                  & \in   \left \{\text{0, 1}\right \}   & \forall j \in V, \inH                                 \\
-                     &        &              &  & z^{h}                     & \in   \mathbb R_{\ge 0}              & \forall \inH                                  
-                \end{alignat}  \label{eq:nPC}
+                     & \min         & \sum_{\inH}z^{h}                                                                          &                               &  &  &                                                             \\
+                     & \text{ s.t.} & \sum_{j \in V}y_{j}^h                                                                     & =     p^{h}                   &  &  & \forall \inH                                                \\
+                     &              & z^{h} \geq d_{ij} - \sum_{j':d_{ij'} < d_{ij}}                                            & (d_{ij} - d_{ij'})y_{j'}^h \; &  &  & \forall i,j \in V, h \in \mathcal H                         \\
+                     &              & y_{j}^h \geq  y_j^{h-1}                                                                   &                               &  &  & \forall j \in V, \forall \inH \setminus \left \{1 \right \} \\
+                     &              & (y,z)                                           \in \left|V\right|\left|\mathcal H\right| & \times \mathbb{R}_{\geq 0}    &  &  &
+                \end{alignat}
             \end{subequations}
         \end{block}
     \end{minipage}
 \end{frame}
+
+\begin{frame}{The nested $p$-center problem: Classical MILP formulation}
+    \vspace*{-24pt}
+    \begin{minipage}[t]{0.40\linewidth}
+        %\vspace{25pt}
+        \setbeamerfont{block body}{size=\footnotesize}
+        \begin{block}<1->{Decision variables}
+            \vspace*{-7pt}
+            \begin{alignat*}{2}
+                \onslide<1->{
+                 & y_{j}^h \ldots \begin{cases}
+                                          1 \, \dots \, \text{if \emph{location \textit{j}} is \emph{open} in} \\
+                                          \qquad \; \,  \text{\emph{time period \textit{h}}}                   \\
+                                          0 \, \dots \, \text{otherwise}
+                                      \end{cases} \\}
+                \onslide<2->{
+                 & z^h  \ldots  \,  \text{maximum \emph{distance} between any }                               \\
+                 & \qquad \; \; \,  \text{\emph{customer \textit{i}} and its nearest}                         \\
+                 & \qquad \; \; \,  \text{\emph{open facility in period \textit{h}}}\\}
+                \onslide<3->{
+                 & u_{k}^h \ldots \begin{cases}
+                                          1 \, \dots \, \text{if \emph{$z^h \geq D_k$} in}   \\
+                                          \qquad \; \,  \text{\emph{time period \textit{h}}} \\
+                                          0 \, \dots \, \text{otherwise}
+                                      \end{cases} }
+            \end{alignat*}
+            \vspace{11pt}
+        \end{block}
+    \end{minipage}
+    \begin{minipage}[t]{0.59\linewidth}
+        %\setbeamerfont{block title}{size=\small}
+        \setbeamerfont{block body}{size=\footnotesize}
+        \begin{block}<4->{\nPCE\ based on \cite{Elloumi2018}}
+            \vspace*{-10pt}
+            \begin{subequations}
+                \begin{alignat*}{9}
+                     & \min         &  &           &  & \sum_{\inH}z^{h}            &  &         &  &                           &  &                                                                                    \\
+                     & \text{ s.t.} &  &           &  & \sum_{j \in V}y_{j}^h =     &  & p^{h}   &  &                           &  & \forall \inH                                                                       \\
+                     &              &  & D_0 +     &  & \sum_{k=1}^{K} (D_k-        &  & D_{k-1} &  & )u^{h}_k \leq z^h \;      &  & \forall h \in \mathcal{H}                                                          \\
+                     &              &  & u^{h}_k + &  & \sum_{j:d_{ij}<D_k} y_{j}^h &  & \geq 1  &  & \,\forall i \in V,\forall &  & h \in \mathcal H, \forall k \in S_i \cup \left \{K \right \}                       \\
+                     &              &  &           &  & u^{h}_k \geq u_{k+1}^h      &  &         &  &                           &  & \forall h \in \mathcal{H}, \forall k \in \mathcal{K} \setminus \left \{K \right \} \\
+                     &              &  &           &  & y_{j}^h \geq y_j^{h-1}      &  &         &  &                           &  & \forall \inH \setminus \left \{1 \right \}                                         \\
+                     &              &  & (u,       &  & y,z) \in                    &  & |V|     &  & |K| \times |V|            &  & |\mathcal H| \times \mathbb{R}_{\geq 0}
+                \end{alignat*}
+            \end{subequations}
+        \end{block}
+    \end{minipage}
+\end{frame}
+
 \section{Related work}
 \begin{frame}{$p$-center problem}
     \begin{itemize}
@@ -541,16 +588,16 @@
         % \onlside<4->{&\mathcal P && \dots &&\text{set of integers of facilities to open, $\mathcal P = \{p^1, \dots, p^H\}$ where $p^h > p^{h+1}$}       \\[-1mm]}
         % \onlside<5->{&           &&       &&\text{for $h = 1, \dots, H-1$}                                                                               \\[-1mm]}
         % \onlside<6->{&d_{ij}     && \dots &&\text{distance between customer demand point $i$ and potential facility location $j$}                        \\[-2mm]}
-        \onslide<1->{&x_{ij}^h \ldots \begin{cases}
-                                    1 \, \dots \, \text{if customer $i$ is assigned to facility location $j$ in period $h$}    \\
-                                    0 \, \dots \, \text{otherwise}
-                                \end{cases}                                                                                                 \\}
-        \onslide<2->{&y_{j}^h \ldots \begin{cases}
-                                    1 \, \dots \, \text{if a facility is opened at location $j$ in period $h$}                              \\
-                                    0 \, \dots \, \text{otherwise}
-                                \end{cases}                                                                                                 \\}
-        \onslide<3>{&z^h  \ldots \text{maximum distance between any customer $i$ and its nearest open facility}                  \\
-                    &            \text{in period $h$}}
+        \onslide<1->{ & x_{ij}^h \ldots \begin{cases}
+                                                1 \, \dots \, \text{if customer $i$ is assigned to facility location $j$ in period $h$} \\
+                                                0 \, \dots \, \text{otherwise}
+                                            \end{cases}                                                                                                 \\}
+        \onslide<2->{ & y_{j}^h \ldots \begin{cases}
+                                               1 \, \dots \, \text{if a facility is opened at location $j$ in period $h$} \\
+                                               0 \, \dots \, \text{otherwise}
+                                           \end{cases}                                                                                                 \\}
+        \onslide<3>{  & z^h  \ldots \text{maximum distance between any customer $i$ and its nearest open facility}                                                            \\
+                      & \text{in period $h$}}
     \end{align*}
 \end{frame}
 
@@ -591,15 +638,15 @@
 
 \begin{frame}{Second MILP formulation}
     \vspace{-15pt}
-    \begin{subequations}\label{eq:nPCY} 
+    \begin{subequations}\label{eq:nPCY}
         \begin{align}
-            &\nPCY  &&\min          &\sum_{h \in \mathcal H}    z^{h}                                                                                                                                                       \label{eq:pc2N-obj}     \\
-            &       &&\text{ s.t.}  &\sum_{j \in \mathcal J}    y_{j}^h & =     p^h                                                          && \forall h \in \mathcal H                                                 \label{eq:pc2N-numfac}  \\
-            &       &&              &                           z^{h}   & \geq  d_{ij} - \sum_{j':d_{ij'} < d_{ij}} (d_{ij} - d_{ij'})y_{j'}^h  && \forall i \in \mathcal I, j \in \mathcal J, h \in \mathcal H             \label{eq:pc2N-zpush}   \\
-            &       &&              &                           y_j^{h} & \geq  y_j^{h-1}                                                       && \forall j \in \mathcal J, h \in \mathcal H \setminus \left \{1 \right \} \label{eq:pc2N-nested}  \\
-            &       &&              &                           y_{j}^h & \in   \{\text{0, 1}\}                                                 && \forall j \in \mathcal J, h \in \mathcal H                               \label{eq:pc2N-bin}     \\
-            &       &&              &                           z^{h}   & \in   \mathbb R_{\ge 0}                                               && \forall h \in \mathcal H                                                 \label{eq:pc2N-real}
-        \end{align} 
+             & \nPCY &  & \min         & \sum_{h \in \mathcal H}    z^{h}   &                                                                      &  & \label{eq:pc2N-obj}                                                                             \\
+             &       &  & \text{ s.t.} & \sum_{j \in \mathcal J}    y_{j}^h & =     p^h                                                            &  & \forall h \in \mathcal H                                                 \label{eq:pc2N-numfac} \\
+             &       &  &              & z^{h}                              & \geq  d_{ij} - \sum_{j':d_{ij'} < d_{ij}} (d_{ij} - d_{ij'})y_{j'}^h &  & \forall i \in \mathcal I, j \in \mathcal J, h \in \mathcal H             \label{eq:pc2N-zpush}  \\
+             &       &  &              & y_j^{h}                            & \geq  y_j^{h-1}                                                      &  & \forall j \in \mathcal J, h \in \mathcal H \setminus \left \{1 \right \} \label{eq:pc2N-nested} \\
+             &       &  &              & y_{j}^h                            & \in   \{\text{0, 1}\}                                                &  & \forall j \in \mathcal J, h \in \mathcal H                               \label{eq:pc2N-bin}    \\
+             &       &  &              & z^{h}                              & \in   \mathbb R_{\ge 0}                                              &  & \forall h \in \mathcal H                                                 \label{eq:pc2N-real}
+        \end{align}
     \end{subequations}
 \end{frame}
 
@@ -610,39 +657,39 @@
         % &\mathcal H &&  \dots &&    \text{set of time periods, } \mathcal H = \{1,2,\dots,H\}                                                           \\[-1mm]
         % &\mathcal P &&  \dots &&    \text{set of integers of facilities to open, $\mathcal P = \{p^1, \dots, p^H\}$ where $p^h > p^{h+1}$}              \\[-1mm]
         % &           &&        &&    \text{for $h = 1, \dots, H-1$}                                                                                      \\[-1.5mm]
-        \onslide<1->{&\mathcal D    \ldots  \text{set of distinct distances where $D_0 \leq \dots \leq D_K$ are the values in $\mathcal D$}                     \\}%[-1mm] 
-        \onslide<2->{&\mathcal K    \ldots  \text{set of indices in $\mathcal D$}                                                                               \\}%[-1mm]
-        \onslide<3->{&S_i           \ldots  \text{set of indices $k \in \mathcal K$ for which there exists a facility $j \in \mathcal J$ with $d_{ij} = D_k$}   }%[-1.5mm] 
-    \end{flalign*} 
+        \onslide<1->{ & \mathcal D    \ldots  \text{set of distinct distances where $D_0 \leq \dots \leq D_K$ are the values in $\mathcal D$}                     \\} %[-1mm] 
+        \onslide<2->{ & \mathcal K    \ldots  \text{set of indices in $\mathcal D$}                                                                               \\} %[-1mm]
+        \onslide<3->{ & S_i           \ldots  \text{set of indices $k \in \mathcal K$ for which there exists a facility $j \in \mathcal J$ with $d_{ij} = D_k$}   }                         %[-1.5mm] 
+    \end{flalign*}
     %\onslide<4->{\vspace*{-10pt}}
     \onslide<4->{\textbf{Decision variables}}
     \begin{flalign*}
-        \onslide<4->{&y_{j}^h       \ldots  \begin{cases}
-                                                1 \, \dots \, \text{if a facility is opened at location $j$ in period $h$}                                      \\%[-1mm]
-                                                0 \, \dots \, \text{otherwise}
-                                            \end{cases}                                                                                                         \\}%[-1mm]
-        \onslide<5->{&u_k^h         \ldots  \begin{cases}
-                                                1 \, \dots \, \text{if the optimal value of $z^h$ is greater or equal than $D_k$}                                                    \\%[-1mm]
-                                                0 \, \dots \, \text{otherwise} 
-                                            \end{cases}                                                                                                         \\}%[-1.5mm]
-        \onslide<6>{&z^h            \ldots  \text{maximum distance between any customer $i$ and its nearest open facility}                                      \\%[-1.5mm]
-                    &\text{in period $h$}}
+        \onslide<4->{ & y_{j}^h       \ldots  \begin{cases}
+                                                      1 \, \dots \, \text{if a facility is opened at location $j$ in period $h$} \\%[-1mm]
+                                                      0 \, \dots \, \text{otherwise}
+                                                  \end{cases}                                                                                                         \\} %[-1mm]
+        \onslide<5->{ & u_k^h         \ldots  \begin{cases}
+                                                      1 \, \dots \, \text{if the optimal value of $z^h$ is greater or equal than $D_k$} \\%[-1mm]
+                                                      0 \, \dots \, \text{otherwise}
+                                                  \end{cases}                                                                                                         \\} %[-1.5mm]
+        \onslide<6>{  & z^h            \ldots  \text{maximum distance between any customer $i$ and its nearest open facility}                                                               \\%[-1.5mm]
+                      & \text{in period $h$}}
     \end{flalign*}
 \end{frame}
 
 \begin{frame}{Third formulation}
     \vspace{-1.2cm}
-    \begin{subequations}\label{eq:nPCE} 
+    \begin{subequations}\label{eq:nPCE}
         \begin{align}
-            &\nPCE  &&\min          &\sum_{h \in \mathcal H}    z^h                                                                                                                                                                             \label{eq:nEpCP-obj}        \\
-            &       &&\text{ s.t.}  &\sum_{j \in \mathcal J}    y_{j}^h                                     &=      p^h                     &&\forall h \in \mathcal{H}                                                                         \label{eq:nEpCP-faciltiy}   \\[-4mm]
-            &       &&              &                           D_0 + \sum_{k=1}^{K}(D_k-D_{k-1})u^{h}_k    &\leq   z^h                     &&\forall h \in \mathcal{H}                                                                         \label{eq:nEpCP-rpush}      \\[-2mm]
-            &       &&              &                           u^{h}_k + \sum_{j:d_{ij}<D_k} y_{j}^h       &\geq   1                       &&\forall i \in \mathcal{I}, \forall h \in \mathcal H, \forall k \in S_i \cup \left \{K \right \}   \label{eq:nEpCP-upush}      \\[-1mm]
-            &       &&              &                           u^{h}_k                                     &\geq   u_{k+1}^h               &&\forall h \in \mathcal{H}, \forall k \in \mathcal{K} \setminus \left \{K \right \}                \label{eq:nEpCP-unest}      \\
-            &       &&              &                           y_{j}^h                                     &\leq   y_{j}^{h-1}             &&\forall h \in \mathcal{H}, \forall j \in \mathcal{J}                                              \label{eq:nEpCP-nesting}    \\[-1mm]
-            &       &&              &                           y_{j}^h                                     &\in    \left \{0, 1 \right \}  &&\forall h \in \mathcal{H}, \forall j \in \mathcal{J}                                              \label{eq:nEpCP-ybin}       \\[-1mm]
-            &       &&              &                           u^{h}_k                                     &\in    \left \{0, 1 \right \}  &&\forall h \in \mathcal{H}, \forall k \in \mathcal{K}                                              \label{eq:nEpCP-ubin}       \\[-1mm]
-            &       &&              &                           z^h                                         &\in    \mathbb{R}              &&\forall h \in \mathcal{H}                                                                         \label{eq:nEpCP-Rreal}      
+             & \nPCE &  & \min         & \sum_{h \in \mathcal H}    z^h           &                               &  & \label{eq:nEpCP-obj}                                                                                                        \\
+             &       &  & \text{ s.t.} & \sum_{j \in \mathcal J}    y_{j}^h       & =      p^h                    &  & \forall h \in \mathcal{H}                                                                         \label{eq:nEpCP-faciltiy} \\[-4mm]
+             &       &  &              & D_0 + \sum_{k=1}^{K}(D_k-D_{k-1})u^{h}_k & \leq   z^h                    &  & \forall h \in \mathcal{H}                                                                         \label{eq:nEpCP-rpush}    \\[-2mm]
+             &       &  &              & u^{h}_k + \sum_{j:d_{ij}<D_k} y_{j}^h    & \geq   1                      &  & \forall i \in \mathcal{I}, \forall h \in \mathcal H, \forall k \in S_i \cup \left \{K \right \}   \label{eq:nEpCP-upush}    \\[-1mm]
+             &       &  &              & u^{h}_k                                  & \geq   u_{k+1}^h              &  & \forall h \in \mathcal{H}, \forall k \in \mathcal{K} \setminus \left \{K \right \}                \label{eq:nEpCP-unest}    \\
+             &       &  &              & y_{j}^h                                  & \leq   y_{j}^{h-1}            &  & \forall h \in \mathcal{H}, \forall j \in \mathcal{J}                                              \label{eq:nEpCP-nesting}  \\[-1mm]
+             &       &  &              & y_{j}^h                                  & \in    \left \{0, 1 \right \} &  & \forall h \in \mathcal{H}, \forall j \in \mathcal{J}                                              \label{eq:nEpCP-ybin}     \\[-1mm]
+             &       &  &              & u^{h}_k                                  & \in    \left \{0, 1 \right \} &  & \forall h \in \mathcal{H}, \forall k \in \mathcal{K}                                              \label{eq:nEpCP-ubin}     \\[-1mm]
+             &       &  &              & z^h                                      & \in    \mathbb{R}             &  & \forall h \in \mathcal{H}                                                                         \label{eq:nEpCP-Rreal}
         \end{align}
     \end{subequations}
 \end{frame}
@@ -653,20 +700,20 @@
         \centering
         \caption{Comparison of complexity of the formulations}
         \label{tab:complexity}
-            \begin{tabular}{l|ccc}
-                \hline
-                            & \nPC                                                      & \nPCY                                                         & \nPCE                                                                                          \\ \hline
-                Variables   & $\mathcal O(| \mathcal I || \mathcal J || \mathcal H |)$  & $\mathcal O (| \mathcal J || \mathcal H |)$                   & $\mathcal O ((| \mathcal I | + | \mathcal K |) | \mathcal H |)$                               \\
-                Constraints & $\mathcal O(| \mathcal I || \mathcal J || \mathcal H |)$  & $\mathcal O (| \mathcal I || \mathcal J || \mathcal H |)$     & $\mathcal O (\min(| \mathcal I || \mathcal J |,| \mathcal I || \mathcal K |)| \mathcal H |)$  \\ \hline
-            \end{tabular}%
+        \begin{tabular}{l|ccc}
+            \hline
+                        & \nPC                                                     & \nPCY                                                     & \nPCE                                                                                        \\ \hline
+            Variables   & $\mathcal O(| \mathcal I || \mathcal J || \mathcal H |)$ & $\mathcal O (| \mathcal J || \mathcal H |)$               & $\mathcal O ((| \mathcal I | + | \mathcal K |) | \mathcal H |)$                              \\
+            Constraints & $\mathcal O(| \mathcal I || \mathcal J || \mathcal H |)$ & $\mathcal O (| \mathcal I || \mathcal J || \mathcal H |)$ & $\mathcal O (\min(| \mathcal I || \mathcal J |,| \mathcal I || \mathcal K |)| \mathcal H |)$ \\ \hline
+        \end{tabular}%
     \end{table}\pause
     %Different formulations with have different linear programming $(\mathcal{LP})$-bounds. 
-    The \pCP\ version of formulation \nPCE\ has the best known linear programming $(\mathcal{LP})$-bounds for the \pCP, 
-    while the \pCP\ versions of \nPC\ and \nPCY\ have equally but worse $\mathcal{LP}$-bounds. 
+    The \pCP\ version of formulation \nPCE\ has the best known linear programming $(\mathcal{LP})$-bounds for the \pCP,
+    while the \pCP\ versions of \nPC\ and \nPCY\ have equally but worse $\mathcal{LP}$-bounds.
     % \begin{itemize}
-        % \item Different formulations with have different linear programming (\mathcal{LP}) bounds
-        % \item \nPCY\ has the lowest number of variables but with \nPC\ the highest number of constraints
-        % \item \nPCE\ has depending on $| \mathcal K |$ the smallest number of constraints and less variables than \nPC\ but more than \nPCY
+    % \item Different formulations with have different linear programming (\mathcal{LP}) bounds
+    % \item \nPCY\ has the lowest number of variables but with \nPC\ the highest number of constraints
+    % \item \nPCE\ has depending on $| \mathcal K |$ the smallest number of constraints and less variables than \nPC\ but more than \nPCY
     % \end{itemize}
 \end{frame}
 
@@ -679,10 +726,10 @@
         the distinct distance $D_k$ can only be the optimal distance for $z^h$ if $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds.  \\
         Therfore let set $S_i^h \subseteq S_i$ for $h \in \mathcal H$, where $S_i^h$ contains only the indices k where $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds and constraint \eqref{eq:nEpCP-upush} can be replaced with
         \begin{align}
-            u^{h}_k + \sum_{j:d_{ij}<D_k} y_{j}^h  &\geq 1 &\forall i \in \mathcal{I}, \forall h \in \mathcal H, \forall k \in S_i^h \cup \{K\} \label{eq:nEpCP-u_push_new}
+            u^{h}_k + \sum_{j:d_{ij}<D_k} y_{j}^h & \geq 1 & \forall i \in \mathcal{I}, \forall h \in \mathcal H, \forall k \in S_i^h \cup \{K\} \label{eq:nEpCP-u_push_new}
         \end{align}
     \end{lemma}
-    Depending on the bounds $\underline{z^h}$ and $\overline{z^h}$ the sets $S_i^h$ can be much smaller than $S_i$.   
+    Depending on the bounds $\underline{z^h}$ and $\overline{z^h}$ the sets $S_i^h$ can be much smaller than $S_i$.
 \end{frame}
 
 % \begin{frame}{Reducing constraints \nPCY}
@@ -718,11 +765,11 @@
         Let $LB_h$ be a lower bound on the decision variable $z_h$ of (nPC2) for every $i \in \mathcal I, j \in \mathcal J, h \in \mathcal H$ then
         \begin{equation}
             z^h \geq max\{LB^h, d_{ij}\} - \sum_{j':d_{ij'} < d_{ij}} (\max \{\textit{$LB^h$}, d_{ij}\} - \max \{\textit{$LB^h$}, d_{ij'}\})y_{j'}^h  \label{eq:nPC2-lift} \tag{\emph{nL-OPT}}
-        \end{equation} 
+        \end{equation}
         is a valid inequality for (nPC2), i.e., every feasible solution of (nPC2) fulfills \eqref{eq:nPC2-lift}.
         Theorem is based on Lemma 5 in \textcite{GAAR2022}.
     \end{lemma}
-    A similar strengthening can be done for \eqref{eq:pc1N-zpush} in fromulation \nPC. 
+    A similar strengthening can be done for \eqref{eq:pc1N-zpush} in fromulation \nPC.
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Obtaining bounds}
@@ -733,7 +780,7 @@
     %     \item Every optimal solution to the $p$-center problem is a upper bound to the $p+1$-center problem
     % \end{itemize} 
     \begin{lemma}\label{lemma:upperbounds}
-        Let $z'^{h*}$ be the optimal objective function value of \pCP\ with $p = p^h$ for $h \in \mathcal H = \{1, 2, \dots, H\}$ where $p^h > p^{h+1}$, then 
+        Let $z'^{h*}$ be the optimal objective function value of \pCP\ with $p = p^h$ for $h \in \mathcal H = \{1, 2, \dots, H\}$ where $p^h > p^{h+1}$, then
         $UB = H z^{'1*}$ is a valid upper bound on the optimal objective function value of \npCP. \\
         Then
         \begin{equation*}
@@ -742,7 +789,7 @@
         where $\overline{z^h}$ is a valid upper bound on the decision variable $z^h$ of the \npCP\ for $h \in \mathcal H$.
     \end{lemma}
     \begin{lemma}\label{lemma:lowerbounds}
-        Let $z'^{*}$ be the optimal objective function value of \pCP\ for a certain $p'$. Then $z'^{*}$ is a valid lower bound $\underline{z^h}$ on the decision variable $z^h$ of \npCP\ with $p^h = p'$. 
+        Let $z'^{*}$ be the optimal objective function value of \pCP\ for a certain $p'$. Then $z'^{*}$ is a valid lower bound $\underline{z^h}$ on the decision variable $z^h$ of \npCP\ with $p^h = p'$.
     \end{lemma}
     %The bounds obtained through these two lemmas can then be used to reduce the set $\mathcal K$ in \nPCE\ or to reduce and strenghten the constraints in \nPCY.
     % Can I base my proof on the nested p-center without nesting constraint is only sum over several p-center problems.
@@ -767,36 +814,36 @@
         \item Implemented in \Cplusplus\ using the CPLEX API of CPLEX 20.1.0.0
         \item Formulation \nPCY\ solved by branch-and-cut and seperation based on the customers
         \item Preprocessing for all formulations
-        \begin{itemize}
-            \item solving the \pCP\ for $p^h, h \in \mathcal H$ starting with $h = H$
-            \item $p^h$ is a valid lower bound for the \pCP\ with $p^{h-1}$
-        \end{itemize}
+              \begin{itemize}
+                  \item solving the \pCP\ for $p^h, h \in \mathcal H$ starting with $h = H$
+                  \item $p^h$ is a valid lower bound for the \pCP\ with $p^{h-1}$
+              \end{itemize}
         \item Single core of an Intel Xeon X5570 machine
-        \begin{itemize}
-            \item 2.93 GHz
-            \item 48 GB RAM
-            \item Each run limited to 9 GB RAM and 3600 sec
-        \end{itemize}
+              \begin{itemize}
+                  \item 2.93 GHz
+                  \item 48 GB RAM
+                  \item Each run limited to 9 GB RAM and 3600 sec
+              \end{itemize}
     \end{itemize}
 \end{frame}
 \begin{frame}{Data}
     \vspace*{-2pt}
     \begin{itemize}
-    \setlength\itemsep{1em}
+        \setlength\itemsep{1em}
         \item data set \emph{PMED} from "A note on solving large p-median problems” by \textcite{Beasley1985}
-        \begin{itemize}
-            \item set of 40 test instances
-            \item the sets contain between 100 and 900 nodes
-            \item number of facilities to open initially ranging from 5 to 200
-            \item $\mathcal P = \left \{p, p+1, p+2\right \}$
-        \end{itemize} \pause
+              \begin{itemize}
+                  \item set of 40 test instances
+                  \item the sets contain between 100 and 900 nodes
+                  \item number of facilities to open initially ranging from 5 to 200
+                  \item $\mathcal P = \left \{p, p+1, p+2\right \}$
+              \end{itemize} \pause
         \item data set \emph{TSPLIB} 2D-Euclidean distances from “TSPLIB—A Traveling Salesman Problem Library” by \textcite{Reinelt1991}
-        \begin{itemize}
-            \item set of 80 test instances
-            \item the sets contain between 51 and 1002 nodes
-            \item rounded to the nearest integer value
-            \item $\mathcal P = \left \{4, 5, 6\right \}$
-        \end{itemize}
+              \begin{itemize}
+                  \item set of 80 test instances
+                  \item the sets contain between 51 and 1002 nodes
+                  \item rounded to the nearest integer value
+                  \item $\mathcal P = \left \{4, 5, 6\right \}$
+              \end{itemize}
     \end{itemize}
 \end{frame}
 
@@ -918,6 +965,54 @@
     %\setbeamerfont{bibliography item}{size={\footnotesize}}
     %\AtNextBibliography{\footnotesize}
     \printbibliography
+\end{frame}
+
+\begin{frame}{The nested $p$-center problem: Classical MILP formulation}
+    \vspace*{-23pt}
+    \begin{minipage}[t]{0.48\textwidth}
+        %\vspace{25pt}
+        \setbeamerfont{block body}{size=\footnotesize}
+        \begin{block}<1->{Decision variables}
+            \vspace*{-8pt}
+            \begin{alignat*}{2}
+                \onslide<1->{
+                 & x_{ij}^h \ldots \begin{cases}
+                                           1 \, \dots \,   \text{if \emph{location \textit{i}} is \emph{assigned} to }        \\
+                                           \qquad \; \,    \text{\emph{location \textit{j}} in \emph{time period \textit{h}}} \\
+                                           0 \, \dots \,   \text{otherwise}
+                                       \end{cases}                                                                             \\}
+                \onslide<2->{
+                 & y_{j}^h \ldots \begin{cases}
+                                          1 \, \dots \, \text{if \emph{location \textit{j}} is \emph{open} in} \\
+                                          \qquad \; \,  \text{\emph{time period \textit{h}}}                   \\
+                                          0 \, \dots \, \text{otherwise}
+                                      \end{cases}                                                               \\}
+                \onslide<3->{
+                 & z^h  \ldots  \,  \text{maximum \emph{distance} between any }                                                                      \\
+                 & \qquad \; \; \,  \text{\emph{customer \textit{i}} and its nearest \emph{open facility}}                                           \\
+                 & \qquad \; \; \,  \text{in period \textit{h}}}
+            \end{alignat*}
+            \vspace{10pt}
+        \end{block}
+    \end{minipage}
+    \begin{minipage}[t]{0.48\textwidth}
+        %\setbeamerfont{block title}{size=\small}
+        \setbeamerfont{block body}{size=\footnotesize}
+        \begin{block}<4->{\nPC\ based on \cite{wiley2013}}
+            \vspace*{-12pt}
+            \begin{subequations}
+                \begin{alignat}{3}
+                     & \min         & \sum_{\inH}z^{h}             &                                                                              \\
+                     & \text{ s.t.} & \sum_{j \in V}y_{j}^h        & =     p^{h}           &  & \forall \inH                                      \\
+                     &              & \sum_{j \in V}x_{ij}^h       & =     1               &  & \forall i \in V, \inH                             \\
+                     &              & x_{ij}^h                     & \leq  y_j^{h}         &  & \forall i,j \in V, \inH                           \\
+                     &              & \sum_{j \in V}d_{ij}x_{ij}^h & \leq  z^{h}           &  & \forall i \in V, \inH                             \\
+                     &              & y_{j}^h                      & \geq  y_j^{h-1}       &  & \forall \inH \setminus \left \{1 \right \}        \\
+                     &              & (x,y,z)                      & \in |V|^2|\mathcal H| &  & \times |V||\mathcal H| \times \mathbb{R}_{\geq 0}
+                \end{alignat}  \label{eq:nPC}
+            \end{subequations}
+        \end{block}
+    \end{minipage}
 \end{frame}
 
 \end{document}

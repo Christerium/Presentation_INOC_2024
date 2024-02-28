@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1709110674 "main.bcf" "main.bbl" "main" 1709111669 0
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1709136785 -1
   "./references.bib" 1704116128 12642 638f938c2ea1eb40a825d9d4d6347509 ""
-  "main.bcf" 1709111668 108947 d3b4e665726ce7174bb3a96bad0fd837 "pdflatex"
+  "main.bcf" 1709136784 109408 4a9fc022be1bd38db8ff539f77a8b265 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1709111664 "/home/user/OneDrive/INOC/Presentation/main.tex" "main.pdf" "main" 1709111669 0
+["pdflatex"] 1709136777 "/home/user/OneDrive/INOC/Presentation/main.tex" "main.pdf" "main" 1709136785 0
   "/home/user/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1707916172 189117 2a04beaea7864ea122565fbee9e43c13 ""
   "/home/user/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1704797615 24218774 f0abc7bdb1643fb144aa00d580e748b0 ""
   "/home/user/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc" 1704182611 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
@@ -70,13 +70,10 @@
   "/home/user/.miktex/texmfs/install/fonts/tfm/public/lm/rm-lmr8.tfm" 1704182616 11864 309fd7f43e4a0ba39f6f7644d76e8edf ""
   "/home/user/.miktex/texmfs/install/fonts/tfm/public/lm/rm-lmr9.tfm" 1704182616 11884 c93929a6974dce79eabb778f219d7e18 ""
   "/home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex10.pfb" 1704182603 12536 a46bc0672764104789d46e9c8de8f188 ""
-  "/home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex7.pfb" 1704182603 12103 142aed0b63ff0d67ce4801b60be0e777 ""
   "/home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex9.pfb" 1704182603 11989 67a4948745f40b24c545cc3a48a6472a ""
   "/home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eurm10.pfb" 1704182603 22644 de44b1031364c5f57164f2249f1302c5 ""
-  "/home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eurm7.pfb" 1704182603 22927 31e776418d6f3753a749eafbf9a8a2bf ""
   "/home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb" 1704182603 10594 310261a6407d360eda1ed257d05cd4df ""
   "/home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1704182603 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
-  "/home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb" 1704182603 35309 940e81a5b9e04201a07e8b33a3ae6e64 ""
   "/home/user/.miktex/texmfs/install/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb" 1704183245 80472 80293bde06887d309938fd1de50ad188 ""
   "/home/user/.miktex/texmfs/install/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb" 1704183245 55526 184de5d68af8c544d6d1653244a2b006 ""
   "/home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmex10.pfb" 1704182616 23055 2e5b42921de910eaa97b85df04ca4891 ""
@@ -404,7 +401,7 @@
   "/home/user/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1704182620 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/home/user/.miktex/texmfs/install/tex/latex/zref/zref-abspage.sty" 1704183373 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "/home/user/.miktex/texmfs/install/tex/latex/zref/zref-base.sty" 1704183373 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "/home/user/OneDrive/INOC/Presentation/main.tex" 1709111658 55539 10b2398863d56a272208f86aac3993e0 ""
+  "/home/user/OneDrive/INOC/Presentation/main.tex" 1709136777 61969 1d0386a2793e0c6306884c354b2f3476 ""
   "beamercolorthemejku.sty" 1704116128 16806 a03d95604e3283bc6a2e306decd5a186 ""
   "beamerfontthemejku.sty" 1704116128 17054 056cdea7729d0b0e28989c736161b6ce ""
   "beamerthemejku.sty" 1708955562 86476 0ba296372a25a583edd69673115f8508 ""
@@ -430,12 +427,12 @@
   "logos/jku_en_white.pdf" 1704116130 4879 1eac8063fd041abb055ec04e3436a693 ""
   "logos/jku_k_black.pdf" 1704116130 1555 0325737bca332d1e5b60b94958189ebc ""
   "logos/jku_k_white.pdf" 1704116130 1555 13a705b3525b9b3ee4af0ef0ae232d89 ""
-  "main.aux" 1709111668 19220 03a22ebd9588b3fb905a4b8617348ed5 "pdflatex"
-  "main.bbl" 1709110675 25808 9441351bcb6457af59335dde5489c620 "biber main"
-  "main.nav" 1709111668 4555 427cda1d2e96e8255b71fa49a1e10d25 "pdflatex"
-  "main.out" 1709111668 886 eafcdcaec7d6d4ce0853b9df059d2b3e "pdflatex"
-  "main.run.xml" 1709111668 2369 1ce0a9d9045d32c932ac4e696ade2623 "pdflatex"
-  "main.tex" 1709111658 55539 10b2398863d56a272208f86aac3993e0 ""
+  "main.aux" 1709136784 20110 bcc7554322002b3a34492ef51b46bb39 "pdflatex"
+  "main.bbl" 1709136330 25808 9441351bcb6457af59335dde5489c620 "biber main"
+  "main.nav" 1709136784 4739 0f479fedd877ce7ba99bff77ba3dc7e9 "pdflatex"
+  "main.out" 1709136784 886 eafcdcaec7d6d4ce0853b9df059d2b3e "pdflatex"
+  "main.run.xml" 1709136784 2369 1ce0a9d9045d32c932ac4e696ade2623 "pdflatex"
+  "main.tex" 1709136777 61969 1d0386a2793e0c6306884c354b2f3476 ""
   (generated)
   "main.aux"
   "main.bcf"

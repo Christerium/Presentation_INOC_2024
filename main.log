@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.9)  28 FEB 2024 10:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.9)  28 FEB 2024 17:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1725,11 +1725,11 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9.79996> not available
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 413.
+(Font)              <9> on input line 418.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 413.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 418.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 413.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 418.
  [9
 
 {/home/user/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-mathex.enc}] [10
@@ -1746,95 +1746,56 @@ LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14> not available
 
 ] [16
 
-] [17
-
 ]
-<images/Rplot01.pdf, id=194, 578.16pt x 433.62pt>
+<images/Rplot01.pdf, id=187, 578.16pt x 433.62pt>
 File: images/Rplot01.pdf Graphic file (type pdf)
 <use images/Rplot01.pdf>
-Package pdftex.def Info: images/Rplot01.pdf  used on input line 422.
+Package pdftex.def Info: images/Rplot01.pdf  used on input line 427.
 (pdftex.def)             Requested size: 226.91199pt x 170.18298pt.
 
-Overfull \vbox (4.96495pt too high) detected at line 422
+Overfull \vbox (4.96495pt too high) detected at line 427
  []
 
-[18
+[17
 
- <./images/Rplot01.pdf>] [19
+ <./images/Rplot01.pdf>] [18
 
 ]
-Overfull \hbox (6.96025pt too wide) detected at line 512
-[]
- []
-
-
-Overfull \hbox (6.96025pt too wide) in paragraph at lines 512--512
- []$[]$  
- []
-
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 512.
-(/home/user/.miktex/texmfs/install/tex/latex/inconsolata/t1zi4.fd
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 510.
+ (/home/user/.miktex/texmfs/install/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 6.0pt on input line 512.
+(Font)              scaled to size 9.0pt on input line 510.
+ [19
 
-Overfull \vbox (21.67068pt too high) detected at line 512
- []
+{/home/user/.miktex/texmfs/install/fonts/enc/dvips/inconsolata/i4-t1-0.enc}] [20
 
-[20
-
-{/home/user/.miktex/texmfs/install/fonts/enc/dvips/inconsolata/i4-t1-0.enc}]
-Overfull \hbox (6.96025pt too wide) detected at line 512
-[]
- []
-
-
-Overfull \hbox (6.96025pt too wide) in paragraph at lines 512--512
- []$[]$  
- []
-
-
-Overfull \vbox (21.67068pt too high) detected at line 512
- []
-
-[21
+] [21
 
 ]
-Overfull \hbox (6.96025pt too wide) detected at line 512
-[]
- []
-
-
-Overfull \hbox (6.96025pt too wide) in paragraph at lines 512--512
- []$[]$  
- []
-
-
-Overfull \vbox (21.67068pt too high) detected at line 512
+Overfull \vbox (13.36787pt too high) detected at line 558
  []
 
 [22
 
 ]
-Overfull \hbox (6.96025pt too wide) detected at line 512
-[]
- []
-
-
-Overfull \hbox (6.96025pt too wide) in paragraph at lines 512--512
- []$[]$  
- []
-
-
-Overfull \vbox (21.67068pt too high) detected at line 512
+Overfull \vbox (13.36787pt too high) detected at line 558
  []
 
 [23
 
-] [24
+]
+Overfull \vbox (13.36787pt too high) detected at line 558
+ []
 
-] [25
+[24
+
+]
+Overfull \vbox (13.36787pt too high) detected at line 558
+ []
+
+[25
 
 ] [26
 
@@ -1846,206 +1807,232 @@ Overfull \vbox (21.67068pt too high) detected at line 512
 
 ] [30
 
+] [31
+
+] [32
+
 ]
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 11.0pt on input line 604.
- [31
+(Font)              scaled to size 11.0pt on input line 651.
+ [33
 
 ]
-Overfull \vbox (11.54457pt too high) detected at line 631
- []
-
-[32
-
-]
-Overfull \vbox (11.54457pt too high) detected at line 631
- []
-
-[33
-
-]
-Overfull \vbox (11.54457pt too high) detected at line 631
+Overfull \vbox (11.54457pt too high) detected at line 678
  []
 
 [34
 
 ]
-Overfull \vbox (11.54457pt too high) detected at line 631
+Overfull \vbox (11.54457pt too high) detected at line 678
  []
 
 [35
 
 ]
-Overfull \vbox (11.54457pt too high) detected at line 631
+Overfull \vbox (11.54457pt too high) detected at line 678
  []
 
 [36
 
 ]
-Overfull \vbox (11.54457pt too high) detected at line 631
+Overfull \vbox (11.54457pt too high) detected at line 678
  []
 
 [37
 
 ]
-Overfull \vbox (8.34476pt too high) detected at line 648
+Overfull \vbox (11.54457pt too high) detected at line 678
  []
 
 [38
 
-] [39
+]
+Overfull \vbox (11.54457pt too high) detected at line 678
+ []
 
-] [40
+[39
+
+]
+Overfull \vbox (8.34476pt too high) detected at line 695
+ []
+
+[40
+
+] [41
+
+] [42
 
 ]
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 14.0pt on input line 686.
- [41
+(Font)              scaled to size 14.0pt on input line 733.
+ [43
 
 ]
 
-LaTeX Warning: Reference `eq:pc1N-zpush' on page 42 undefined on input line 726.
+LaTeX Warning: Reference `eq:pc1N-zpush' on page 44 undefined on input line 773.
 
-[42
-
-] [43
-
-] [44
-
+[44
 
 ] [45
 
 ] [46
 
-]
-Overfull \vbox (3.42351pt too high) detected at line 801
- []
 
-[47
+] [47
 
-]
-Overfull \vbox (3.42351pt too high) detected at line 801
- []
-
-[48
+] [48
 
 ]
-<images/prepro_pmed.pdf, id=541, 433.62pt x 289.08pt>
-File: images/prepro_pmed.pdf Graphic file (type pdf)
-<use images/prepro_pmed.pdf>
-Package pdftex.def Info: images/prepro_pmed.pdf  used on input line 814.
-(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
-<images/prepro_tsp.pdf, id=542, 433.62pt x 289.08pt>
-File: images/prepro_tsp.pdf Graphic file (type pdf)
-<use images/prepro_tsp.pdf>
-Package pdftex.def Info: images/prepro_tsp.pdf  used on input line 814.
-(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
-
-Overfull \vbox (7.80301pt too high) detected at line 814
+Overfull \vbox (3.42351pt too high) detected at line 848
  []
 
 [49
 
+]
+Overfull \vbox (3.42351pt too high) detected at line 848
+ []
+
+[50
+
+]
+<images/prepro_pmed.pdf, id=555, 433.62pt x 289.08pt>
+File: images/prepro_pmed.pdf Graphic file (type pdf)
+<use images/prepro_pmed.pdf>
+Package pdftex.def Info: images/prepro_pmed.pdf  used on input line 861.
+(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
+<images/prepro_tsp.pdf, id=556, 433.62pt x 289.08pt>
+File: images/prepro_tsp.pdf Graphic file (type pdf)
+<use images/prepro_tsp.pdf>
+Package pdftex.def Info: images/prepro_tsp.pdf  used on input line 861.
+(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
+
+Overfull \vbox (7.80301pt too high) detected at line 861
+ []
+
+[51
+
  <./images/prepro_pmed.pdf> <./images/prepro_tsp.pdf>]
-<images/gap_xy_both.pdf, id=565, 433.62pt x 289.08pt>
+<images/gap_xy_both.pdf, id=578, 433.62pt x 289.08pt>
 File: images/gap_xy_both.pdf Graphic file (type pdf)
 <use images/gap_xy_both.pdf>
-Package pdftex.def Info: images/gap_xy_both.pdf  used on input line 828.
+Package pdftex.def Info: images/gap_xy_both.pdf  used on input line 875.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
-LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 828.
-<images/runtime_xy_both.pdf, id=568, 433.62pt x 289.08pt>
+<images/runtime_xy_both.pdf, id=581, 433.62pt x 289.08pt>
 File: images/runtime_xy_both.pdf Graphic file (type pdf)
 <use images/runtime_xy_both.pdf>
-Package pdftex.def Info: images/runtime_xy_both.pdf  used on input line 828.
-(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
- [50
-
- <./images/gap_xy_both.pdf> <./images/runtime_xy_both.pdf>]
-<images/gap_y_both.pdf, id=593, 433.62pt x 289.08pt>
-File: images/gap_y_both.pdf Graphic file (type pdf)
-<use images/gap_y_both.pdf>
-Package pdftex.def Info: images/gap_y_both.pdf  used on input line 842.
-(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
-<images/runtime_y_both.pdf, id=596, 433.62pt x 289.08pt>
-File: images/runtime_y_both.pdf Graphic file (type pdf)
-<use images/runtime_y_both.pdf>
-Package pdftex.def Info: images/runtime_y_both.pdf  used on input line 842.
-(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
- [51
-
- <./images/gap_y_both.pdf> <./images/runtime_y_both.pdf>]
-<images/gap_u_both.pdf, id=621, 433.62pt x 289.08pt>
-File: images/gap_u_both.pdf Graphic file (type pdf)
-<use images/gap_u_both.pdf>
-Package pdftex.def Info: images/gap_u_both.pdf  used on input line 856.
-(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
-<images/runtime_u_both.pdf, id=624, 433.62pt x 289.08pt>
-File: images/runtime_u_both.pdf Graphic file (type pdf)
-<use images/runtime_u_both.pdf>
-Package pdftex.def Info: images/runtime_u_both.pdf  used on input line 856.
+Package pdftex.def Info: images/runtime_xy_both.pdf  used on input line 875.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
  [52
 
- <./images/gap_u_both.pdf> <./images/runtime_u_both.pdf>]
-<images/gap_models_sH.pdf, id=649, 433.62pt x 289.08pt>
-File: images/gap_models_sH.pdf Graphic file (type pdf)
-<use images/gap_models_sH.pdf>
-Package pdftex.def Info: images/gap_models_sH.pdf  used on input line 870.
+ <./images/gap_xy_both.pdf> <./images/runtime_xy_both.pdf>]
+<images/gap_y_both.pdf, id=606, 433.62pt x 289.08pt>
+File: images/gap_y_both.pdf Graphic file (type pdf)
+<use images/gap_y_both.pdf>
+Package pdftex.def Info: images/gap_y_both.pdf  used on input line 889.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
-<images/runtime_models_sHp.pdf, id=650, 433.62pt x 289.08pt>
-File: images/runtime_models_sHp.pdf Graphic file (type pdf)
-<use images/runtime_models_sHp.pdf>
-Package pdftex.def Info: images/runtime_models_sHp.pdf  used on input line 870.
+<images/runtime_y_both.pdf, id=609, 433.62pt x 289.08pt>
+File: images/runtime_y_both.pdf Graphic file (type pdf)
+<use images/runtime_y_both.pdf>
+Package pdftex.def Info: images/runtime_y_both.pdf  used on input line 889.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
  [53
 
+ <./images/gap_y_both.pdf> <./images/runtime_y_both.pdf>]
+<images/gap_u_both.pdf, id=634, 433.62pt x 289.08pt>
+File: images/gap_u_both.pdf Graphic file (type pdf)
+<use images/gap_u_both.pdf>
+Package pdftex.def Info: images/gap_u_both.pdf  used on input line 903.
+(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
+<images/runtime_u_both.pdf, id=637, 433.62pt x 289.08pt>
+File: images/runtime_u_both.pdf Graphic file (type pdf)
+<use images/runtime_u_both.pdf>
+Package pdftex.def Info: images/runtime_u_both.pdf  used on input line 903.
+(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
+ [54
+
+ <./images/gap_u_both.pdf> <./images/runtime_u_both.pdf>]
+<images/gap_models_sH.pdf, id=662, 433.62pt x 289.08pt>
+File: images/gap_models_sH.pdf Graphic file (type pdf)
+<use images/gap_models_sH.pdf>
+Package pdftex.def Info: images/gap_models_sH.pdf  used on input line 917.
+(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
+<images/runtime_models_sHp.pdf, id=663, 433.62pt x 289.08pt>
+File: images/runtime_models_sHp.pdf Graphic file (type pdf)
+<use images/runtime_models_sHp.pdf>
+Package pdftex.def Info: images/runtime_models_sHp.pdf  used on input line 917.
+(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
+ [55
+
  <./images/gap_models_sH.pdf> <./images/runtime_models_sHp.pdf>]
-<images/regret_relative_opt.pdf, id=672, 433.62pt x 289.08pt>
+<images/regret_relative_opt.pdf, id=686, 433.62pt x 289.08pt>
 File: images/regret_relative_opt.pdf Graphic file (type pdf)
 <use images/regret_relative_opt.pdf>
-Package pdftex.def Info: images/regret_relative_opt.pdf  used on input line 884.
+Package pdftex.def Info: images/regret_relative_opt.pdf  used on input line 931.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
-<images/fac_relative_opt.pdf, id=673, 433.62pt x 289.08pt>
+<images/fac_relative_opt.pdf, id=687, 433.62pt x 289.08pt>
 File: images/fac_relative_opt.pdf Graphic file (type pdf)
 <use images/fac_relative_opt.pdf>
-Package pdftex.def Info: images/fac_relative_opt.pdf  used on input line 884.
+Package pdftex.def Info: images/fac_relative_opt.pdf  used on input line 931.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
 
-Overfull \vbox (8.03305pt too high) detected at line 884
+Overfull \vbox (8.03305pt too high) detected at line 931
  []
 
-[54
+[56
 
- <./images/regret_relative_opt.pdf> <./images/fac_relative_opt.pdf>] [55
+ <./images/regret_relative_opt.pdf> <./images/fac_relative_opt.pdf>] [57
 
-] [56
+] [58
 
 ]
-<images/gap_models_sH_nopt.pdf, id=715, 433.62pt x 289.08pt>
+<images/gap_models_sH_nopt.pdf, id=728, 433.62pt x 289.08pt>
 File: images/gap_models_sH_nopt.pdf Graphic file (type pdf)
 <use images/gap_models_sH_nopt.pdf>
-Package pdftex.def Info: images/gap_models_sH_nopt.pdf  used on input line 915.
+Package pdftex.def Info: images/gap_models_sH_nopt.pdf  used on input line 962.
 (pdftex.def)             Requested size: 268.1647pt x 178.78664pt.
 
-Overfull \vbox (5.5686pt too high) detected at line 915
+Overfull \vbox (5.5686pt too high) detected at line 962
  []
 
-[57
+[59
 
- <./images/gap_models_sH_nopt.pdf>] [58
-
-] [59
-
-
-] [60
-
+ <./images/gap_models_sH_nopt.pdf>] [60
 
 ] [61
 
 
 ] [62
 
+
+] [63
+
+
+] [64
+
+
+]
+Overfull \vbox (20.2228pt too high) detected at line 1016
+ []
+
+[65
+
+]
+Overfull \vbox (20.2228pt too high) detected at line 1016
+ []
+
+[66
+
+]
+Overfull \vbox (20.2228pt too high) detected at line 1016
+ []
+
+[67
+
+]
+Overfull \vbox (20.2228pt too high) detected at line 1016
+ []
+
+[68
 
 ]
 \tf@nav=\write7
@@ -2080,20 +2067,20 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58477 strings out of 474496
- 1337070 string characters out of 5749163
- 2217933 words of memory out of 5000000
- 79554 multiletter control sequences out of 15000+600000
- 738890 words of font info for 253 fonts, out of 8000000 for 9000
+ 58504 strings out of 474496
+ 1337513 string characters out of 5749163
+ 2228078 words of memory out of 5000000
+ 79570 multiletter control sequences out of 15000+600000
+ 737120 words of font info for 250 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 128i,24n,123p,1685b,2463s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,27n,123p,1685b,2463s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{eq:pc1N-zpush} has been referenced but does not exist, replaced by a fixed one
 
-</home/user/.miktex/texmfs/install/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex10.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex7.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex9.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eurm10.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eurm7.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmex10.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy10.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy5.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy6.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy8.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy9.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb></home/user/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb></home/user/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvbo8a.pfb></home/user/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb></home/user/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (62 pages, 1802290 bytes).
+</home/user/.miktex/texmfs/install/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex10.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex9.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eurm10.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmex10.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy10.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy5.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy6.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy8.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy9.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/user/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb></home/user/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvbo8a.pfb></home/user/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb></home/user/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (68 pages, 1812370 bytes).
 PDF statistics:
- 905 PDF objects out of 1000 (max. 8388607)
- 186 named destinations out of 1000 (max. 500000)
+ 947 PDF objects out of 1000 (max. 8388607)
+ 198 named destinations out of 1000 (max. 500000)
  193 words of extra memory for PDF output out of 10000 (max. 10000000)
 

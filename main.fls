@@ -898,8 +898,6 @@ INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
 INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-mathex.enc
-INPUT /home/user/.miktex/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT ./images/Rplot01.pdf
 INPUT ./images/Rplot01.pdf
 INPUT ./images/Rplot01.pdf
@@ -909,11 +907,10 @@ INPUT ./images/Rplot01.pdf
 INPUT /home/user/.miktex/texmfs/install/tex/latex/inconsolata/t1zi4.fd
 INPUT /home/user/.miktex/texmfs/install/tex/latex/inconsolata/t1zi4.fd
 INPUT /home/user/.miktex/texmfs/install/tex/latex/inconsolata/t1zi4.fd
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/inconsolata/t1-zi4r-0.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/inconsolata/t1-zi4r-0.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/enc/dvips/inconsolata/i4-t1-0.enc
-INPUT /home/user/.miktex/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /home/user/.miktex/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
 INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvb8t.tfm
@@ -985,7 +982,6 @@ INPUT ./images/gap_xy_both.pdf
 INPUT ./images/gap_xy_both.pdf
 INPUT ./images/gap_xy_both.pdf
 INPUT ./images/gap_xy_both.pdf
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/inconsolata/t1-zi4r-0.tfm
 INPUT ./images/runtime_xy_both.pdf
 INPUT ./images/runtime_xy_both.pdf
 INPUT ./images/runtime_xy_both.pdf
@@ -1063,14 +1059,10 @@ INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/inconsolata/Inconsola
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex10.pfb
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex10.pfb
-INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex7.pfb
-INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex7.pfb
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex9.pfb
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex9.pfb
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eurm10.pfb
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eurm10.pfb
-INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eurm7.pfb
-INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eurm7.pfb
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmex10.pfb
@@ -1087,8 +1079,6 @@ INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy9.pfb
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy9.pfb
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb
-INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb
-INPUT /home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb
 INPUT /home/user/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvbo8a.pfb
