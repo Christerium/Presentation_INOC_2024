@@ -169,12 +169,28 @@
 \usepackage[caption=false]{subfig}
 
 \renewcommand{\emph}[1]{\textcolor{jkuGreen}{#1}}
-\newcommand{\nPC}{\hyperref[eq:nPC]{\texttt{(nPC1)}}}
-\newcommand{\nPCY}{\hyperref[eq:nPCY]{\texttt{(nPC2)}}}
-\newcommand{\nPCE}{\hyperref[eq:nPCE]{\texttt{(nPC3)}}}
-\newcommand{\npCP}{\emph{(npCP)}}
-\newcommand{\pCP}{\emph{(pCP)}}
+% \newcommand{\nPC}{\hyperref[eq:nPC]{\texttt{(nPC1)}}}
+% \newcommand{\nPCY}{\hyperref[eq:nPCY]{\texttt{(nPC2)}}}
+% \newcommand{\nPCE}{\hyperref[eq:nPCE]{\texttt{(nPC3)}}}
+% \newcommand{\npCP}{\emph{(npCP)}}
+% \newcommand{\pCP}{\emph{(pCP)}}
 \def\Cplusplus{C\raisebox{0.5ex}{\tiny\textbf{++}}}
+
+\newcommand{\nPC}{\hyperref[eq:nPC]{\texttt{(nPC1)}}}
+\newcommand{\nPCE}{\hyperref[eq:nPCE]{\texttt{(nPC3)}}}
+\newcommand{\nPCY}{\hyperref[eq:nPCY]{\texttt{(nPC2)}}}
+\newcommand{\nPCYR}{\hyperref[eq:nPCYR]{\texttt{(nPCR)}}}
+\newcommand{\nPCYRN}{\hyperref[eq:nPCYRN]{\texttt{(nPCR2)}}}
+\newcommand{\tsplib}{\texttt{TSPlib}}
+\newcommand{\pmed}{\texttt{pmed}}
+\newcommand{\pCP}{$p$CP}
+\newcommand{\npCP}{n-$p$CP}
+\newcommand{\PC}{\hyperref[eq:PC]{\texttt{(PC1)}}}
+\newcommand{\PCE}{\hyperref[eq:PCE]{\texttt{(PC3)}}}
+\newcommand{\PCY}{\hyperref[eq:PCY]{\texttt{(PC2)}}}
+\newcommand{\inI}{i \in \mathcal I}
+\newcommand{\inJ}{j \in \mathcal J}
+\newcommand{\inH}{h \in \mathcal H}
 
 %% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -199,6 +215,11 @@
 \setbeamertemplate{theorems}[numbered]
 \setbeamertemplate{definitions}[numbered]
 \setbeamertemplate{lemmas}[numbered]
+
+%\setbeamerfont{block title}{}
+
+\setbeamercolor{block title}{bg=jkuGreen,fg=white}
+
 %% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -226,7 +247,7 @@
 \author{Christof Brandstetter \and Markus Sinnl}
 
 %% Command \institute{name}: sets the institute / author affiliation (style-breaking)
-\institute{Institute of Business Analytics and Technology Transformation, Johannes Kepler University Linz}
+\institute{Institute of Business Analytics and Technology Transformation / JKU Business School, \\Johannes Kepler University Linz}
 
 %% Command \institutecode{CODE}: sets the institute abbreviation/initials (used to load the institute logo file, if present)
 %\institutecode{INS}
@@ -282,73 +303,213 @@
 %% `\section*{<title>}') to suppress specific section title frames.
 %% 
 
-\section*{Introdcution}
-\begin{frame}{Introduction}
+% \section*{Introdcution}
+% \begin{frame}{Introduction}
+%     \begin{itemize}
+%         \item \emph{$p$-center problem} \pCP: open $p$ number of facilities, such that the maximum distance between a customer and its closest open facility minimized \pause
+%         %\item \emph{nested}: sets of later periods contain more facilities and have to contain the facilities of sets of previous periods \pause
+%         \item \emph{nested}: considering more than one time period in which facilities are opened, facilities once open cannot be closed \pause
+%         %\item \emph{nested $p$-center problem} \npCP: choose a set of $p^h$ facilities over different time periods h, such that the sum of the maximum distance between a demand point and its closest facility belonging to that set in that time period over all periods is minimized and the sets are nested 
+%         \item \emph{nested $p$-center problem} \npCP: open $p^h$ number of \emph{nested} facilities in period $h$, such that the sum of the maximum distances between a customer and its closest open facility in this time period is minimized
+%     \end{itemize}
+% \end{frame}
+\begin{frame}{The $p$-center problem: Definition}
+\begin{block}{Definition}
     \begin{itemize}
-        \item \emph{$p$-center problem} \pCP: open $p$ number of facilities, such that the maximum distance between a customer and its closest open facility minimized \pause
-        %\item \emph{nested}: sets of later periods contain more facilities and have to contain the facilities of sets of previous periods \pause
-        \item \emph{nested}: considering more than one time period in which facilities are opened, facilities once open cannot be closed \pause
-        %\item \emph{nested $p$-center problem} \npCP: choose a set of $p^h$ facilities over different time periods h, such that the sum of the maximum distance between a demand point and its closest facility belonging to that set in that time period over all periods is minimized and the sets are nested 
-        \item \emph{nested $p$-center problem} \npCP: open $p^h$ number of \emph{nested} facilities in period $h$, such that the sum of the maximum distances between a customer and its closest open facility in this time period is minimized
+        \item Given \pause
+        \begin{itemize}
+            \item a set V of locations, \pause
+            \item \emph{$p$} $\in \mathbb{Z}$, and \pause
+            \item \emph{distances} $\emph{d_{ij}}$ from location $i \in V$ to $j \in V$ \pause
+        \end{itemize}
+        \item we want to
+        \begin{itemize}
+            \item \emph{open \textit{p} locations} of V, such that \pause
+            \item the \emph{maximum distance} of any location to its closest opened location is \emph{minimized}.
+        \end{itemize}
     \end{itemize}
+\end{block}
+\end{frame}
+\begin{frame}{The nesting property}
+
+\end{frame}
+
+% \section{The nested \textit{p}-center problem}
+% \begin{frame}[allowframebreaks]{The nested $p$-center problem: Definition}
+%     %\vspace{-6pt}
+    
+%     \begin{block}{\vspace*{-4ex}}
+%         \begin{itemize}
+%             \item given a set of customer demand points $\mathcal I$,
+%             \item potential facility locations $\mathcal J$, 
+%             \item time periods $\mathcal H = \left \{1,\dots,H \right \}$, 
+%             %\item integers $\mathcal P = \left \{p^1, \dots p^H \right \}$ where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and $p^H \leq \left\lvert \mathcal J \right\rvert$ 
+%             \item integers $\mathcal P = \left \{p^1, \dots p^H \right \}$   
+%             \begin{itemize}
+%                 \item where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and
+%                 \item $p^H \leq \left\lvert \mathcal J \right\rvert$
+%             \end{itemize}
+%             \item distances $d_{ij} \geq 0$ between each $i \in \mathcal I$ and $j \in \mathcal J$
+%         \end{itemize}
+%     \end{block}
+
+%     \begin{block}{\vspace*{-4ex}}
+%         \begin{itemize}
+%             %\item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq \mathcal J$ with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$, for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds
+%             \item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq \mathcal J$
+%             \begin{itemize}
+%                 \item with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$,
+%                 \item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds
+%                 %\item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h \in \mathcal H \setminus \left \{H \right \}$ holds
+%             \end{itemize}
+%             %\item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$, where $d_h(\mathcal J^h) = \max_{i \in \mathcal I}\min_{j \in \mathcal J^h} d_{ij}$ for $h \in \mathcal H$
+%             \item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$, 
+%             \begin{itemize}
+%                 \item where $d_h(\mathcal J^h) = \max_{i \in \mathcal I}\min_{j \in \mathcal J^h} d_{ij}$ for $h \in \mathcal H$
+%             \end{itemize}
+%         \end{itemize}
+%     \end{block} 
+% \end{frame}
+%\setbeamerfont{block}{size=\huge}
+\begin{frame}{The nested \textit{p}-center problem: Definition}
+    \setbeamerfont{item}{size=\footnotesize}
+    \setbeamerfont{subitem}{size=\footnotesize}
+    \begin{minipage}{0.48\textwidth}
+        \begin{block}{Definition I}
+            \begin{itemize}
+                \item given a set of customer demand points $\mathcal I$, \pause
+                \item potential facility locations $\mathcal J$, \pause
+                \item time periods $\mathcal H = \left \{1,\dots,H \right \}$, \pause
+                %\item integers $\mathcal P = \left \{p^1, \dots p^H \right \}$ where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and $p^H \leq \left\lvert \mathcal J \right\rvert$ 
+                \item integers $\mathcal P = \left \{p^1, \dots p^H \right \}$   \pause
+                \begin{itemize} 
+                    \item where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and
+                    \item $p^H \leq \left\lvert \mathcal J \right\rvert$
+                \end{itemize} \pause
+                \item distances $d_{ij} \geq 0$ between each $i \in \mathcal I$ and $j \in \mathcal J$ \pause
+            \end{itemize}
+        \end{block}
+    \end{minipage}
+    \begin{minipage}{0.48\textwidth}
+        \begin{block}{Definition II}
+            \vspace*{3pt}
+            \begin{itemize}
+                %\item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq \mathcal J$ with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$, for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds
+                \item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq \mathcal J$ \pause
+                \begin{itemize}
+                    \item with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$,
+                    \item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds \pause
+                    %\item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h \in \mathcal H \setminus \left \{H \right \}$ holds
+                \end{itemize} 
+                %\item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$, where $d_h(\mathcal J^h) = \max_{i \in \mathcal I}\min_{j \in \mathcal J^h} d_{ij}$ for $h \in \mathcal H$
+                \item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$, 
+                \begin{itemize}
+                    \item where $d_h(\mathcal J^h) = \max_{i \in \mathcal I}\min_{j \in \mathcal J^h} d_{ij}$ for $h \in \mathcal H$
+                \end{itemize}
+            \end{itemize}
+            \vspace*{3pt}
+        \end{block}
+    \end{minipage}
 \end{frame}
 
 \begin{frame}{$p$-center problem vs nested $p$-center problem}
     \centering
-    \vspace{-10pt}
+%    \vspace{-10pt}
     \begin{figure}
-        \includegraphics[width=0.43\linewidth]{images/Rplot01.pdf}
-        \caption{Feasible solution for the nested and the non-nested $p$-center problem with $p = p^h = 4, 5, 6$}
+        \includegraphics[width=0.55\linewidth]{images/Rplot01.pdf}
+%        \caption{Feasible solution for the nested and the non-nested $p$-center problem with $p = p^h = 4, 5, 6$}
     \end{figure}
 \end{frame}
 
-\begin{frame}{Research question}
-    \begin{exampleblock}{\vspace{-2em}}
-        \textbf{How can the nesting concept be applied to the p-center problem?}
-        \begin{itemize}
-            \item proposed by \textcite{McGarvey2022} \pause
-            \item Which mixed integer programming (MILP) formulations can be used?
-            \item Which MILP formulations have the best runtime? 
-            \item How can the nested p-center problem affect managerial decisions?
-        \end{itemize} 
-    \end{exampleblock} 
+% \begin{frame}{Research question}
+%     \begin{exampleblock}{\vspace{-2em}}
+%         \textbf{How can the nesting concept be applied to the p-center problem?}
+%         \begin{itemize}
+%             \item proposed by \textcite{McGarvey2022} \pause
+%             \item Which mixed integer programming (MILP) formulations can be used?
+%             \item Which MILP formulations have the best runtime? 
+%             \item How can the nested p-center problem affect managerial decisions?
+%         \end{itemize} 
+%     \end{exampleblock} 
+% \end{frame}
+
+\begin{frame}{The nested $p$-center problem: Potential applications}
+
 \end{frame}
 
-\begin{frame}[allowframebreaks]{Definition of the nested $p$-center problem}
-    %\vspace{-6pt}
-    \begin{block}{\vspace*{-4ex}}
-        \begin{itemize}
-            \item given a set of customer demand points $\mathcal I$,
-            \item potential facility locations $\mathcal J$, 
-            \item time periods $\mathcal H = \left \{1,\dots,H \right \}$, 
-            %\item integers $\mathcal P = \left \{p^1, \dots p^H \right \}$ where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and $p^H \leq \left\lvert \mathcal J \right\rvert$ 
-            \item integers $\mathcal P = \left \{p^1, \dots p^H \right \}$   
-            \begin{itemize}
-                \item where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and
-                \item $p^H \leq \left\lvert \mathcal J \right\rvert$
-            \end{itemize}
-            \item distances $d_{ij} \geq 0$ between each $i \in \mathcal I$ and $j \in \mathcal J$
-        \end{itemize}
-    \end{block}
-
-    \begin{block}{\vspace*{-4ex}}
-        \begin{itemize}
-            %\item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq \mathcal J$ with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$, for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds
-            \item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq \mathcal J$
-            \begin{itemize}
-                \item with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$,
-                \item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds
-                %\item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h \in \mathcal H \setminus \left \{H \right \}$ holds
-            \end{itemize}
-            %\item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$, where $d_h(\mathcal J^h) = \max_{i \in \mathcal I}\min_{j \in \mathcal J^h} d_{ij}$ for $h \in \mathcal H$
-            \item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$, 
-            \begin{itemize}
-                \item where $d_h(\mathcal J^h) = \max_{i \in \mathcal I}\min_{j \in \mathcal J^h} d_{ij}$ for $h \in \mathcal H$
-            \end{itemize}
-        \end{itemize}
-    \end{block} 
+% \begin{frame}{The nested $p$-center problem: Classical MILP formulation}
+%     \vspace*{-30pt}
+%     \fontsize{8pt}{10pt}\selectfont
+%     \setbeamerfont{block title}{size=\small}
+%     \begin{alignat*}{2}
+%         \onslide<1->{
+%             &x_{ij}^h \ldots \begin{cases}
+%                 1 \, \dots \, \text{if \emph{location \textit{i}} is \emph{assigned} to \emph{location \textit{j}} in \emph{time period \textit{h}}}    \\
+%                 0 \, \dots \, \text{otherwise}
+%             \end{cases}                                                                                                 \\}
+%         \onslide<2->{
+%             &y_{j}^h \ldots \begin{cases}
+%                 1 \, \dots \, \text{if \emph{location \textit{j}} is \emph{open} in \emph{time period \textit{h}}}                              \\
+%                 0 \, \dots \, \text{otherwise}
+%             \end{cases}                                                                                                 \\}
+%         \onslide<3->{
+%             &z^h  \ldots \text{maximum distance between any customer $i$ and its nearest open facility}                  \\
+%             &           \text{in period $h$}}
+%     \end{alignat*}
+%     %\onslide<4->{
+%     \begin{minipage}{0.6\textwidth}
+%         %\vspace*{-10pt}
+%         \begin{block}<4->{Mixed Integer Linear Program (MILP) for \textit{p}-center (based on \cite{wiley2013})}
+        
+%         \end{block}
+%     \end{minipage}
+%     %}
+% \end{frame}
+\begin{frame}{The nested $p$-center problem: Classical MILP formulation}
+    \vspace*{-10pt}
+    \begin{minipage}[t]{0.45\textwidth}
+        \vspace{25pt}
+        \setbeamerfont{block body}{size=\tiny}
+        \begin{block}<1->{Variables}
+            \vspace*{-10pt}
+            \begin{alignat*}{2}
+                \onslide<1->{
+                    &x_{ij}^h \ldots \begin{cases}
+                        1 \, \dots \, \text{if \emph{location \textit{i}} is \emph{assigned} to \emph{location \textit{j}} in \emph{time period \textit{h}}}    \\
+                        0 \, \dots \, \text{otherwise}
+                    \end{cases}                                                                                                 \\}
+                \onslide<2->{
+                    &y_{j}^h \ldots \begin{cases}
+                        1 \, \dots \, \text{if \emph{location \textit{j}} is \emph{open} in \emph{time period \textit{h}}}                              \\
+                        0 \, \dots \, \text{otherwise}
+                    \end{cases}                                                                                                 \\}
+                \onslide<3->{
+                    &z^h  \ldots    \text{maximum \emph{distance} between any \emph{customer \textit{i}} and its nearest}         \\
+                    &               \text{\emph{open facility} in period $h$}}
+            \end{alignat*}
+        \end{block}
+    \end{minipage}
+    \begin{minipage}[t]{0.45\textwidth}
+        %\setbeamerfont{block title}{size=\small}
+        \setbeamerfont{block body}{size=\tiny}
+        \begin{block}<4->{(MILP) for nested \textit{p}-center (based on \cite{wiley2013})}
+            \vspace*{-12pt}
+            \begin{subequations}
+                \begin{alignat}{4}
+                     & \nPC\  & \min         &  & \sum_{\inH}z^{h}          &                                      &                                               \\
+                     &        & \text{ s.t.} &  & \sum_{j \in V}y_{j}^h        & =     p^{h}                          & \forall \inH                                   \\
+                     &        &              &  & \sum_{j \in V}x_{ij}^h       & =     1                              & \forall i \in V, \inH                             \\
+                     &        &              &  & x_{ij}^h                  & \leq  y_j^{h}                        & \forall i,j \in V, \inH                       \\
+                     &        &              &  & \sum_{j \in V}d_{ij}x_{ij}^h & \leq  z^{h}                          & \forall i \in V, \inH                               \\
+                     &        &              &  & y_{j}^h                   & \geq  y_j^{h-1}                      & \forall \inH \setminus \left \{1 \right \}       \\
+                     &        &              &  & x_{ij}^h,                 & \in   \left \{\text{0, 1}\right \}\  & \;\; \forall i,j \in V, \inH                           \\
+                     &        &              &  & y_{j}^h,                  & \in   \left \{\text{0, 1}\right \}   & \forall j \in V, \inH                                 \\
+                     &        &              &  & z^{h}                     & \in   \mathbb R_{\ge 0}              & \forall \inH                                  
+                \end{alignat}  \label{eq:nPC}
+            \end{subequations}
+        \end{block}
+    \end{minipage}
 \end{frame}
-
 \section{Related work}
 \begin{frame}{$p$-center problem}
     \begin{itemize}
@@ -393,22 +554,22 @@
     \end{align*}
 \end{frame}
 
-\begin{frame}{First MILP formulation}
-    \vspace{-31pt}
-    \begin{subequations}
-        \begin{align}
-            &\nPC   &&\min          &\sum_{h \in \mathcal H}    z^{h}                                                                                                                      \label{eq:pc1N-obj}         \\[-3pt]
-            &       &&\text{ s.t.}  &\sum_{j \in \mathcal J}    y_{j}^h         & =     p^{h}                           && \forall h \in \mathcal H                                        \label{eq:pc1N-numfac}      \\[-3pt]
-            &       &&              &\sum_{j \in \mathcal J}    x_{ij}^h        & =     1                               && \forall i \in \mathcal I, h \in \mathcal H                      \label{eq:pc1N-onetoone}    \\[-6pt]
-            &       &&              &                           x_{ij}^h        & \leq  y_j^{h}                         && \forall i \in \mathcal I, j \in \mathcal J, h \in \mathcal H    \label{eq:pc1N-onlyopen}    \\[-1.2pt]
-            &       &&              &\sum_{j \in \mathcal J}    d_{ij}x_{ij}^h  & \leq  z^{h}                           && \forall i \in \mathcal I, h \in \mathcal H                      \label{eq:pc1N-zpush}       \\[-10pt]
-            &       &&              &                           y_{j}^h         & \geq  y_j^{h-1}                       && \forall h \in \mathcal H \setminus \left \{1 \right \}          \label{eq:pc1N-nested}      \\
-            &       &&              &                           x_{ij}^h,\      & \in   \left \{\text{0, 1}\right \}    && \forall i \in \mathcal I, j \in \mathcal J, h \in \mathcal H    \label{eq:pc1N-binx}        \\
-            &       &&              &                           y_{j}^h,\       & \in   \left \{\text{0, 1}\right \}    && \forall j \in \mathcal J, h \in \mathcal H                      \label{eq:pc1N-biny}        \\
-            &       &&              &                           z^{h}           & \in   \mathbb R_{\ge 0}               && \forall h \in \mathcal H                                        \label{eq:pc1N-zreal} 
-        \end{align}  \label{eq:nPC}
-    \end{subequations}
-\end{frame}
+% \begin{frame}{First MILP formulation}
+%     \vspace{-31pt}
+%     \begin{subequations}
+%         \begin{align}
+%             &\nPC   &&\min          &\sum_{h \in \mathcal H}    z^{h}                                                                                                                      \label{eq:pc1N-obj}         \\[-3pt]
+%             &       &&\text{ s.t.}  &\sum_{j \in \mathcal J}    y_{j}^h         & =     p^{h}                           && \forall h \in \mathcal H                                        \label{eq:pc1N-numfac}      \\[-3pt]
+%             &       &&              &\sum_{j \in \mathcal J}    x_{ij}^h        & =     1                               && \forall i \in \mathcal I, h \in \mathcal H                      \label{eq:pc1N-onetoone}    \\[-6pt]
+%             &       &&              &                           x_{ij}^h        & \leq  y_j^{h}                         && \forall i \in \mathcal I, j \in \mathcal J, h \in \mathcal H    \label{eq:pc1N-onlyopen}    \\[-1.2pt]
+%             &       &&              &\sum_{j \in \mathcal J}    d_{ij}x_{ij}^h  & \leq  z^{h}                           && \forall i \in \mathcal I, h \in \mathcal H                      \label{eq:pc1N-zpush}       \\[-10pt]
+%             &       &&              &                           y_{j}^h         & \geq  y_j^{h-1}                       && \forall h \in \mathcal H \setminus \left \{1 \right \}          \label{eq:pc1N-nested}      \\
+%             &       &&              &                           x_{ij}^h,\      & \in   \left \{\text{0, 1}\right \}    && \forall i \in \mathcal I, j \in \mathcal J, h \in \mathcal H    \label{eq:pc1N-binx}        \\
+%             &       &&              &                           y_{j}^h,\       & \in   \left \{\text{0, 1}\right \}    && \forall j \in \mathcal J, h \in \mathcal H                      \label{eq:pc1N-biny}        \\
+%             &       &&              &                           z^{h}           & \in   \mathbb R_{\ge 0}               && \forall h \in \mathcal H                                        \label{eq:pc1N-zreal} 
+%         \end{align}  \label{eq:nPC}
+%     \end{subequations}
+% \end{frame}
 
 % \begin{frame}{Second MILP formulation}
 %     \vspace{-1cm}
