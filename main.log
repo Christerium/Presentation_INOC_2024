@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.31)  1 MAR 2024 16:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.12.31)  1 MAR 2024 16:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1866,7 +1866,7 @@ Overfull \vbox (19.35304pt too high) detected at line 614
 
 ]
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 11.0pt on input line 758.
+(Font)              scaled to size 11.0pt on input line 755.
  [33
 
 ] [34
@@ -1875,7 +1875,7 @@ LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 14.0pt on input line 804.
+(Font)              scaled to size 14.0pt on input line 801.
  [36
 
 ] [37
@@ -1916,7 +1916,7 @@ LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
 
 ]
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.0pt on input line 876.
+(Font)              scaled to size 10.0pt on input line 873.
  [55
 
 ] [56
@@ -1937,12 +1937,12 @@ LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
 <../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf, id=689, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf  used on input line 985.
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf  used on input line 982.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
 <../../Master Thesis/final_plots/inoc_gap_nPC1.pdf, id=690, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf  used on input line 985.
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf  used on input line 982.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
  [63
 
@@ -1950,12 +1950,12 @@ Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf  used
 <../../Master Thesis/final_plots/inoc_runtime_nPC2.pdf, id=713, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/inoc_runtime_nPC2.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/inoc_runtime_nPC2.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_nPC2.pdf  used on input line 999.
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_nPC2.pdf  used on input line 996.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
 <../../Master Thesis/final_plots/inoc_gap_nPC2.pdf, id=714, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/inoc_gap_nPC2.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/inoc_gap_nPC2.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_nPC2.pdf  used on input line 999.
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_nPC2.pdf  used on input line 996.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
  [64
 
@@ -1963,12 +1963,12 @@ Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_nPC2.pdf  used
 <../../Master Thesis/final_plots/inoc_runtime_nPC3.pdf, id=737, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/inoc_runtime_nPC3.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/inoc_runtime_nPC3.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_nPC3.pdf  used on input line 1013.
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_nPC3.pdf  used on input line 1010.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
 <../../Master Thesis/final_plots/inoc_gap_nPC3.pdf, id=738, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/inoc_gap_nPC3.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/inoc_gap_nPC3.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_nPC3.pdf  used on input line 1013.
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_nPC3.pdf  used on input line 1010.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
  [65
 
@@ -1976,12 +1976,12 @@ Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_nPC3.pdf  used
 <../../Master Thesis/final_plots/inoc_runtime_PH.pdf, id=761, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/inoc_runtime_PH.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/inoc_runtime_PH.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_PH.pdf  used on input line 1028.
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_PH.pdf  used on input line 1025.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
 <../../Master Thesis/final_plots/inoc_gap_PH.pdf, id=762, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/inoc_gap_PH.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/inoc_gap_PH.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_PH.pdf  used on input line 1028.
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_PH.pdf  used on input line 1025.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
  [66
 
@@ -1989,12 +1989,12 @@ Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_PH.pdf  used o
 <../../Master Thesis/final_plots/regret_obj.pdf, id=784, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/regret_obj.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/regret_obj.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/regret_obj.pdf  used on input line 1042.
+Package pdftex.def Info: ../../Master Thesis/final_plots/regret_obj.pdf  used on input line 1039.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
 <../../Master Thesis/final_plots/regret_fac.pdf, id=785, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/regret_fac.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/regret_fac.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/regret_fac.pdf  used on input line 1042.
+Package pdftex.def Info: ../../Master Thesis/final_plots/regret_fac.pdf  used on input line 1039.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
  [67
 
@@ -2011,25 +2011,25 @@ Package pdftex.def Info: ../../Master Thesis/final_plots/regret_fac.pdf  used on
 
 
 ]
-Overfull \vbox (20.2228pt too high) detected at line 1127
+Overfull \vbox (20.2228pt too high) detected at line 1124
  []
 
 [73
 
 ]
-Overfull \vbox (20.2228pt too high) detected at line 1127
+Overfull \vbox (20.2228pt too high) detected at line 1124
  []
 
 [74
 
 ]
-Overfull \vbox (20.2228pt too high) detected at line 1127
+Overfull \vbox (20.2228pt too high) detected at line 1124
  []
 
 [75
 
 ]
-Overfull \vbox (20.2228pt too high) detected at line 1127
+Overfull \vbox (20.2228pt too high) detected at line 1124
  []
 
 [76
