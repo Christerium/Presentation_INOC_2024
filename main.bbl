@@ -19,7 +19,7 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{Elloumi2018}{inproceedings}{}
+    \entry{Elloumi2018}{inbook}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=cc5158c6c2d265a5f343f4ff0a8a4c9a}{%
            family={Ales},
@@ -34,28 +34,8 @@
            giveni={S\bibinitperiod},
            givenun=0}}%
       }
-      \name{editor}{3}{}{%
-        {{hash=2778d00b63611810839f7e97a581468a}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Jon},
-           giveni={J\bibinitperiod}}}%
-        {{hash=e8401634f5e7a6782d15bb5bb9f8206b}{%
-           family={Rinaldi},
-           familyi={R\bibinitperiod},
-           given={Giovanni},
-           giveni={G\bibinitperiod}}}%
-        {{hash=d5eff86d500a0fbb6e778c409244daba}{%
-           family={Mahjoub},
-           familyi={M\bibinitperiod},
-           given={A.\bibnamedelimi Ridha},
-           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Cham}%
-      }
-      \list{publisher}{1}{%
-        {Springer International Publishing}%
+      \list{organization}{1}{%
+        {Springer}%
       }
       \strng{namehash}{9611d59013231d97172a697de2acd1ff}
       \strng{fullhash}{9611d59013231d97172a697de2acd1ff}
@@ -63,57 +43,55 @@
       \strng{authorbibnamehash}{9611d59013231d97172a697de2acd1ff}
       \strng{authornamehash}{9611d59013231d97172a697de2acd1ff}
       \strng{authorfullhash}{9611d59013231d97172a697de2acd1ff}
-      \strng{editorbibnamehash}{6cf748cbc2b05c6741f7bc731b630b86}
-      \strng{editornamehash}{6cf748cbc2b05c6741f7bc731b630b86}
-      \strng{editorfullhash}{6cf748cbc2b05c6741f7bc731b630b86}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The p-center problem consists in selecting p centers among M to cover N clients, such that the maximal distance between a client and its closest selected center is minimized. For this problem we propose two new and compact integer formulations.}
-      \field{booktitle}{Combinatorial Optimization}
-      \field{isbn}{978-3-319-96151-4}
-      \field{title}{Compact MILP Formulations for the p-Center Problem}
+      \field{booktitle}{Combinatorial Optimization: 5th International Symposium, ISCO 2018, Marrakesh, Morocco, April 11--13, 2018, Revised Selected Papers 5}
+      \field{title}{Compact MILP formulations for the p-center problem}
       \field{year}{2018}
       \field{pages}{14\bibrangedash 25}
       \range{pages}{12}
     \endentry
-    \entry{Beasley1985}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=8bb7614ea1b6f6b7109453f231a7b2d7}{%
-           family={Beasley},
-           familyi={B\bibinitperiod},
-           given={J.E.},
-           giveni={J\bibinitperiod},
+    \entry{calik2013double}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7bdd1ee20bb939069baa4726ce0e90d7}{%
+           family={Çal{ı}k},
+           familyi={Ç\bibinitperiod},
+           given={Hatice},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d1b3b2d3019801b7b7335cc063b1526}{%
+           family={Tansel},
+           familyi={T\bibinitperiod},
+           given={Barbaros\bibnamedelima C.},
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{8bb7614ea1b6f6b7109453f231a7b2d7}
-      \strng{fullhash}{8bb7614ea1b6f6b7109453f231a7b2d7}
-      \strng{bibnamehash}{8bb7614ea1b6f6b7109453f231a7b2d7}
-      \strng{authorbibnamehash}{8bb7614ea1b6f6b7109453f231a7b2d7}
-      \strng{authornamehash}{8bb7614ea1b6f6b7109453f231a7b2d7}
-      \strng{authorfullhash}{8bb7614ea1b6f6b7109453f231a7b2d7}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{78a1392d72c50fbcc32554a5dbe88f27}
+      \strng{fullhash}{78a1392d72c50fbcc32554a5dbe88f27}
+      \strng{bibnamehash}{78a1392d72c50fbcc32554a5dbe88f27}
+      \strng{authorbibnamehash}{78a1392d72c50fbcc32554a5dbe88f27}
+      \strng{authornamehash}{78a1392d72c50fbcc32554a5dbe88f27}
+      \strng{authorfullhash}{78a1392d72c50fbcc32554a5dbe88f27}
+      \field{sortinit}{Ç}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{In a previous paper we presented a tree search algorithm for the p-median problem, the problem of locating p facilities (medians) on a network, which was based upon La grangean relaxation and subgradient optimisation. That algorithm solved (optimally) problems with an arbitrary number of medians and having up to 200 vertices. In this note we show that it is possible to enhance that algorithm to solve (optimally) problems having up to 900 vertices using the Cray-1S computer.}
-      \field{issn}{0377-2217}
-      \field{journaltitle}{European Journal of Operational Research}
-      \field{number}{2}
-      \field{title}{A note on solving large p-median problems}
-      \field{volume}{21}
-      \field{year}{1985}
-      \field{pages}{270\bibrangedash 273}
-      \range{pages}{4}
-      \verb{doi}
-      \verb https://doi.org/10.1016/0377-2217(85)90040-2
-      \endverb
-      \keyw{Location,networks,integer programming}
+      \field{journaltitle}{Computers \& Operations Research}
+      \field{number}{12}
+      \field{title}{Double bound method for solving the p-center location problem}
+      \field{volume}{40}
+      \field{year}{2013}
+      \field{pages}{2991\bibrangedash 2999}
+      \range{pages}{9}
     \endentry
     \entry{CALOGIURI2021}{article}{}
       \name{author}{4}{}{%
@@ -142,6 +120,9 @@
            giveni={E\bibinitperiod},
            givenun=0}}%
       }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
       \strng{namehash}{2491d44e72ed8e4fd42e6f14b9c8b48e}
       \strng{fullhash}{0f9c4ac08f4331ec71fbe3a2e125fa7f}
       \strng{bibnamehash}{2491d44e72ed8e4fd42e6f14b9c8b48e}
@@ -154,24 +135,50 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{This paper deals with a multi-period extension of the p-center problem, in which arc traversal times vary over time, and facilities are mobile units that can be relocated multiple times during the planning horizon. The problem arises in several applications, such as emergency services, in which vehicles can be relocated in anticipation of traffic congestion. First, we analyze the problem structure and its relationship with its single-period counterpart, considered as a special case. Then, the insight gained with this analysis is used to devise a decomposition heuristic. Computational results on instances based on the Paris (France) road graph indicate that the algorithm is capable of determining good-quality solutions in a reasonable execution time.}
-      \field{issn}{0305-0548}
       \field{journaltitle}{Computers \& Operations Research}
       \field{title}{The multi-period p-center problem with time-dependent travel times}
       \field{volume}{136}
       \field{year}{2021}
       \field{pages}{105487}
       \range{pages}{1}
-      \verb{doi}
-      \verb https://doi.org/10.1016/j.cor.2021.105487
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0305054821002343
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0305054821002343
-      \endverb
-      \keyw{-center problem,Time-dependent travel times,Multi-period location,Discrete location}
+    \endentry
+    \entry{chen2009new}{article}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=ee41cb416d5a3df8948a0fcef2119886}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Doron},
+           giveni={D\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=4f60fea1fb6c2242faae7a440a72931a}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Reuven},
+           giveni={R\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{f712ef85e7d7a87d2f4582857ffe2cdd}
+      \strng{fullhash}{f712ef85e7d7a87d2f4582857ffe2cdd}
+      \strng{bibnamehash}{f712ef85e7d7a87d2f4582857ffe2cdd}
+      \strng{authorbibnamehash}{f712ef85e7d7a87d2f4582857ffe2cdd}
+      \strng{authornamehash}{f712ef85e7d7a87d2f4582857ffe2cdd}
+      \strng{authorfullhash}{f712ef85e7d7a87d2f4582857ffe2cdd}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Operations Research}
+      \field{number}{5}
+      \field{title}{New relaxation-based algorithms for the optimal solution of the continuous and discrete p-center problems}
+      \field{volume}{36}
+      \field{year}{2009}
+      \field{pages}{1646\bibrangedash 1655}
+      \range{pages}{10}
     \endentry
     \entry{Contardo2018}{article}{}
       \name{author}{3}{}{%
@@ -194,28 +201,76 @@
            giveni={R\bibinitperiod},
            givenun=0}}%
       }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
       \strng{namehash}{bf4a0031582a1f9d99823428975e7b2c}
       \strng{fullhash}{bf4a0031582a1f9d99823428975e7b2c}
       \strng{bibnamehash}{bf4a0031582a1f9d99823428975e7b2c}
       \strng{authorbibnamehash}{bf4a0031582a1f9d99823428975e7b2c}
       \strng{authornamehash}{bf4a0031582a1f9d99823428975e7b2c}
       \strng{authorfullhash}{bf4a0031582a1f9d99823428975e7b2c}
+      \field{extraname}{1}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Computers \& Operations Research}
-      \field{month}{03}
       \field{title}{A scalable exact algorithm for the vertex p-center problem}
       \field{volume}{103}
-      \field{year}{2018}
-      \verb{doi}
-      \verb 10.1016/j.cor.2018.11.006
-      \endverb
+      \field{year}{2019}
+      \field{pages}{211\bibrangedash 220}
+      \range{pages}{10}
     \endentry
-    \entry{wiley2013}{inbook}{}
+    \entry{contardo2019scalable}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e830f9378c11bc3dd72b306ba53c77d4}{%
+           family={Contardo},
+           familyi={C\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5425f8b3958d872a4966e21944b95fc0}{%
+           family={Iori},
+           familyi={I\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e1b1369ae9b9096777964039b142df9}{%
+           family={Kramer},
+           familyi={K\bibinitperiod},
+           given={Raphael},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{bf4a0031582a1f9d99823428975e7b2c}
+      \strng{fullhash}{bf4a0031582a1f9d99823428975e7b2c}
+      \strng{bibnamehash}{bf4a0031582a1f9d99823428975e7b2c}
+      \strng{authorbibnamehash}{bf4a0031582a1f9d99823428975e7b2c}
+      \strng{authornamehash}{bf4a0031582a1f9d99823428975e7b2c}
+      \strng{authorfullhash}{bf4a0031582a1f9d99823428975e7b2c}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Operations Research}
+      \field{title}{A scalable exact algorithm for the vertex p-center problem}
+      \field{volume}{103}
+      \field{year}{2019}
+      \field{pages}{211\bibrangedash 220}
+      \range{pages}{10}
+    \endentry
+    \entry{wiley2013}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=be82b7822f7234b494a6103d8a9c8d3f}{%
            family={Daskin},
@@ -240,16 +295,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Summary The coverage distance, or service standard, was exogenously specified in the set covering and maximum covering models of Chapter 4 and the extensions of those models. The center problem treats the coverage distance as an endogenous decision variable. The center problem locates a fixed number of facilities to minimize the maximum distance between any demand node and the nearest facility to that demand node. The absolute center model allows facilities to be located anywhere on the network while the vertex center model restricts facility locations to the nodes. Unweighted problems treat each demand node identically while weighted problems allow nodes to be valued or weighted differently. Polynomial algorithms for the absolute 1- and 2-center problems on an unweighted tree network are presented as is an algorithm for the absolute 1-center on a weighted tree. The vertex center problem on a general graph is then discussed, followed by a discussion of algorithms for the absolute center problem on a general graph.}
-      \field{booktitle}{Network and Discrete Location: Models, Algorithms, and Applications, Second Edition}
-      \field{chapter}{5}
-      \field{isbn}{9781118537015}
-      \field{title}{Center Problems}
+      \field{title}{Network and Discrete Location: Models, Algorithms, and Applications, Second Edition}
       \field{year}{2013}
-      \field{pages}{193\bibrangedash 234}
-      \range{pages}{42}
-      \verb{doi}
-      \verb https://doi.org/10.1002/9781118537015.ch05
-      \endverb
       \keyw{center problem,absolute center,vertex center,weighted center,unweighted center,tree network}
     \endentry
     \entry{Elloumi2004}{article}{}
@@ -273,6 +320,9 @@
            giveni={Y\bibinitperiod},
            givenun=0}}%
       }
+      \list{publisher}{1}{%
+        {INFORMS}%
+      }
       \strng{namehash}{9916db53ac2a4d0c8724b7859d5a3115}
       \strng{fullhash}{9916db53ac2a4d0c8724b7859d5a3115}
       \strng{bibnamehash}{9916db53ac2a4d0c8724b7859d5a3115}
@@ -286,15 +336,12 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{INFORMS Journal on Computing}
-      \field{month}{02}
-      \field{title}{A New Formulation and Resolution Method for the p-Center Problem}
+      \field{number}{1}
+      \field{title}{A new formulation and resolution method for the p-center problem}
       \field{volume}{16}
       \field{year}{2004}
-      \field{pages}{83\bibrangedash 94}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1287/ijoc.1030.0028
-      \endverb
+      \field{pages}{84\bibrangedash 94}
+      \range{pages}{11}
     \endentry
     \entry{GAAR2022}{article}{}
       \name{author}{2}{}{%
@@ -311,6 +358,9 @@
            giveni={M\bibinitperiod},
            givenun=0}}%
       }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
       \strng{namehash}{192d7c8e7a0e2f0725473560120b7fbf}
       \strng{fullhash}{192d7c8e7a0e2f0725473560120b7fbf}
       \strng{bibnamehash}{192d7c8e7a0e2f0725473560120b7fbf}
@@ -323,8 +373,6 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The p-center problem (pCP) is a fundamental problem in location science, where we are given customer demand points and possible facility locations, and we want to choose p of these locations to open a facility such that the maximum distance of any customer demand point to its closest open facility is minimized. State-of-the-art solution approaches of pCP use its connection to the set cover problem to solve pCP in an iterative fashion by repeatedly solving set cover problems. The classical textbook integer programming (IP) formulation of pCP is usually dismissed due to its size and bad linear programming (LP)-relaxation bounds. We present a novel solution approach that works on a new IP formulation that can be obtained by a projection from the classical formulation. The formulation is solved by means of branch-and-cut, where cuts for demand points are iteratively generated. Moreover, the formulation can be strengthened with combinatorial information to obtain a much tighter LP-relaxation. In particular, we present a novel way to use lower bound information to obtain stronger cuts. We show that the LP-relaxation bound of our strengthened formulation has the same strength as the best known bound in literature, which is based on a semi-relaxation. Finally, we also present a computational study on instances from the literature with up to more than 700,000 customers and locations. Our solution algorithm is competitive with highly sophisticated set-cover-based solution algorithms, which depend on various components and parameters.}
-      \field{issn}{0377-2217}
       \field{journaltitle}{European Journal of Operational Research}
       \field{number}{1}
       \field{title}{A scaleable projection-based branch-and-cut algorithm for the p-center problem}
@@ -332,51 +380,46 @@
       \field{year}{2022}
       \field{pages}{78\bibrangedash 98}
       \range{pages}{21}
-      \verb{doi}
-      \verb https://doi.org/10.1016/j.ejor.2022.02.016
-      \endverb
-      \keyw{Location,-center problem,Integer programming formulation,Lifting,Min-max objective}
     \endentry
     \entry{Hakimi1964}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=499f6b2cb9e299e3489d51a378fe91a4}{%
+        {{un=0,uniquepart=base,hash=e92cfae69b4769fbdb981fb07e7c3d40}{%
            family={Hakimi},
            familyi={H\bibinitperiod},
-           given={S.\bibnamedelimi L.},
+           given={S.\bibnamedelimi Louis},
            giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{499f6b2cb9e299e3489d51a378fe91a4}
-      \strng{fullhash}{499f6b2cb9e299e3489d51a378fe91a4}
-      \strng{bibnamehash}{499f6b2cb9e299e3489d51a378fe91a4}
-      \strng{authorbibnamehash}{499f6b2cb9e299e3489d51a378fe91a4}
-      \strng{authornamehash}{499f6b2cb9e299e3489d51a378fe91a4}
-      \strng{authorfullhash}{499f6b2cb9e299e3489d51a378fe91a4}
+      \list{publisher}{1}{%
+        {informs}%
+      }
+      \strng{namehash}{e92cfae69b4769fbdb981fb07e7c3d40}
+      \strng{fullhash}{e92cfae69b4769fbdb981fb07e7c3d40}
+      \strng{bibnamehash}{e92cfae69b4769fbdb981fb07e7c3d40}
+      \strng{authorbibnamehash}{e92cfae69b4769fbdb981fb07e7c3d40}
+      \strng{authornamehash}{e92cfae69b4769fbdb981fb07e7c3d40}
+      \strng{authorfullhash}{e92cfae69b4769fbdb981fb07e7c3d40}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The concepts of the “center” and the “median vertex” of a graph are generalized to the “absolute center” and the “absolute median” of a weighted graph (a graph with weights attached to its vertices as well as to its branches). These results are used to find the optimum location of a “switching center” in a communication network and to locate the best place to build a “police station” in a highway system. It is shown that the optimum location of a switching center is always at a vertex of the communication network while the best location for the police station is not necessarily at an intersection. Procedures for finding these locations are given.}
       \field{journaltitle}{Operations Research}
       \field{number}{3}
-      \field{title}{Optimum Locations of Switching Centers and the Absolute Centers and Medians of a Graph}
+      \field{title}{Optimum locations of switching centers and the absolute centers and medians of a graph}
       \field{volume}{12}
       \field{year}{1964}
       \field{pages}{450\bibrangedash 459}
       \range{pages}{10}
-      \verb{doi}
-      \verb 10.1287/opre.12.3.450
-      \endverb
     \endentry
     \entry{McGarvey2022}{article}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=fe104a5ce963fd81fd98529af950f256}{%
+        {{un=0,uniquepart=base,hash=368a488a70b402df6a547ead88254e66}{%
            family={McGarvey},
            familyi={M\bibinitperiod},
-           given={Ronald},
-           giveni={R\bibinitperiod},
+           given={Ronald\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=70f56f118c00fd97cce4d38bf8313a39}{%
            family={Thorsen},
@@ -385,59 +428,28 @@
            giveni={A\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{56c22a8ccd69d7fb87c32e14e2f7aedc}
-      \strng{fullhash}{56c22a8ccd69d7fb87c32e14e2f7aedc}
-      \strng{bibnamehash}{56c22a8ccd69d7fb87c32e14e2f7aedc}
-      \strng{authorbibnamehash}{56c22a8ccd69d7fb87c32e14e2f7aedc}
-      \strng{authornamehash}{56c22a8ccd69d7fb87c32e14e2f7aedc}
-      \strng{authorfullhash}{56c22a8ccd69d7fb87c32e14e2f7aedc}
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{b6ed24d9a174d07e01d146439311fd48}
+      \strng{fullhash}{b6ed24d9a174d07e01d146439311fd48}
+      \strng{bibnamehash}{b6ed24d9a174d07e01d146439311fd48}
+      \strng{authorbibnamehash}{b6ed24d9a174d07e01d146439311fd48}
+      \strng{authornamehash}{b6ed24d9a174d07e01d146439311fd48}
+      \strng{authorfullhash}{b6ed24d9a174d07e01d146439311fd48}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Optimization Letters}
-      \field{month}{03}
-      \field{title}{Nested-Solution Facility Location Models}
+      \field{journaltitle}{Optimization letters}
+      \field{number}{2}
+      \field{title}{Nested-solution facility location models}
       \field{volume}{16}
       \field{year}{2022}
-      \verb{doi}
-      \verb 10.1007/s11590-021-01759-4
-      \endverb
-    \endentry
-    \entry{Reinelt1991}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=38b844c9f4a823467f2581c274534664}{%
-           family={Reinelt},
-           familyi={R\bibinitperiod},
-           given={Gerhard},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{38b844c9f4a823467f2581c274534664}
-      \strng{fullhash}{38b844c9f4a823467f2581c274534664}
-      \strng{bibnamehash}{38b844c9f4a823467f2581c274534664}
-      \strng{authorbibnamehash}{38b844c9f4a823467f2581c274534664}
-      \strng{authornamehash}{38b844c9f4a823467f2581c274534664}
-      \strng{authorfullhash}{38b844c9f4a823467f2581c274534664}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This paper contains the description of a traveling salesman problem library (TSPLIB) which is meant to provide researchers with a broad set of test problems from various sources and with various properties. For every problem a short description is given along with known lower and upper bounds. Several references to computational tests on some of the problems are given. INFORMS Journal on Computing, ISSN 1091-9856, was published as ORSA Journal on Computing from 1989 to 1995 under ISSN 0899-1499.}
-      \field{journaltitle}{ORSA Journal on Computing}
-      \field{number}{4}
-      \field{title}{TSPLIB—A Traveling Salesman Problem Library}
-      \field{volume}{3}
-      \field{year}{1991}
-      \field{pages}{376\bibrangedash 384}
-      \range{pages}{9}
-      \verb{doi}
-      \verb 10.1287/ijoc.3.4.376
-      \endverb
+      \field{pages}{497\bibrangedash 514}
+      \range{pages}{18}
     \endentry
     \entry{Roodman1977}{article}{}
       \name{author}{2}{}{%
@@ -470,16 +482,13 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{A I I E Transactions}
+      \field{journaltitle}{AIIE Transactions}
       \field{number}{1}
-      \field{title}{Extensions of the Multi-Period Facility Phase-Out Model: New Procedures and Application to a Phase-In/Phase-Out Problem}
+      \field{title}{Extensions of the multi-period facility phase-out model: New procedures and application to a phase-in/phase-out problem}
       \field{volume}{9}
       \field{year}{1977}
       \field{pages}{103\bibrangedash 107}
       \range{pages}{5}
-      \verb{doi}
-      \verb 10.1080/05695557708975128
-      \endverb
     \endentry
     \entry{Roodman1975}{article}{}
       \name{author}{2}{}{%
@@ -512,16 +521,13 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{A I I E Transactions}
+      \field{journaltitle}{AIIE transactions}
       \field{number}{2}
-      \field{title}{Optimal and Heuristic Facility Phase-out Strategies}
+      \field{title}{Optimal and heuristic facility phase-out strategies}
       \field{volume}{7}
       \field{year}{1975}
       \field{pages}{177\bibrangedash 184}
       \range{pages}{8}
-      \verb{doi}
-      \verb 10.1080/05695557508975000
-      \endverb
     \endentry
   \enddatalist
 \endrefsection

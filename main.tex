@@ -164,9 +164,16 @@
 %\newcommand{\rarr}{\ding{212}}
 %\newcommand{\larr}{\raisebox{\depth}{\rotatebox{180}{\rarr}}}
 \usepackage{csquotes}
-\usepackage[backend=biber,citestyle=authoryear,sortcites=true]{biblatex}
+\usepackage[%
+    backend=biber,
+    citestyle=authoryear,
+    sortcites=true, 
+    firstinits=true,
+    sortcites=true
+]{biblatex}
 \usepackage{animate}
 \usepackage[caption=false]{subfig}
+\usepackage{xspace}
 
 \renewcommand{\emph}[1]{\textcolor{jkuGreen}{#1}}
 % \newcommand{\nPC}{\hyperref[eq:nPC]{\texttt{(nPC1)}}}
@@ -176,21 +183,25 @@
 % \newcommand{\pCP}{\emph{(pCP)}}
 \def\Cplusplus{C\raisebox{0.5ex}{\tiny\textbf{++}}}
 
-\newcommand{\nPC}{\hyperref[eq:nPC]{\texttt{(nPC1)}}}
-\newcommand{\nPCE}{\hyperref[eq:nPCE]{\texttt{(nPC3)}}}
-\newcommand{\nPCY}{\hyperref[eq:nPCY]{\texttt{(nPC2)}}}
-\newcommand{\nPCYR}{\hyperref[eq:nPCYR]{\texttt{(nPCR)}}}
-\newcommand{\nPCYRN}{\hyperref[eq:nPCYRN]{\texttt{(nPCR2)}}}
-\newcommand{\tsplib}{\texttt{TSPlib}}
-\newcommand{\pmed}{\texttt{pmed}}
-\newcommand{\pCP}{$p$CP}
-\newcommand{\npCP}{n-$p$CP}
-\newcommand{\PC}{\hyperref[eq:PC]{\texttt{(PC1)}}}
-\newcommand{\PCE}{\hyperref[eq:PCE]{\texttt{(PC3)}}}
-\newcommand{\PCY}{\hyperref[eq:PCY]{\texttt{(PC2)}}}
+\newcommand{\nPC}{\hyperref[eq:nPC]{\texttt{(nPC1)}}\xspace}
+\newcommand{\nPCE}{\hyperref[eq:nPCE]{\texttt{(nPC3)}}\xspace}
+\newcommand{\nPCY}{\hyperref[eq:nPCY]{\texttt{(nPC2)}}\xspace}
+\newcommand{\nPCYR}{\hyperref[eq:nPCYR]{\texttt{(nPCR)}}\xspace}
+\newcommand{\nPCYRN}{\hyperref[eq:nPCYRN]{\texttt{(nPCR2)}}\xspace}
+\newcommand{\tsplib}{\texttt{TSPlib}\xspace}
+\newcommand{\pmed}{\texttt{pmed}\xspace}
+\newcommand{\pCP}{$p$CP\xspace}
+\newcommand{\npCP}{n-$p$CP\xspace}
+\newcommand{\PC}{\hyperref[eq:PC]{\texttt{(PC1)}}\xspace}
+\newcommand{\PCE}{\hyperref[eq:PCE]{\texttt{(PC3)}}\xspace}
+\newcommand{\PCY}{\hyperref[eq:PCY]{\texttt{(PC2)}}\xspace}
 \newcommand{\inI}{i \in \mathcal I}
 \newcommand{\inJ}{j \in \mathcal J}
 \newcommand{\inH}{h \in \mathcal H}
+\newcommand{\noPP}{\texttt{noPP}\xspace}
+\newcommand{\PP}{\texttt{PP}\xspace}
+\newcommand{\sH}{\texttt{PH}\xspace}
+\newcommand{\prio}{\texttt{PHB}\xspace}
 
 %% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -334,6 +345,15 @@
 
 \end{frame}
 
+\begin{frame}{$p$-center problem vs nested $p$-center problem}
+    \centering
+    %    \vspace{-10pt}
+    \begin{figure}
+        \includegraphics[width=0.55\linewidth]{images/Rplot01.pdf}
+        %        \caption{Feasible solution for the nested and the non-nested $p$-center problem with $p = p^h = 4, 5, 6$}
+    \end{figure}
+\end{frame}
+
 % \begin{frame}{The nested \textit{p}-center problem: Definition}
 %     \setbeamerfont{item}{size=\footnotesize}
 %     \setbeamerfont{subitem}{size=\footnotesize}
@@ -379,7 +399,7 @@
     \setbeamerfont{item}{size=\footnotesize}
     \setbeamerfont{subitem}{size=\footnotesize}
     \begin{minipage}{0.48\textwidth}
-        \begin{block}{Definition I}
+        \begin{block}{Definition part I}
             \vspace*{2pt}
             \begin{itemize}
                 \item given a set of locations $V$, \pause
@@ -396,7 +416,7 @@
         \end{block}
     \end{minipage}
     \begin{minipage}{0.48\textwidth}
-        \begin{block}{Definition II}
+        \begin{block}{Definition part II}
             %\vspace*{3pt}
             \begin{itemize}
                 %\item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq \mathcal J$ with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$, for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds
@@ -417,15 +437,6 @@
     \end{minipage}
 \end{frame}
 
-\begin{frame}{$p$-center problem vs nested $p$-center problem}
-    \centering
-    %    \vspace{-10pt}
-    \begin{figure}
-        \includegraphics[width=0.55\linewidth]{images/Rplot01.pdf}
-        %        \caption{Feasible solution for the nested and the non-nested $p$-center problem with $p = p^h = 4, 5, 6$}
-    \end{figure}
-\end{frame}
-
 % \begin{frame}{Research question}
 %     \begin{exampleblock}{\vspace{-2em}}
 %         \textbf{How can the nesting concept be applied to the p-center problem?}
@@ -437,9 +448,28 @@
 %         \end{itemize} 
 %     \end{exampleblock} 
 % \end{frame}
-
+% (TODO) rework literature and potential application
 \begin{frame}{The nested $p$-center problem: Potential applications}
 
+\end{frame}
+
+\begin{frame}{$p$-center problem}
+    \begin{itemize}
+        \item First introduction of the $p$-center problem by \textcite{Hakimi1964}
+        \item The standard textbook formulation of the $p$-center problem can be found in \textcite{wiley2013}
+        \item Solution approach based on the set cover problem by \textcite{Contardo2018}
+        \item A compact formulation by \textcite{Elloumi2004,Elloumi2018}
+        \item A formulation with a projection-based branch-and-cut algorithm for the $p$-center problem by \textcite{GAAR2022}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Nested facility location problems}
+    \begin{itemize}
+        \item First introduction of the nesting property and constraint by \textcite{Roodman1975}
+        \item Extension of the nesting to a phase-in and phase-out by \textcite{Roodman1977}
+        \item Reintroduction of the nesting on the example of the $p$-median problem by \textcite{McGarvey2022}
+        \item Other work on multi-period facility locations problems mainly focus on varying demand, distances, or cost over time f.e. \textcite{CALOGIURI2021}
+    \end{itemize}
 \end{frame}
 
 % \begin{frame}{The nested $p$-center problem: Classical MILP formulation}
@@ -470,7 +500,8 @@
 %     \end{minipage}
 %     %}
 % \end{frame}
-\begin{frame}{The nested $p$-center problem: Classical MILP formulation}
+\section{MILP formulations}
+\begin{frame}{The nested $p$-center problem: MILP formulation}
     %\vspace*{-23pt}
     \begin{minipage}[t]{0.40\linewidth}
         %\vspace{25pt}
@@ -496,7 +527,7 @@
         %\setbeamerfont{block title}{size=\small}
         \setbeamerfont{block body}{size=\footnotesize}
         \begin{block}<3->{\nPCY\ based on \cite{GAAR2022}}
-            \begin{subequations}
+            \begin{subequations}\label{eq:nPCY}
                 \begin{alignat}{4}
                      & \min         & \sum_{\inH}z^{h}                                                                          &                               &  &  &                                                             \\
                      & \text{ s.t.} & \sum_{j \in V}y_{j}^h                                                                     & =     p^{h}                   &  &  & \forall \inH                                                \\
@@ -509,7 +540,7 @@
     \end{minipage}
 \end{frame}
 
-\begin{frame}{The nested $p$-center problem: Classical MILP formulation}
+\begin{frame}{The nested $p$-center problem: Compact MILP formulation}
     \vspace*{-24pt}
     \begin{minipage}[t]{0.40\linewidth}
         %\vspace{25pt}
@@ -542,7 +573,7 @@
         \setbeamerfont{block body}{size=\footnotesize}
         \begin{block}<4->{\nPCE\ based on \cite{Elloumi2018}}
             \vspace*{-10pt}
-            \begin{subequations}
+            \begin{subequations}\label{eq:nPCE}
                 \begin{alignat*}{9}
                      & \min         &  &           &  & \sum_{\inH}z^{h}            &  &         &  &                           &  &                                                                                    \\
                      & \text{ s.t.} &  &           &  & \sum_{j \in V}y_{j}^h =     &  & p^{h}   &  &                           &  & \forall \inH                                                                       \\
@@ -557,49 +588,33 @@
     \end{minipage}
 \end{frame}
 
-\section{Related work}
-\begin{frame}{$p$-center problem}
-    \begin{itemize}
-        \item First introduction of the $p$-center problem by \textcite{Hakimi1964}
-        \item The standard textbook formulation of the $p$-center problem can be found in \textcite{wiley2013}
-        \item Solution approach based on the set cover problem by \textcite{Contardo2018}
-        \item A compact formulation by \textcite{Elloumi2004,Elloumi2018}
-        \item A formulation with a projection-based branch-and-cut algorithm for the $p$-center problem by \textcite{GAAR2022}
-    \end{itemize}
-\end{frame}
 
-\begin{frame}{Nested facility location problems}
-    \begin{itemize}
-        \item First introduction of the nesting property and constraint by \textcite{Roodman1975}
-        \item Extension of the nesting to a phase-in and phase-out by \textcite{Roodman1977}
-        \item Reintroduction of the nesting on the example of the $p$-median problem by \textcite{McGarvey2022}
-        \item Other work on multi-period facility locations problems mainly focus on varying demand, distances, or cost over time f.e. \textcite{CALOGIURI2021}
-    \end{itemize}
-\end{frame}
 
-\section{Mixed Integer Linear Programming formulations}
 
-\begin{frame}{First MILP formulation}
-    \textbf{Decision variables}
-    \begin{align*}
-        % \onlside<1->{&\mathcal I && \dots &&\text{set of cusotmer demand points i}                                                                       \\[-1mm]}
-        % \onlside<2->{&\mathcal J && \dots &&\text{set of potential facility locations j}                                                                 \\[-1mm]}
-        % \onlside<3->{&\mathcal H && \dots &&\text{set of time periods, } \mathcal H = \{1,2,\dots,H\}                                                    \\[-1mm]}
-        % \onlside<4->{&\mathcal P && \dots &&\text{set of integers of facilities to open, $\mathcal P = \{p^1, \dots, p^H\}$ where $p^h > p^{h+1}$}       \\[-1mm]}
-        % \onlside<5->{&           &&       &&\text{for $h = 1, \dots, H-1$}                                                                               \\[-1mm]}
-        % \onlside<6->{&d_{ij}     && \dots &&\text{distance between customer demand point $i$ and potential facility location $j$}                        \\[-2mm]}
-        \onslide<1->{ & x_{ij}^h \ldots \begin{cases}
-                                                1 \, \dots \, \text{if customer $i$ is assigned to facility location $j$ in period $h$} \\
-                                                0 \, \dots \, \text{otherwise}
-                                            \end{cases}                                                                                                 \\}
-        \onslide<2->{ & y_{j}^h \ldots \begin{cases}
-                                               1 \, \dots \, \text{if a facility is opened at location $j$ in period $h$} \\
-                                               0 \, \dots \, \text{otherwise}
-                                           \end{cases}                                                                                                 \\}
-        \onslide<3>{  & z^h  \ldots \text{maximum distance between any customer $i$ and its nearest open facility}                                                            \\
-                      & \text{in period $h$}}
-    \end{align*}
-\end{frame}
+
+%\section{Mixed Integer Linear Programming formulations}
+
+% \begin{frame}{First MILP formulation}
+%     \textbf{Decision variables}
+%     \begin{align*}
+%         % \onlside<1->{&\mathcal I && \dots &&\text{set of cusotmer demand points i}                                                                       \\[-1mm]}
+%         % \onlside<2->{&\mathcal J && \dots &&\text{set of potential facility locations j}                                                                 \\[-1mm]}
+%         % \onlside<3->{&\mathcal H && \dots &&\text{set of time periods, } \mathcal H = \{1,2,\dots,H\}                                                    \\[-1mm]}
+%         % \onlside<4->{&\mathcal P && \dots &&\text{set of integers of facilities to open, $\mathcal P = \{p^1, \dots, p^H\}$ where $p^h > p^{h+1}$}       \\[-1mm]}
+%         % \onlside<5->{&           &&       &&\text{for $h = 1, \dots, H-1$}                                                                               \\[-1mm]}
+%         % \onlside<6->{&d_{ij}     && \dots &&\text{distance between customer demand point $i$ and potential facility location $j$}                        \\[-2mm]}
+%         \onslide<1->{ & x_{ij}^h \ldots \begin{cases}
+%                                                 1 \, \dots \, \text{if customer $i$ is assigned to facility location $j$ in period $h$} \\
+%                                                 0 \, \dots \, \text{otherwise}
+%                                             \end{cases}                                                                                                 \\}
+%         \onslide<2->{ & y_{j}^h \ldots \begin{cases}
+%                                                1 \, \dots \, \text{if a facility is opened at location $j$ in period $h$} \\
+%                                                0 \, \dots \, \text{otherwise}
+%                                            \end{cases}                                                                                                 \\}
+%         \onslide<3>{  & z^h  \ldots \text{maximum distance between any customer $i$ and its nearest open facility}                                                            \\
+%                       & \text{in period $h$}}
+%     \end{align*}
+% \end{frame}
 
 % \begin{frame}{First MILP formulation}
 %     \vspace{-31pt}
@@ -636,63 +651,63 @@
 %     \end{align*}
 % \end{frame}
 
-\begin{frame}{Second MILP formulation}
-    \vspace{-15pt}
-    \begin{subequations}\label{eq:nPCY}
-        \begin{align}
-             & \nPCY &  & \min         & \sum_{h \in \mathcal H}    z^{h}   &                                                                      &  & \label{eq:pc2N-obj}                                                                             \\
-             &       &  & \text{ s.t.} & \sum_{j \in \mathcal J}    y_{j}^h & =     p^h                                                            &  & \forall h \in \mathcal H                                                 \label{eq:pc2N-numfac} \\
-             &       &  &              & z^{h}                              & \geq  d_{ij} - \sum_{j':d_{ij'} < d_{ij}} (d_{ij} - d_{ij'})y_{j'}^h &  & \forall i \in \mathcal I, j \in \mathcal J, h \in \mathcal H             \label{eq:pc2N-zpush}  \\
-             &       &  &              & y_j^{h}                            & \geq  y_j^{h-1}                                                      &  & \forall j \in \mathcal J, h \in \mathcal H \setminus \left \{1 \right \} \label{eq:pc2N-nested} \\
-             &       &  &              & y_{j}^h                            & \in   \{\text{0, 1}\}                                                &  & \forall j \in \mathcal J, h \in \mathcal H                               \label{eq:pc2N-bin}    \\
-             &       &  &              & z^{h}                              & \in   \mathbb R_{\ge 0}                                              &  & \forall h \in \mathcal H                                                 \label{eq:pc2N-real}
-        \end{align}
-    \end{subequations}
-\end{frame}
+% \begin{frame}{Second MILP formulation}
+%     \vspace{-15pt}
+%     \begin{subequations}\label{eq:nPCY}
+%         \begin{align}
+%              & \nPCY &  & \min         & \sum_{h \in \mathcal H}    z^{h}   &                                                                      &  & \label{eq:pc2N-obj}                                                                             \\
+%              &       &  & \text{ s.t.} & \sum_{j \in \mathcal J}    y_{j}^h & =     p^h                                                            &  & \forall h \in \mathcal H                                                 \label{eq:pc2N-numfac} \\
+%              &       &  &              & z^{h}                              & \geq  d_{ij} - \sum_{j':d_{ij'} < d_{ij}} (d_{ij} - d_{ij'})y_{j'}^h &  & \forall i \in \mathcal I, j \in \mathcal J, h \in \mathcal H             \label{eq:pc2N-zpush}  \\
+%              &       &  &              & y_j^{h}                            & \geq  y_j^{h-1}                                                      &  & \forall j \in \mathcal J, h \in \mathcal H \setminus \left \{1 \right \} \label{eq:pc2N-nested} \\
+%              &       &  &              & y_{j}^h                            & \in   \{\text{0, 1}\}                                                &  & \forall j \in \mathcal J, h \in \mathcal H                               \label{eq:pc2N-bin}    \\
+%              &       &  &              & z^{h}                              & \in   \mathbb R_{\ge 0}                                              &  & \forall h \in \mathcal H                                                 \label{eq:pc2N-real}
+%         \end{align}
+%     \end{subequations}
+% \end{frame}
 
-\begin{frame}{Third MILP formualtion}
-    \vspace*{-25pt}
-    \begin{flalign*}
-        % &\mathcal I &&  \dots &&    \text{set of cusotmer demand points i,\, } \mathcal J \dots \,\text{set of potential facility locations j}          \\[-1mm]
-        % &\mathcal H &&  \dots &&    \text{set of time periods, } \mathcal H = \{1,2,\dots,H\}                                                           \\[-1mm]
-        % &\mathcal P &&  \dots &&    \text{set of integers of facilities to open, $\mathcal P = \{p^1, \dots, p^H\}$ where $p^h > p^{h+1}$}              \\[-1mm]
-        % &           &&        &&    \text{for $h = 1, \dots, H-1$}                                                                                      \\[-1.5mm]
-        \onslide<1->{ & \mathcal D    \ldots  \text{set of distinct distances where $D_0 \leq \dots \leq D_K$ are the values in $\mathcal D$}                     \\} %[-1mm] 
-        \onslide<2->{ & \mathcal K    \ldots  \text{set of indices in $\mathcal D$}                                                                               \\} %[-1mm]
-        \onslide<3->{ & S_i           \ldots  \text{set of indices $k \in \mathcal K$ for which there exists a facility $j \in \mathcal J$ with $d_{ij} = D_k$}   }                         %[-1.5mm] 
-    \end{flalign*}
-    %\onslide<4->{\vspace*{-10pt}}
-    \onslide<4->{\textbf{Decision variables}}
-    \begin{flalign*}
-        \onslide<4->{ & y_{j}^h       \ldots  \begin{cases}
-                                                      1 \, \dots \, \text{if a facility is opened at location $j$ in period $h$} \\%[-1mm]
-                                                      0 \, \dots \, \text{otherwise}
-                                                  \end{cases}                                                                                                         \\} %[-1mm]
-        \onslide<5->{ & u_k^h         \ldots  \begin{cases}
-                                                      1 \, \dots \, \text{if the optimal value of $z^h$ is greater or equal than $D_k$} \\%[-1mm]
-                                                      0 \, \dots \, \text{otherwise}
-                                                  \end{cases}                                                                                                         \\} %[-1.5mm]
-        \onslide<6>{  & z^h            \ldots  \text{maximum distance between any customer $i$ and its nearest open facility}                                                               \\%[-1.5mm]
-                      & \text{in period $h$}}
-    \end{flalign*}
-\end{frame}
+% \begin{frame}{Third MILP formualtion}
+%     \vspace*{-25pt}
+%     \begin{flalign*}
+%         % &\mathcal I &&  \dots &&    \text{set of cusotmer demand points i,\, } \mathcal J \dots \,\text{set of potential facility locations j}          \\[-1mm]
+%         % &\mathcal H &&  \dots &&    \text{set of time periods, } \mathcal H = \{1,2,\dots,H\}                                                           \\[-1mm]
+%         % &\mathcal P &&  \dots &&    \text{set of integers of facilities to open, $\mathcal P = \{p^1, \dots, p^H\}$ where $p^h > p^{h+1}$}              \\[-1mm]
+%         % &           &&        &&    \text{for $h = 1, \dots, H-1$}                                                                                      \\[-1.5mm]
+%         \onslide<1->{ & \mathcal D    \ldots  \text{set of distinct distances where $D_0 \leq \dots \leq D_K$ are the values in $\mathcal D$}                     \\} %[-1mm] 
+%         \onslide<2->{ & \mathcal K    \ldots  \text{set of indices in $\mathcal D$}                                                                               \\} %[-1mm]
+%         \onslide<3->{ & S_i           \ldots  \text{set of indices $k \in \mathcal K$ for which there exists a facility $j \in \mathcal J$ with $d_{ij} = D_k$}   }                         %[-1.5mm] 
+%     \end{flalign*}
+%     %\onslide<4->{\vspace*{-10pt}}
+%     \onslide<4->{\textbf{Decision variables}}
+%     \begin{flalign*}
+%         \onslide<4->{ & y_{j}^h       \ldots  \begin{cases}
+%                                                       1 \, \dots \, \text{if a facility is opened at location $j$ in period $h$} \\%[-1mm]
+%                                                       0 \, \dots \, \text{otherwise}
+%                                                   \end{cases}                                                                                                         \\} %[-1mm]
+%         \onslide<5->{ & u_k^h         \ldots  \begin{cases}
+%                                                       1 \, \dots \, \text{if the optimal value of $z^h$ is greater or equal than $D_k$} \\%[-1mm]
+%                                                       0 \, \dots \, \text{otherwise}
+%                                                   \end{cases}                                                                                                         \\} %[-1.5mm]
+%         \onslide<6>{  & z^h            \ldots  \text{maximum distance between any customer $i$ and its nearest open facility}                                                               \\%[-1.5mm]
+%                       & \text{in period $h$}}
+%     \end{flalign*}
+% \end{frame}
 
-\begin{frame}{Third formulation}
-    \vspace{-1.2cm}
-    \begin{subequations}\label{eq:nPCE}
-        \begin{align}
-             & \nPCE &  & \min         & \sum_{h \in \mathcal H}    z^h           &                               &  & \label{eq:nEpCP-obj}                                                                                                        \\
-             &       &  & \text{ s.t.} & \sum_{j \in \mathcal J}    y_{j}^h       & =      p^h                    &  & \forall h \in \mathcal{H}                                                                         \label{eq:nEpCP-faciltiy} \\[-4mm]
-             &       &  &              & D_0 + \sum_{k=1}^{K}(D_k-D_{k-1})u^{h}_k & \leq   z^h                    &  & \forall h \in \mathcal{H}                                                                         \label{eq:nEpCP-rpush}    \\[-2mm]
-             &       &  &              & u^{h}_k + \sum_{j:d_{ij}<D_k} y_{j}^h    & \geq   1                      &  & \forall i \in \mathcal{I}, \forall h \in \mathcal H, \forall k \in S_i \cup \left \{K \right \}   \label{eq:nEpCP-upush}    \\[-1mm]
-             &       &  &              & u^{h}_k                                  & \geq   u_{k+1}^h              &  & \forall h \in \mathcal{H}, \forall k \in \mathcal{K} \setminus \left \{K \right \}                \label{eq:nEpCP-unest}    \\
-             &       &  &              & y_{j}^h                                  & \leq   y_{j}^{h-1}            &  & \forall h \in \mathcal{H}, \forall j \in \mathcal{J}                                              \label{eq:nEpCP-nesting}  \\[-1mm]
-             &       &  &              & y_{j}^h                                  & \in    \left \{0, 1 \right \} &  & \forall h \in \mathcal{H}, \forall j \in \mathcal{J}                                              \label{eq:nEpCP-ybin}     \\[-1mm]
-             &       &  &              & u^{h}_k                                  & \in    \left \{0, 1 \right \} &  & \forall h \in \mathcal{H}, \forall k \in \mathcal{K}                                              \label{eq:nEpCP-ubin}     \\[-1mm]
-             &       &  &              & z^h                                      & \in    \mathbb{R}             &  & \forall h \in \mathcal{H}                                                                         \label{eq:nEpCP-Rreal}
-        \end{align}
-    \end{subequations}
-\end{frame}
+% \begin{frame}{Third formulation}
+%     \vspace{-1.2cm}
+%     \begin{subequations}\label{eq:nPCE}
+%         \begin{align}
+%              & \nPCE &  & \min         & \sum_{h \in \mathcal H}    z^h           &                               &  & \label{eq:nEpCP-obj}                                                                                                        \\
+%              &       &  & \text{ s.t.} & \sum_{j \in \mathcal J}    y_{j}^h       & =      p^h                    &  & \forall h \in \mathcal{H}                                                                         \label{eq:nEpCP-faciltiy} \\[-4mm]
+%              &       &  &              & D_0 + \sum_{k=1}^{K}(D_k-D_{k-1})u^{h}_k & \leq   z^h                    &  & \forall h \in \mathcal{H}                                                                         \label{eq:nEpCP-rpush}    \\[-2mm]
+%              &       &  &              & u^{h}_k + \sum_{j:d_{ij}<D_k} y_{j}^h    & \geq   1                      &  & \forall i \in \mathcal{I}, \forall h \in \mathcal H, \forall k \in S_i \cup \left \{K \right \}   \label{eq:nEpCP-upush}    \\[-1mm]
+%              &       &  &              & u^{h}_k                                  & \geq   u_{k+1}^h              &  & \forall h \in \mathcal{H}, \forall k \in \mathcal{K} \setminus \left \{K \right \}                \label{eq:nEpCP-unest}    \\
+%              &       &  &              & y_{j}^h                                  & \leq   y_{j}^{h-1}            &  & \forall h \in \mathcal{H}, \forall j \in \mathcal{J}                                              \label{eq:nEpCP-nesting}  \\[-1mm]
+%              &       &  &              & y_{j}^h                                  & \in    \left \{0, 1 \right \} &  & \forall h \in \mathcal{H}, \forall j \in \mathcal{J}                                              \label{eq:nEpCP-ybin}     \\[-1mm]
+%              &       &  &              & u^{h}_k                                  & \in    \left \{0, 1 \right \} &  & \forall h \in \mathcal{H}, \forall k \in \mathcal{K}                                              \label{eq:nEpCP-ubin}     \\[-1mm]
+%              &       &  &              & z^h                                      & \in    \mathbb{R}             &  & \forall h \in \mathcal{H}                                                                         \label{eq:nEpCP-Rreal}
+%         \end{align}
+%     \end{subequations}
+% \end{frame}
 
 %\begin{frame}{Comparing complexity}
 \begin{frame}{Comparing formulations}
@@ -717,20 +732,9 @@
     % \end{itemize}
 \end{frame}
 
-\begin{frame}{Reducing set $\mathcal K$ in \nPCE}
-    \begin{lemma}\label{lemma:setK}
-        % Let $\underline{z^h}$ be a valid lower bound and $\overline{z^h}$ be a valid upper bound on the decision variable $z^h$ for $h \in \mathcal H$, then
-        % the optimal solution value $z^{h*}$ can only be optimal for $z^{h*} = D_k, for \in \mathcal D^k \; \forall k \in K$ where $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds.  \\
-        % Therfore let set $S_i^h \subseteq S_i$ for $h \in \mathcal H$ only contain the values between $\underline{z^h}$ and $\overline{z^h}$ and \eqref{eq:nEpCP-upush} can be replaced with
-        Let $\underline{z^h}$ be a valid lower bound and $\overline{z^h}$ be a valid upper bound on the decision variable $z^h$ for $h \in \mathcal H$, then
-        the distinct distance $D_k$ can only be the optimal distance for $z^h$ if $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds.  \\
-        Therfore let set $S_i^h \subseteq S_i$ for $h \in \mathcal H$, where $S_i^h$ contains only the indices k where $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds and constraint \eqref{eq:nEpCP-upush} can be replaced with
-        \begin{align}
-            u^{h}_k + \sum_{j:d_{ij}<D_k} y_{j}^h & \geq 1 & \forall i \in \mathcal{I}, \forall h \in \mathcal H, \forall k \in S_i^h \cup \{K\} \label{eq:nEpCP-u_push_new}
-        \end{align}
-    \end{lemma}
-    Depending on the bounds $\underline{z^h}$ and $\overline{z^h}$ the sets $S_i^h$ can be much smaller than $S_i$.
-\end{frame}
+\section{Improving the formulations}
+% (TODO) reduce the technicalities, not necessary at the conference
+
 
 % \begin{frame}{Reducing constraints \nPCY}
 %     \begin{alertblock}{Problem}
@@ -769,16 +773,19 @@
         is a valid inequality for (nPC2), i.e., every feasible solution of (nPC2) fulfills \eqref{eq:nPC2-lift}.
         Theorem is based on Lemma 5 in \textcite{GAAR2022}.
     \end{lemma}
-    A similar strengthening can be done for \eqref{eq:pc1N-zpush} in fromulation \nPC.
+    A similar strengthening can be done for \nPC which is based on \cite{wiley2013}.
+\end{frame}
+
+\begin{frame}{Reducing set $\mathcal K$ in \nPCE}
+    \begin{lemma}\label{lemma:setK}
+        Let $\underline{z^h}$ be a valid lower bound and $\overline{z^h}$ be a valid upper bound on the decision variable $z^h$ for $h \in \mathcal H$, then
+        the distinct distance $D_k$ can only be the optimal distance for $z^h$ if $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds.  \\
+        Therfore let set $S_i^h \subseteq S_i$ for $h \in \mathcal H$, where $S_i^h$ contains only the indices k where $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds.
+    \end{lemma}
+    Depending on the bounds $\underline{z^h}$ and $\overline{z^h}$ the sets $S_i^h$ can be much smaller than $S_i$.
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Obtaining bounds}
-    % \begin{itemize}
-    %     \item Every optimal solution to the $p$-center problem is a lower bound to the respective $z^h$
-    %     \item We can use this by calculating the solution to the $p$-center problem for all $p \in \mathcal P$
-    %     \item and using the optimal values as lower bounds for the $z^h$. 
-    %     \item Every optimal solution to the $p$-center problem is a upper bound to the $p+1$-center problem
-    % \end{itemize} 
     \begin{lemma}\label{lemma:upperbounds}
         Let $z'^{h*}$ be the optimal objective function value of \pCP\ with $p = p^h$ for $h \in \mathcal H = \{1, 2, \dots, H\}$ where $p^h > p^{h+1}$, then
         $UB = H z^{'1*}$ is a valid upper bound on the optimal objective function value of \npCP. \\
@@ -788,12 +795,9 @@
         \end{equation*}
         where $\overline{z^h}$ is a valid upper bound on the decision variable $z^h$ of the \npCP\ for $h \in \mathcal H$.
     \end{lemma}
-    \begin{lemma}\label{lemma:lowerbounds}
-        Let $z'^{*}$ be the optimal objective function value of \pCP\ for a certain $p'$. Then $z'^{*}$ is a valid lower bound $\underline{z^h}$ on the decision variable $z^h$ of \npCP\ with $p^h = p'$.
-    \end{lemma}
-    %The bounds obtained through these two lemmas can then be used to reduce the set $\mathcal K$ in \nPCE\ or to reduce and strenghten the constraints in \nPCY.
-    % Can I base my proof on the nested p-center without nesting constraint is only sum over several p-center problems.
-    % And that every feasible solution of the nested p-center problem for a certain h, is a feasible solution for the p-center problem with p = p^h 
+    % \begin{lemma}\label{lemma:lowerbounds}
+    %     Let $z'^{*}$ be the optimal objective function value of \pCP\ for a certain $p'$. Then $z'^{*}$ is a valid lower bound $\underline{z^h}$ on the decision variable $z^h$ of \npCP\ with $p^h = p'$.
+    % \end{lemma}
 \end{frame}
 
 % \begin{frame}{Upper bound third formulation}
@@ -808,99 +812,130 @@
 %     \end{itemize}
 % \end{frame}
 
-\section{Implementation and outline of the results}
+
+\section{Implementation}
 \begin{frame}{Implementation}
     \begin{itemize}
-        \item Implemented in \Cplusplus\ using the CPLEX API of CPLEX 20.1.0.0
-        \item Formulation \nPCY\ solved by branch-and-cut and seperation based on the customers
-        \item Preprocessing for all formulations
-              \begin{itemize}
-                  \item solving the \pCP\ for $p^h, h \in \mathcal H$ starting with $h = H$
-                  \item $p^h$ is a valid lower bound for the \pCP\ with $p^{h-1}$
-              \end{itemize}
-        \item Single core of an Intel Xeon X5570 machine
-              \begin{itemize}
-                  \item 2.93 GHz
-                  \item 48 GB RAM
-                  \item Each run limited to 9 GB RAM and 3600 sec
-              \end{itemize}
+        \item \emph{C++, CPLEX} 20.1
+        \item \emph{preprocessing}
+        \item \nPCY
+        \begin{itemize}
+            \item \emph{branch-and-cut} algorithm
+            \item separation similar to \emph{fixedCustomer} from \cite{GAAR2022}
+        \end{itemize}
+        \item \nPCE
+        \begin{itemize}
+            \item \emph{branch-and-bound} algorithm
+            \item starting with the \emph{reduced} set $\mathcal{K}$
+        \end{itemize}
     \end{itemize}
 \end{frame}
-\begin{frame}{Data}
+\begin{frame}{Settings}
+    \begin{itemize}
+            \item \noPP: without preprocessing or any lifting
+            \item \PP: with preprocessing a lifting
+            \begin{itemize}
+                \item \nPC and \nPCY: set upper bounds on $z^h$ and using lower bounds in \eqref{eq:nPC2-lift}
+                \item \nPCE: problem initialized on reduced set $\mathcal{K}$ 
+            \end{itemize}
+            \item \sH: \PP with an additional starting heuristic
+    \end{itemize}
+\end{frame}
+% \begin{frame}{Implementation}
+%     \begin{itemize}
+%         \item Implemented in \Cplusplus\ using the CPLEX API of CPLEX 20.1.0.0
+%         \item Formulation \nPCY\ solved by branch-and-cut and seperation based on the customers
+%         \item Preprocessing for all formulations
+%               \begin{itemize}
+%                   \item solving the \pCP\ for $p^h, h \in \mathcal H$ starting with $h = H$
+%                   \item $p^h$ is a valid lower bound for the \pCP\ with $p^{h-1}$
+%               \end{itemize}
+%         \item Single core of an Intel Xeon X5570 machine
+%               \begin{itemize}
+%                   \item 2.93 GHz
+%                   \item 48 GB RAM
+%                   \item Each run limited to 9 GB RAM and 3600 sec
+%               \end{itemize}
+%     \end{itemize}
+% \end{frame}
+
+\section{Results}
+\begin{frame}{Instance from literature}
     \vspace*{-2pt}
     \begin{itemize}
-        \setlength\itemsep{1em}
-        \item data set \emph{PMED} from "A note on solving large p-median problems” by \textcite{Beasley1985}
+        %\setlength\itemsep{1em}
+        \item computational setup
+        \begin{itemize}
+            \item single core of Intel Xeon X5570 with 2.93 GHz and 8 GB RAM
+            \item \emph{timelimit} of 3600 seconds
+        \end{itemize}\pause
+        \item instance set \emph{PMED} \cite{chen2009new,contardo2019scalable,calik2013double}
               \begin{itemize}
-                  \item set of 40 test instances
-                  \item the sets contain between 100 and 900 nodes
-                  \item number of facilities to open initially ranging from 5 to 200
-                  \item $\mathcal P = \left \{p, p+1, p+2\right \}$
+                \item 40 instances
+                \item $\mathcal P = \left \{p, p+1, p+2\right \}$, $p$ from 5 to 200, $\left|V\right|$ from 100 and 900 nodes                  
               \end{itemize} \pause
-        \item data set \emph{TSPLIB} 2D-Euclidean distances from “TSPLIB—A Traveling Salesman Problem Library” by \textcite{Reinelt1991}
+        \item instance set \emph{TSPLIB} \cite{contardo2019scalable, GAAR2022}
               \begin{itemize}
-                  \item set of 80 test instances
-                  \item the sets contain between 51 and 1002 nodes
-                  \item rounded to the nearest integer value
-                  \item $\mathcal P = \left \{4, 5, 6\right \}$
+                  \item 80 instances
+                  \item $\mathcal P = \left \{4, 5, 6\right \}$, $\left|V\right|$ from 100 and 900 nodes
               \end{itemize}
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Preprocessing}
-    \begin{figure}
-        \begin{minipage}[c]{.48\linewidth}
-            \subfloat[Preprocessing PMED]{\includegraphics[width=\linewidth]{images/prepro_pmed.pdf}\label{fig:prepro_pmed}{}}
-        \end{minipage}
-        \hfill
-        \begin{minipage}[c]{.48\linewidth}
-            \subfloat[Preprocessing TSPLIB]{\includegraphics[width=\linewidth]{images/prepro_tsp.pdf}\label{fig:prepro_tsp}{}}
-        \end{minipage}
-        \caption{Preprocessing}\label{fig:prepro}
-    \end{figure}
-\end{frame}
+% \begin{frame}{Preprocessing}
+%     \begin{figure}
+%         \begin{minipage}[c]{.48\linewidth}
+%             \subfloat[Preprocessing PMED]{\includegraphics[width=\linewidth]{images/prepro_pmed.pdf}\label{fig:prepro_pmed}{}}
+%         \end{minipage}
+%         \hfill
+%         \begin{minipage}[c]{.48\linewidth}
+%             \subfloat[Preprocessing TSPLIB]{\includegraphics[width=\linewidth]{images/prepro_tsp.pdf}\label{fig:prepro_tsp}{}}
+%         \end{minipage}
+%         \caption{Preprocessing}\label{fig:prepro}
+%     \end{figure}
+% \end{frame}
 
-\begin{frame}{\nPC-results}
-    \begin{figure}
-        \begin{minipage}[c]{.48\linewidth}
-            \subfloat[\nPC\ optimality gap]{\includegraphics[width=\linewidth]{images/gap_xy_both.pdf}\label{fig:xy_gap}{}}
-        \end{minipage}
-        \hfill
-        \begin{minipage}[c]{.48\linewidth}
-            \subfloat[\nPC\ runtime]{\includegraphics[width=\linewidth]{images/runtime_xy_both.pdf}\label{fig:xy_runtime}{}}
-        \end{minipage}
-        \label{fig:xy}
-        %\caption{Results of \nPC}
-    \end{figure}
-\end{frame}
+% \begin{frame}{\nPC-results}
+%     \begin{figure}
+%         \begin{minipage}[c]{.48\linewidth}
+%             \subfloat[\nPC\ optimality gap]{\includegraphics[width=\linewidth]{images/gap_xy_both.pdf}\label{fig:xy_gap}{}}
+%         \end{minipage}
+%         \hfill
+%         \begin{minipage}[c]{.48\linewidth}
+%             \subfloat[\nPC\ runtime]{\includegraphics[width=\linewidth]{images/runtime_xy_both.pdf}\label{fig:xy_runtime}{}}
+%         \end{minipage}
+%         \label{fig:xy}
+%         %\caption{Results of \nPC}
+%     \end{figure}
+% \end{frame}
 
-\begin{frame}{\nPCY-results}
-    \begin{figure}
-        \begin{minipage}[c]{.48\linewidth}
-            \subfloat[\nPCY\ optimality gap]{\includegraphics[width=\linewidth]{images/gap_y_both.pdf}\label{fig:y_gap}{}}
-        \end{minipage}
-        \hfill
-        \begin{minipage}[c]{.48\linewidth}
-            \subfloat[\nPCY\ runtime]{\includegraphics[width=\linewidth]{images/runtime_y_both.pdf}\label{fig:y_runtime}{}}
-        \end{minipage}
-        \label{fig:y}
-        %\caption{Results of \nPCY}
-    \end{figure}
-\end{frame}
+% \begin{frame}{\nPCY-results}
+%     \begin{figure}
+%         \begin{minipage}[c]{.48\linewidth}
+%             \subfloat[\nPCY\ optimality gap]{\includegraphics[width=\linewidth]{images/gap_y_both.pdf}\label{fig:y_gap}{}}
+%         \end{minipage}
+%         \hfill
+%         \begin{minipage}[c]{.48\linewidth}
+%             \subfloat[\nPCY\ runtime]{\includegraphics[width=\linewidth]{images/runtime_y_both.pdf}\label{fig:y_runtime}{}}
+%         \end{minipage}
+%         \label{fig:y}
+%         %\caption{Results of \nPCY}
+%     \end{figure}
+% \end{frame}
 
-\begin{frame}{\nPCE-results}
-    \begin{figure}
-        \begin{minipage}[c]{.48\linewidth}
-            \subfloat[\nPCE\ optimality gap]{\includegraphics[width=\linewidth]{images/gap_u_both.pdf}\label{fig:u_gap}{}}
-        \end{minipage}
-        \hfill
-        \begin{minipage}[c]{.48\linewidth}
-            \subfloat[\nPCE\ runtime]{\includegraphics[width=\linewidth]{images/runtime_u_both.pdf}\label{fig:u_runtime}{}}
-        \end{minipage}
-        \label{fig:u}
-        %\caption{Results of \nPC}\label{fig:x}
-    \end{figure}
-\end{frame}
+% \begin{frame}{\nPCE-results}
+%     \begin{figure}
+%         \begin{minipage}[c]{.48\linewidth}
+%             \subfloat[\nPCE\ optimality gap]{\includegraphics[width=\linewidth]{images/gap_u_both.pdf}\label{fig:u_gap}{}}
+%         \end{minipage}
+%         \hfill
+%         \begin{minipage}[c]{.48\linewidth}
+%             \subfloat[\nPCE\ runtime]{\includegraphics[width=\linewidth]{images/runtime_u_both.pdf}\label{fig:u_runtime}{}}
+%         \end{minipage}
+%         \label{fig:u}
+%         %\caption{Results of \nPC}\label{fig:x}
+%     \end{figure}
+% \end{frame}
 
 \begin{frame}{Formulation comparison}
     \begin{figure}
@@ -915,6 +950,21 @@
         %\caption{Results of \nPC}\label{fig:x}
     \end{figure}
 \end{frame}
+
+\begin{frame}{Setting comparison}
+    \begin{figure}
+        \begin{minipage}[c]{.48\linewidth}
+            \subfloat[models optimality gap]{\includegraphics[width=\linewidth]{images/gap_models_sH.pdf}\label{fig:models_gap}{}}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[c]{.48\linewidth}
+            \subfloat[models runtime]{\includegraphics[width=\linewidth]{images/runtime_models_sHp.pdf}\label{fig:models_runtime}{}}
+        \end{minipage}
+        \label{fig:models}
+        %\caption{Results of \nPC}\label{fig:x}
+    \end{figure}
+\end{frame}
+
 
 \begin{frame}{Managerial insights}
     \begin{figure}

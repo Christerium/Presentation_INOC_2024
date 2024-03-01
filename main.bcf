@@ -184,7 +184,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquename</bcf:key>
-      <bcf:value>full</bcf:value>
+      <bcf:value>init</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniqueprimaryauthor</bcf:key>
@@ -399,7 +399,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquename</bcf:key>
-      <bcf:value>full</bcf:value>
+      <bcf:value>init</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniqueprimaryauthor</bcf:key>
@@ -2361,32 +2361,45 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">GAAR2022</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">GAAR2022</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">GAAR2022</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">Elloumi2018</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">Elloumi2018</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">Elloumi2018</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">Elloumi2018</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">Hakimi1964</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">wiley2013</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">Contardo2018</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">Elloumi2004</bcf:citekey>
-    <bcf:citekey order="11" intorder="2">Elloumi2018</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">Hakimi1964</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">wiley2013</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">Contardo2018</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">Elloumi2004</bcf:citekey>
+    <bcf:citekey order="4" intorder="2">Elloumi2018</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">GAAR2022</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">Roodman1975</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">Roodman1977</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">McGarvey2022</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">CALOGIURI2021</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">GAAR2022</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">GAAR2022</bcf:citekey>
     <bcf:citekey order="12" intorder="1">GAAR2022</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">Roodman1975</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">Roodman1977</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">McGarvey2022</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">CALOGIURI2021</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Elloumi2018</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Elloumi2018</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Elloumi2018</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">Elloumi2018</bcf:citekey>
     <bcf:citekey order="17" intorder="1">GAAR2022</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">Beasley1985</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">Reinelt1991</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">Beasley1985</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">Reinelt1991</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">wiley2013</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">wiley2013</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">wiley2013</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">wiley2013</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">wiley2013</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">GAAR2022</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">chen2009new</bcf:citekey>
+    <bcf:citekey order="20" intorder="2">contardo2019scalable</bcf:citekey>
+    <bcf:citekey order="20" intorder="3">calik2013double</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">contardo2019scalable</bcf:citekey>
+    <bcf:citekey order="21" intorder="2">GAAR2022</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">chen2009new</bcf:citekey>
+    <bcf:citekey order="22" intorder="2">contardo2019scalable</bcf:citekey>
+    <bcf:citekey order="22" intorder="3">calik2013double</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">contardo2019scalable</bcf:citekey>
+    <bcf:citekey order="23" intorder="2">GAAR2022</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">chen2009new</bcf:citekey>
+    <bcf:citekey order="24" intorder="2">contardo2019scalable</bcf:citekey>
+    <bcf:citekey order="24" intorder="3">calik2013double</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">contardo2019scalable</bcf:citekey>
+    <bcf:citekey order="25" intorder="2">GAAR2022</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">wiley2013</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">wiley2013</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">wiley2013</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">wiley2013</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
