@@ -231,6 +231,8 @@
 
 \setbeamercolor{block title}{bg=jkuGreen,fg=white}
 
+\graphicspath{{../../Master Thesis/final_plots/}}
+
 %% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -341,8 +343,24 @@
         \end{itemize}
     \end{block}
 \end{frame}
+% TODO ask markus about the definition for nesting, especially about the need of redifining the V and iff
 \begin{frame}{The nesting property}
-
+    \begin{block}{Definition}
+        \setbeamerfont{item}{size=\footnotesize}
+        \setbeamerfont{subitem}{size=\footnotesize}
+        \begin{itemize}
+            \item Given \pause
+            \begin{itemize}
+                \item a set of locations $V$
+                \item a set of time periods $\mathcal{H} = \left\{1, \dots, H\right\}$ and \pause
+                \item a set of integers $\mathcal P = \left\{p^1, \dots, p^H\right\}$ indicating the number of facilities to open \pause
+                \item where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ \pause
+            \end{itemize}
+            \item the subsets $V^h \subseteq V$ with $|V^h| = p^h$ \pause
+            \item are called \emph{nested} iff $V^h  \subseteq V^{h+1}$ for $h = 1, \dots, H-1$
+        \end{itemize}
+    \end{block}\pause
+    Introduced by \cite{Roodman1975} and used in e.g., \cite{albareda2009multi,conforti2014integer,bakker2024value} and reintroduced as nesting by \cite{McGarvey2022}
 \end{frame}
 
 \begin{frame}{$p$-center problem vs nested $p$-center problem}
@@ -448,29 +466,36 @@
 %         \end{itemize} 
 %     \end{exampleblock} 
 % \end{frame}
-% (TODO) rework literature and potential application
+% (TODO) rework literature (nested) and (potential application)
 \begin{frame}{The nested $p$-center problem: Potential applications}
-
+\begin{itemize}
+    \setlength\itemsep{1em}
+    \item variant of the \emph{$p$-center problem}
+    \item part of the \emph{multi-period} facility locations
+    \item \emph{emergency} medical services 
+    \item relief actions in \emph{humanitarian crisis}
+    \item \emph{expansion} into new markets/areas
+\end{itemize}
 \end{frame}
 
-\begin{frame}{$p$-center problem}
-    \begin{itemize}
-        \item First introduction of the $p$-center problem by \textcite{Hakimi1964}
-        \item The standard textbook formulation of the $p$-center problem can be found in \textcite{wiley2013}
-        \item Solution approach based on the set cover problem by \textcite{Contardo2018}
-        \item A compact formulation by \textcite{Elloumi2004,Elloumi2018}
-        \item A formulation with a projection-based branch-and-cut algorithm for the $p$-center problem by \textcite{GAAR2022}
-    \end{itemize}
-\end{frame}
+% \begin{frame}{$p$-center problem}
+%     \begin{itemize}
+%         \item First introduction of the $p$-center problem by \textcite{Hakimi1964}
+%         \item The standard textbook formulation of the $p$-center problem can be found in \textcite{wiley2013}
+%         \item Solution approach based on the set cover problem by \textcite{Contardo2018}
+%         \item A compact formulation by \textcite{Elloumi2004,Elloumi2018}
+%         \item A formulation with a projection-based branch-and-cut algorithm for the $p$-center problem by \textcite{GAAR2022}
+%     \end{itemize}
+% \end{frame}
 
-\begin{frame}{Nested facility location problems}
-    \begin{itemize}
-        \item First introduction of the nesting property and constraint by \textcite{Roodman1975}
-        \item Extension of the nesting to a phase-in and phase-out by \textcite{Roodman1977}
-        \item Reintroduction of the nesting on the example of the $p$-median problem by \textcite{McGarvey2022}
-        \item Other work on multi-period facility locations problems mainly focus on varying demand, distances, or cost over time f.e. \textcite{CALOGIURI2021}
-    \end{itemize}
-\end{frame}
+% \begin{frame}{Nested facility location problems}
+%     \begin{itemize}
+%         \item First introduction of the nesting property and constraint by \textcite{Roodman1975}
+%         \item Extension of the nesting to a phase-in and phase-out by \textcite{Roodman1977}
+%         \item Reintroduction of the nesting on the example of the $p$-median problem by \textcite{McGarvey2022}
+%         \item Other work on multi-period facility locations problems mainly focus on varying demand, distances, or cost over time f.e. \textcite{CALOGIURI2021}
+%     \end{itemize}
+% \end{frame}
 
 % \begin{frame}{The nested $p$-center problem: Classical MILP formulation}
 %     \vspace*{-30pt}
@@ -763,36 +788,38 @@
 %     A similar strengthening can be done for \eqref{eq:pc1N-zpush} in fromulation \nPC.
 % \end{frame}
 
-\begin{frame}{Strengthening constraints \nPCY}
+%(TODO) Ask about mentioning the \nPC here
+
+\begin{frame}{Strengthening constraints \nPCY} \pause
     \vspace{-2pt}
     \begin{lemma}\label{theorem:strength}
-        Let $LB_h$ be a lower bound on the decision variable $z_h$ of (nPC2) for every $i \in \mathcal I, j \in \mathcal J, h \in \mathcal H$ then
+        Let $LB_h$ be a lower bound on the decision variable $z_h$ of (nPC2) for every $i \in \mathcal I, j \in \mathcal J, h \in \mathcal H$ then \pause
         \begin{equation}
             z^h \geq max\{LB^h, d_{ij}\} - \sum_{j':d_{ij'} < d_{ij}} (\max \{\textit{$LB^h$}, d_{ij}\} - \max \{\textit{$LB^h$}, d_{ij'}\})y_{j'}^h  \label{eq:nPC2-lift} \tag{\emph{nL-OPT}}
-        \end{equation}
+        \end{equation} \pause
         is a valid inequality for (nPC2), i.e., every feasible solution of (nPC2) fulfills \eqref{eq:nPC2-lift}.
-        Theorem is based on Lemma 5 in \textcite{GAAR2022}.
-    \end{lemma}
-    A similar strengthening can be done for \nPC which is based on \cite{wiley2013}.
+        The theorem is based on Lemma 5 in \textcite{GAAR2022}.
+    \end{lemma} 
+    %A similar strengthening can be done for \nPC which is based on \cite{wiley2013}.
 \end{frame}
 
-\begin{frame}{Reducing set $\mathcal K$ in \nPCE}
+\begin{frame}{Reducing set $\mathcal K$ in \nPCE} \pause
     \begin{lemma}\label{lemma:setK}
         Let $\underline{z^h}$ be a valid lower bound and $\overline{z^h}$ be a valid upper bound on the decision variable $z^h$ for $h \in \mathcal H$, then
-        the distinct distance $D_k$ can only be the optimal distance for $z^h$ if $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds.  \\
+        the distinct distance $D_k$ can only be the optimal distance for $z^h$ if $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds.  \\ \pause
         Therfore let set $S_i^h \subseteq S_i$ for $h \in \mathcal H$, where $S_i^h$ contains only the indices k where $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds.
     \end{lemma}
     Depending on the bounds $\underline{z^h}$ and $\overline{z^h}$ the sets $S_i^h$ can be much smaller than $S_i$.
 \end{frame}
 
-\begin{frame}[allowframebreaks]{Obtaining bounds}
+\begin{frame}{Obtaining bounds} \pause
     \begin{lemma}\label{lemma:upperbounds}
-        Let $z'^{h*}$ be the optimal objective function value of \pCP\ with $p = p^h$ for $h \in \mathcal H = \{1, 2, \dots, H\}$ where $p^h > p^{h+1}$, then
-        $UB = H z^{'1*}$ is a valid upper bound on the optimal objective function value of \npCP. \\
+        Let $z'^{h*}$ be the optimal objective function value of \pCP\ with $p = p^h$ for $h \in \mathcal H = \{1, 2, \dots, H\}$ where $p^h > p^{h+1}$, \pause
+        then $UB = H z^{'1*}$ is a valid upper bound on the optimal objective function value of \npCP. \\ \pause
         Then
         \begin{equation*}
             \overline{z^h} = \frac{UB - \sum_{x = h+1}^{H}z'^{x*}}{h+1}
-        \end{equation*}
+        \end{equation*} \pause
         where $\overline{z^h}$ is a valid upper bound on the decision variable $z^h$ of the \npCP\ for $h \in \mathcal H$.
     \end{lemma}
     % \begin{lemma}\label{lemma:lowerbounds}
@@ -816,14 +843,19 @@
 \section{Implementation}
 \begin{frame}{Implementation}
     \begin{itemize}
-        \item \emph{C++, CPLEX} 20.1
-        \item \emph{preprocessing}
-        \item \nPCY
+        \item \emph{C++, CPLEX} 20.1 \pause
+        \item \emph{preprocessing} \pause
+        \begin{itemize}
+            \item Solving \emph{$p$-center problem} with $p = p^H$
+            \item Use optimal solution value for \emph{$p$-center problem} with $p = p^{H-1}$
+            \item Repeat for $p = p^{H-2}$
+        \end{itemize}
+        \item \nPCY \pause
         \begin{itemize}
             \item \emph{branch-and-cut} algorithm
             \item separation similar to \emph{fixedCustomer} from \cite{GAAR2022}
-        \end{itemize}
-        \item \nPCE
+        \end{itemize} \pause
+        \item \nPCE \pause
         \begin{itemize}
             \item \emph{branch-and-bound} algorithm
             \item starting with the \emph{reduced} set $\mathcal{K}$
@@ -832,13 +864,14 @@
 \end{frame}
 \begin{frame}{Settings}
     \begin{itemize}
-            \item \noPP: without preprocessing or any lifting
-            \item \PP: with preprocessing a lifting
+        \setlength\itemsep{1em}
+            \item \noPP: without \emph{preprocessing} or any \emph{lifting} \pause
+            \item \PP: with \emph{preprocessing} \pause
             \begin{itemize}
-                \item \nPC and \nPCY: set upper bounds on $z^h$ and using lower bounds in \eqref{eq:nPC2-lift}
+                \item \nPCY: set upper bounds on $z^h$ and using lower bounds in \eqref{eq:nPC2-lift}
                 \item \nPCE: problem initialized on reduced set $\mathcal{K}$ 
-            \end{itemize}
-            \item \sH: \PP with an additional starting heuristic
+            \end{itemize}\pause
+            \item \sH: \PP with \emph{starting heuristic}
     \end{itemize}
 \end{frame}
 % \begin{frame}{Implementation}
@@ -937,58 +970,86 @@
 %     \end{figure}
 % \end{frame}
 
-\begin{frame}{Formulation comparison}
+\begin{frame}{Setting comparison on formulation \nPC}
     \begin{figure}
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[models optimality gap]{\includegraphics[width=\linewidth]{images/gap_models_sH.pdf}\label{fig:models_gap}{}}
+            \subfloat[models runtime]{\includegraphics[width=\linewidth]{inoc_runtime_nPC1.pdf}\label{fig:nPC1_runtime}{}}
         \end{minipage}
         \hfill
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[models runtime]{\includegraphics[width=\linewidth]{images/runtime_models_sHp.pdf}\label{fig:models_runtime}{}}
+            \subfloat[models optimality gap]{\includegraphics[width=\linewidth]{inoc_gap_nPC1.pdf}\label{fig:nPC1_gap}{}}
         \end{minipage}
-        \label{fig:models}
+        \label{fig:nPC1}
         %\caption{Results of \nPC}\label{fig:x}
     \end{figure}
 \end{frame}
 
-\begin{frame}{Setting comparison}
+\begin{frame}{Setting comparison on formulation \nPCY}
     \begin{figure}
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[models optimality gap]{\includegraphics[width=\linewidth]{images/gap_models_sH.pdf}\label{fig:models_gap}{}}
+            \subfloat[models runtime]{\includegraphics[width=\linewidth]{inoc_runtime_nPC2.pdf}\label{fig:nPC2_runtime}{}}
         \end{minipage}
         \hfill
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[models runtime]{\includegraphics[width=\linewidth]{images/runtime_models_sHp.pdf}\label{fig:models_runtime}{}}
+            \subfloat[models optimality gap]{\includegraphics[width=\linewidth]{inoc_gap_nPC2.pdf}\label{fig:nPC2_gap}{}}
         \end{minipage}
-        \label{fig:models}
+        \label{fig:nPC2}
         %\caption{Results of \nPC}\label{fig:x}
     \end{figure}
 \end{frame}
 
+\begin{frame}{Setting comparison on formulation \nPCE}
+    \begin{figure}
+        \begin{minipage}[c]{.48\linewidth}
+            \subfloat[models runtime]{\includegraphics[width=\linewidth]{inoc_runtime_nPC3.pdf}\label{fig:nPC3_runtime}{}}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[c]{.48\linewidth}
+            \subfloat[models optimality gap]{\includegraphics[width=\linewidth]{inoc_gap_nPC3.pdf}\label{fig:nPC3_gap}{}}
+        \end{minipage}
+        \label{fig:nPC3}
+        %\caption{Results of \nPC}\label{fig:x}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Formulation comparison on setting \sH}
+    \begin{figure}
+        \begin{minipage}[c]{.48\linewidth}
+            \subfloat[models runtime]{\includegraphics[width=\linewidth]{inoc_runtime_PH.pdf}\label{fig:PH_runtime}{}}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[c]{.48\linewidth}
+            \subfloat[models optimality gap]{\includegraphics[width=\linewidth]{inoc_gap_PH.pdf}\label{fig:PH_gap}{}}
+        \end{minipage}
+        \label{fig:PH}
+        %\caption{Results of \nPC}\label{fig:x}
+    \end{figure}
+\end{frame}
 
 \begin{frame}{Managerial insights}
     \begin{figure}
         \begin{minipage}[r]{.48\linewidth}
-            \subfloat[Relative regret]{\includegraphics[width=\linewidth]{images/regret_relative_opt.pdf}\label{fig:rel_regret}{}}
+            \subfloat[Relative regret of the optimal solution value]{\includegraphics[width=\linewidth]{regret_obj.pdf}\label{fig:rel_regret}{}}
         \end{minipage}
         \hfill
         \begin{minipage}[l]{.48\linewidth}
-            \subfloat[Relative regret of \# of facilities]{\includegraphics[width=\linewidth]{images/fac_relative_opt.pdf}\label{fig:rel_fac}{}}
+            \subfloat[Relative regret of \# of opened facilities]{\includegraphics[width=\linewidth]{regret_fac.pdf}\label{fig:rel_fac}{}}
         \end{minipage}
         \label{fig:manage}
-        \caption{On a subset of instances: Only if the problem was solved to optimality}
+        %\caption{On a subset of instances: Only if the problem was solved to optimality}
     \end{figure}
 \end{frame}
 
 
 \begin{frame}{Conclusion}
     \begin{itemize}
-        \item \nPCE\ had the best runtimes over all instances
-        \item For optimality gap the results are rather mixed
+        \item \nPCE\ best performance in runtimes and optimality gap
         \item The \nPCY\ outperforms the \nPC
-        \item Maximal relative regret of the objective value of 15\%
-        \item Maximal relative regret of number of facilities above 140\%
-        \item min-max regret as objective function was also analysed and can be found later in the thesis
+        \item Preprocessing brings a large speed up on all formulations
+        \item Starting heuristic improves optimality gap 
+        \item Maximal relative regret of the optimal objective function value of 15\%
+        \item Maximal relative regret of number of opened facilities above 140\%
     \end{itemize}
 \end{frame}
 
@@ -1006,10 +1067,10 @@
 
 \section*{End of presentation}
 
-\begin{frame}{Formulations with non optimal instances}
-    \centering
-    \includegraphics[width = .65\linewidth, keepaspectratio]{images/gap_models_sH_nopt.pdf}
-\end{frame}
+% \begin{frame}{Formulations with non optimal instances}
+%     \centering
+%     \includegraphics[width = .65\linewidth, keepaspectratio]{images/gap_models_sH_nopt.pdf}
+% \end{frame}
 
 \begin{frame}[allowframebreaks]{References}
     %\setbeamerfont{bibliography item}{size={\footnotesize}}

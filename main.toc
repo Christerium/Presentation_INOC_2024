@@ -1,5 +1,5 @@
 \babel@toc {english}{}\relax 
-\beamer@sectionintoc {1}{MILP formulations}{21}{0}{1}
-\beamer@sectionintoc {2}{Improving the formulations}{31}{0}{2}
-\beamer@sectionintoc {3}{Implementation}{35}{0}{3}
-\beamer@sectionintoc {4}{Results}{38}{0}{4}
+\beamer@sectionintoc {1}{MILP formulations}{25}{0}{1}
+\beamer@sectionintoc {2}{Improving the formulations}{35}{0}{2}
+\beamer@sectionintoc {3}{Implementation}{48}{0}{3}
+\beamer@sectionintoc {4}{Results}{59}{0}{4}

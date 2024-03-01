@@ -19,6 +19,56 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{albareda2009multi}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=35650daa8c77582ec03392678ea96e5c}{%
+           family={Albareda-Sambola},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=29d90e900b2f7bf4c541aa62f3e78cd2}{%
+           family={Fernández},
+           familyi={F\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=658deb25cdb255a74489b3562ddd4751}{%
+           family={Hinojosa},
+           familyi={H\bibinitperiod},
+           given={Yolanda},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7de69ccc6b8331f954c21eda9db5d622}{%
+           family={Puerto},
+           familyi={P\bibinitperiod},
+           given={Justo},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{588f92668a382abdd573479761c85cb5}
+      \strng{fullhash}{163f435609f584ec49f009497e23f72e}
+      \strng{bibnamehash}{588f92668a382abdd573479761c85cb5}
+      \strng{authorbibnamehash}{588f92668a382abdd573479761c85cb5}
+      \strng{authornamehash}{588f92668a382abdd573479761c85cb5}
+      \strng{authorfullhash}{163f435609f584ec49f009497e23f72e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Operations Research}
+      \field{number}{5}
+      \field{title}{The multi-period incremental service facility location problem}
+      \field{volume}{36}
+      \field{year}{2009}
+      \field{pages}{1356\bibrangedash 1375}
+      \range{pages}{20}
+    \endentry
     \entry{Elloumi2018}{inbook}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=cc5158c6c2d265a5f343f4ff0a8a4c9a}{%
@@ -54,6 +104,43 @@
       \field{year}{2018}
       \field{pages}{14\bibrangedash 25}
       \range{pages}{12}
+    \endentry
+    \entry{bakker2024value}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4fcf16d9e2061d2bc45e2fe6bfdb045d}{%
+           family={Bakker},
+           familyi={B\bibinitperiod},
+           given={Hannah},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39a12b6a5f3a92e4a258219395d5188e}{%
+           family={Nickel},
+           familyi={N\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{af9a1a1e54d0a26ba8e1e42f0fad8939}
+      \strng{fullhash}{af9a1a1e54d0a26ba8e1e42f0fad8939}
+      \strng{bibnamehash}{af9a1a1e54d0a26ba8e1e42f0fad8939}
+      \strng{authorbibnamehash}{af9a1a1e54d0a26ba8e1e42f0fad8939}
+      \strng{authornamehash}{af9a1a1e54d0a26ba8e1e42f0fad8939}
+      \strng{authorfullhash}{af9a1a1e54d0a26ba8e1e42f0fad8939}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Operations Research}
+      \field{title}{The Value of the Multi-period Solution revisited: When to model time in capacitated location problems}
+      \field{volume}{161}
+      \field{year}{2024}
+      \field{pages}{106428}
+      \range{pages}{1}
     \endentry
     \entry{calik2013double}{article}{}
       \name{author}{2}{}{%
@@ -93,55 +180,6 @@
       \field{pages}{2991\bibrangedash 2999}
       \range{pages}{9}
     \endentry
-    \entry{CALOGIURI2021}{article}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=c6b89c1aa6c4822e29a70ceda33ef2e4}{%
-           family={Calogiuri},
-           familyi={C\bibinitperiod},
-           given={Tobia},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=643a65d19824383510e3893b764f2b65}{%
-           family={Ghiani},
-           familyi={G\bibinitperiod},
-           given={Gianpaolo},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=e0e4bdcef352ec4d9554390076872624}{%
-           family={Guerriero},
-           familyi={G\bibinitperiod},
-           given={Emanuela},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=672ca274b2d869a8729f6a1be68e4748}{%
-           family={Manni},
-           familyi={M\bibinitperiod},
-           given={Emanuele},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{2491d44e72ed8e4fd42e6f14b9c8b48e}
-      \strng{fullhash}{0f9c4ac08f4331ec71fbe3a2e125fa7f}
-      \strng{bibnamehash}{2491d44e72ed8e4fd42e6f14b9c8b48e}
-      \strng{authorbibnamehash}{2491d44e72ed8e4fd42e6f14b9c8b48e}
-      \strng{authornamehash}{2491d44e72ed8e4fd42e6f14b9c8b48e}
-      \strng{authorfullhash}{0f9c4ac08f4331ec71fbe3a2e125fa7f}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Computers \& Operations Research}
-      \field{title}{The multi-period p-center problem with time-dependent travel times}
-      \field{volume}{136}
-      \field{year}{2021}
-      \field{pages}{105487}
-      \range{pages}{1}
-    \endentry
     \entry{chen2009new}{article}{}
       \name{author}{2}{}{%
         {{un=1,uniquepart=given,hash=ee41cb416d5a3df8948a0fcef2119886}{%
@@ -180,50 +218,62 @@
       \field{pages}{1646\bibrangedash 1655}
       \range{pages}{10}
     \endentry
-    \entry{Contardo2018}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=e830f9378c11bc3dd72b306ba53c77d4}{%
-           family={Contardo},
+    \entry{conforti2014integer}{book}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=7c81773474602dfd70a1ef2592805d03}{%
+           family={Conforti},
            familyi={C\bibinitperiod},
-           given={Claudio},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5425f8b3958d872a4966e21944b95fc0}{%
-           family={Iori},
-           familyi={I\bibinitperiod},
-           given={Manuel},
+           given={Michele},
            giveni={M\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=0e1b1369ae9b9096777964039b142df9}{%
-           family={Kramer},
-           familyi={K\bibinitperiod},
-           given={Raphael},
-           giveni={R\bibinitperiod},
+        {{un=0,uniquepart=base,hash=6097c8dac72c605fecb566085a6f17b0}{%
+           family={Cornuéjols},
+           familyi={C\bibinitperiod},
+           given={Gérard},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e906349369476ab81211faadb61fe98}{%
+           family={Zambelli},
+           familyi={Z\bibinitperiod},
+           given={Giacomo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7c81773474602dfd70a1ef2592805d03}{%
+           family={Conforti},
+           familyi={C\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6097c8dac72c605fecb566085a6f17b0}{%
+           family={Cornuéjols},
+           familyi={C\bibinitperiod},
+           given={Gérard},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e906349369476ab81211faadb61fe98}{%
+           family={Zambelli},
+           familyi={Z\bibinitperiod},
+           given={Giacomo},
+           giveni={G\bibinitperiod},
            givenun=0}}%
       }
       \list{publisher}{1}{%
-        {Elsevier}%
+        {Springer}%
       }
-      \strng{namehash}{bf4a0031582a1f9d99823428975e7b2c}
-      \strng{fullhash}{bf4a0031582a1f9d99823428975e7b2c}
-      \strng{bibnamehash}{bf4a0031582a1f9d99823428975e7b2c}
-      \strng{authorbibnamehash}{bf4a0031582a1f9d99823428975e7b2c}
-      \strng{authornamehash}{bf4a0031582a1f9d99823428975e7b2c}
-      \strng{authorfullhash}{bf4a0031582a1f9d99823428975e7b2c}
-      \field{extraname}{1}
+      \strng{namehash}{6b8b6432909ed0b3896577f679c9d248}
+      \strng{fullhash}{b4b38f21c09b2f1b177f087751a3a9ea}
+      \strng{bibnamehash}{6b8b6432909ed0b3896577f679c9d248}
+      \strng{authorbibnamehash}{6b8b6432909ed0b3896577f679c9d248}
+      \strng{authornamehash}{6b8b6432909ed0b3896577f679c9d248}
+      \strng{authorfullhash}{b4b38f21c09b2f1b177f087751a3a9ea}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Computers \& Operations Research}
-      \field{title}{A scalable exact algorithm for the vertex p-center problem}
-      \field{volume}{103}
-      \field{year}{2019}
-      \field{pages}{211\bibrangedash 220}
-      \range{pages}{10}
+      \field{title}{Integer programming models}
+      \field{year}{2014}
     \endentry
     \entry{contardo2019scalable}{article}{}
       \name{author}{3}{}{%
@@ -255,10 +305,8 @@
       \strng{authorbibnamehash}{bf4a0031582a1f9d99823428975e7b2c}
       \strng{authornamehash}{bf4a0031582a1f9d99823428975e7b2c}
       \strng{authorfullhash}{bf4a0031582a1f9d99823428975e7b2c}
-      \field{extraname}{2}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -299,50 +347,6 @@
       \field{year}{2013}
       \keyw{center problem,absolute center,vertex center,weighted center,unweighted center,tree network}
     \endentry
-    \entry{Elloumi2004}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=4f521032e67e613488b5ec87e48daec7}{%
-           family={Elloumi},
-           familyi={E\bibinitperiod},
-           given={Sourour},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c665a0396f578301f2025aca8fbfb90e}{%
-           family={Labbé},
-           familyi={L\bibinitperiod},
-           given={Martine},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=430dee588073029d131a407cd175ad2f}{%
-           family={Pochet},
-           familyi={P\bibinitperiod},
-           given={Yves},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {INFORMS}%
-      }
-      \strng{namehash}{9916db53ac2a4d0c8724b7859d5a3115}
-      \strng{fullhash}{9916db53ac2a4d0c8724b7859d5a3115}
-      \strng{bibnamehash}{9916db53ac2a4d0c8724b7859d5a3115}
-      \strng{authorbibnamehash}{9916db53ac2a4d0c8724b7859d5a3115}
-      \strng{authornamehash}{9916db53ac2a4d0c8724b7859d5a3115}
-      \strng{authorfullhash}{9916db53ac2a4d0c8724b7859d5a3115}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{INFORMS Journal on Computing}
-      \field{number}{1}
-      \field{title}{A new formulation and resolution method for the p-center problem}
-      \field{volume}{16}
-      \field{year}{2004}
-      \field{pages}{84\bibrangedash 94}
-      \range{pages}{11}
-    \endentry
     \entry{GAAR2022}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=e401e040f158b1c25e77130331e6fdd7}{%
@@ -380,38 +384,6 @@
       \field{year}{2022}
       \field{pages}{78\bibrangedash 98}
       \range{pages}{21}
-    \endentry
-    \entry{Hakimi1964}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=e92cfae69b4769fbdb981fb07e7c3d40}{%
-           family={Hakimi},
-           familyi={H\bibinitperiod},
-           given={S.\bibnamedelimi Louis},
-           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {informs}%
-      }
-      \strng{namehash}{e92cfae69b4769fbdb981fb07e7c3d40}
-      \strng{fullhash}{e92cfae69b4769fbdb981fb07e7c3d40}
-      \strng{bibnamehash}{e92cfae69b4769fbdb981fb07e7c3d40}
-      \strng{authorbibnamehash}{e92cfae69b4769fbdb981fb07e7c3d40}
-      \strng{authornamehash}{e92cfae69b4769fbdb981fb07e7c3d40}
-      \strng{authorfullhash}{e92cfae69b4769fbdb981fb07e7c3d40}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Operations Research}
-      \field{number}{3}
-      \field{title}{Optimum locations of switching centers and the absolute centers and medians of a graph}
-      \field{volume}{12}
-      \field{year}{1964}
-      \field{pages}{450\bibrangedash 459}
-      \range{pages}{10}
     \endentry
     \entry{McGarvey2022}{article}{}
       \name{author}{2}{}{%
@@ -451,45 +423,6 @@
       \field{pages}{497\bibrangedash 514}
       \range{pages}{18}
     \endentry
-    \entry{Roodman1977}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=473a1241bb95d60a0a9906da6570cb0b}{%
-           family={Roodman},
-           familyi={R\bibinitperiod},
-           given={Gary\bibnamedelima M.},
-           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=fca93a94f6424fdfc3f8d217a0039578}{%
-           family={Schwarz},
-           familyi={S\bibinitperiod},
-           given={Leroy\bibnamedelima B.},
-           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{12fd37dd53fb64022881521a75e6b896}
-      \strng{fullhash}{12fd37dd53fb64022881521a75e6b896}
-      \strng{bibnamehash}{12fd37dd53fb64022881521a75e6b896}
-      \strng{authorbibnamehash}{12fd37dd53fb64022881521a75e6b896}
-      \strng{authornamehash}{12fd37dd53fb64022881521a75e6b896}
-      \strng{authorfullhash}{12fd37dd53fb64022881521a75e6b896}
-      \field{extraname}{1}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{AIIE Transactions}
-      \field{number}{1}
-      \field{title}{Extensions of the multi-period facility phase-out model: New procedures and application to a phase-in/phase-out problem}
-      \field{volume}{9}
-      \field{year}{1977}
-      \field{pages}{103\bibrangedash 107}
-      \range{pages}{5}
-    \endentry
     \entry{Roodman1975}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=473a1241bb95d60a0a9906da6570cb0b}{%
@@ -514,7 +447,6 @@
       \strng{authorbibnamehash}{12fd37dd53fb64022881521a75e6b896}
       \strng{authornamehash}{12fd37dd53fb64022881521a75e6b896}
       \strng{authorfullhash}{12fd37dd53fb64022881521a75e6b896}
-      \field{extraname}{2}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{extradatescope}{labelyear}

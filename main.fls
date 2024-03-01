@@ -880,12 +880,6 @@ INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
-INPUT .\images\Rplot01.pdf
-INPUT .\images\Rplot01.pdf
-INPUT .\images\Rplot01.pdf
-INPUT .\images\Rplot01.pdf
-INPUT .\images\Rplot01.pdf
-INPUT .\images\Rplot01.pdf
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr9.tfm
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eurm10.tfm
@@ -898,14 +892,20 @@ INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\eul
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8t.tfm
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\public\eulervm\zeurm10.tfm
-INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvbo8t.tfm
-INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvbo8t.vf
-INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvbo8r.tfm
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
+INPUT .\images\Rplot01.pdf
+INPUT .\images\Rplot01.pdf
+INPUT .\images\Rplot01.pdf
+INPUT .\images\Rplot01.pdf
+INPUT .\images\Rplot01.pdf
+INPUT .\images\Rplot01.pdf
+INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvbo8t.tfm
+INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvbo8t.vf
+INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvbo8r.tfm
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\tex\latex\inconsolata\t1zi4.fd
@@ -956,45 +956,59 @@ INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
+INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
+INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\public\inconsolata\t1-zi4r-0.tfm
-INPUT .\images\gap_models_sH.pdf
-INPUT .\images\gap_models_sH.pdf
-INPUT .\images\gap_models_sH.pdf
-INPUT .\images\gap_models_sH.pdf
-INPUT .\images\gap_models_sH.pdf
-INPUT .\images\gap_models_sH.pdf
-INPUT .\images\runtime_models_sHp.pdf
-INPUT .\images\runtime_models_sHp.pdf
-INPUT .\images\runtime_models_sHp.pdf
-INPUT .\images\runtime_models_sHp.pdf
-INPUT .\images\runtime_models_sHp.pdf
-INPUT .\images\runtime_models_sHp.pdf
-INPUT .\images\gap_models_sH.pdf
-INPUT .\images\gap_models_sH.pdf
-INPUT .\images\gap_models_sH.pdf
-INPUT .\images\gap_models_sH.pdf
-INPUT .\images\runtime_models_sHp.pdf
-INPUT .\images\runtime_models_sHp.pdf
-INPUT .\images\runtime_models_sHp.pdf
-INPUT .\images\runtime_models_sHp.pdf
-INPUT .\images\regret_relative_opt.pdf
-INPUT .\images\regret_relative_opt.pdf
-INPUT .\images\regret_relative_opt.pdf
-INPUT .\images\regret_relative_opt.pdf
-INPUT .\images\regret_relative_opt.pdf
-INPUT .\images\regret_relative_opt.pdf
-INPUT .\images\fac_relative_opt.pdf
-INPUT .\images\fac_relative_opt.pdf
-INPUT .\images\fac_relative_opt.pdf
-INPUT .\images\fac_relative_opt.pdf
-INPUT .\images\fac_relative_opt.pdf
-INPUT .\images\fac_relative_opt.pdf
-INPUT .\images\gap_models_sH_nopt.pdf
-INPUT .\images\gap_models_sH_nopt.pdf
-INPUT .\images\gap_models_sH_nopt.pdf
-INPUT .\images\gap_models_sH_nopt.pdf
-INPUT .\images\gap_models_sH_nopt.pdf
-INPUT .\images\gap_models_sH_nopt.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_nPC1.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_nPC1.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_nPC1.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_nPC1.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_nPC1.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_nPC1.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_nPC1.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_nPC1.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_nPC1.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_nPC1.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_nPC2.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_nPC2.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_nPC2.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_nPC2.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_nPC2.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_nPC2.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_nPC2.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_nPC2.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_nPC2.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_nPC2.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_nPC3.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_nPC3.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_nPC3.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_nPC3.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_nPC3.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_nPC3.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_nPC3.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_nPC3.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_nPC3.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_nPC3.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_PH.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_PH.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_PH.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_PH.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_runtime_PH.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_PH.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_PH.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_PH.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_PH.pdf
+INPUT ..\..\Master Thesis\final_plots\inoc_gap_PH.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_obj.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_obj.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_obj.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_obj.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_obj.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_fac.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_fac.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_fac.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_fac.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_fac.pdf
 OUTPUT main.nav
 OUTPUT main.toc
 OUTPUT main.snm
