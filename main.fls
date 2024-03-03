@@ -903,6 +903,8 @@ INPUT .\images\Rplot01.pdf
 INPUT .\images\Rplot01.pdf
 INPUT .\images\Rplot01.pdf
 INPUT .\images\Rplot01.pdf
+INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
+INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvbo8t.tfm
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvbo8t.vf
 INPUT C:\Users\chris\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvbo8r.tfm
@@ -1006,6 +1008,12 @@ INPUT ..\..\Master Thesis\final_plots\regret_obj.pdf
 INPUT ..\..\Master Thesis\final_plots\regret_obj.pdf
 INPUT ..\..\Master Thesis\final_plots\regret_fac.pdf
 INPUT ..\..\Master Thesis\final_plots\regret_fac.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_fac.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_fac.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_fac.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_obj.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_obj.pdf
+INPUT ..\..\Master Thesis\final_plots\regret_obj.pdf
 INPUT ..\..\Master Thesis\final_plots\regret_fac.pdf
 INPUT ..\..\Master Thesis\final_plots\regret_fac.pdf
 INPUT ..\..\Master Thesis\final_plots\regret_fac.pdf

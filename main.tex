@@ -326,7 +326,7 @@
 %         \item \emph{nested $p$-center problem} \npCP: open $p^h$ number of \emph{nested} facilities in period $h$, such that the sum of the maximum distances between a customer and its closest open facility in this time period is minimized
 %     \end{itemize}
 % \end{frame}
-\begin{frame}{The $p$-center problem: Definition}
+\begin{frame}{The $p$-center problem \pCP: Definition}
     \begin{block}{Definition}
         \begin{itemize}
             \item Given \pause
@@ -357,13 +357,13 @@
                 \item where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ \pause
             \end{itemize}
             \item the subsets $V^h \subseteq V$ with $|V^h| = p^h$ \pause
-            \item are called \emph{nested} iff $V^h  \subseteq V^{h+1}$ for $h = 1, \dots, H-1$
+            \item are called \emph{nested} iff $V^h  \subset V^{h+1}$ for $h = 1, \dots, H-1$
         \end{itemize}
     \end{block}\pause
     Introduced by \cite{Roodman1975} and used in e.g., \cite{albareda2009multi,conforti2014integer,bakker2024value} and reintroduced as nesting by \cite{McGarvey2022}
 \end{frame}
 
-\begin{frame}{$p$-center problem vs nested $p$-center problem}
+\begin{frame}{$p$-center problem vs nested $p$-center problem for $\mathcal P = \{4, 5, 6\}$}
     \centering
     %    \vspace{-10pt}
     \begin{figure}
@@ -426,7 +426,7 @@
                 \item integers $\mathcal P = \left \{p^1, \dots p^H \right \}$   \pause
                       \begin{itemize}
                           \item where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and
-                          \item $p^H \leq \left\lvert \mathcal J \right\rvert$
+                          \item $p^H \leq \left\lvert V \right\rvert$
                       \end{itemize} \pause
                 \item distances $d_{ij} \geq 0$ between each $i \in V$ and $j \in V$ \pause
             \end{itemize}
@@ -470,11 +470,11 @@
 \begin{frame}{The nested $p$-center problem: Potential applications}
 \begin{itemize}
     \setlength\itemsep{1em}
-    \item variant of the \emph{$p$-center problem}
-    \item part of the \emph{multi-period} facility locations
-    \item \emph{emergency} medical services 
-    \item relief actions in \emph{humanitarian crisis}
-    \item \emph{expansion} into new markets/areas
+    \item variant of the \emph{$p$-center problem}\pause % TODO ??
+    \item part of the \emph{multi-period} facility locations \pause % TODO ??
+    \item \emph{emergency} medical services \pause
+    \item relief actions in \emph{humanitarian crisis} \pause
+    \item \emph{expansion} into new markets/areas 
 \end{itemize}
 \end{frame}
 
@@ -525,7 +525,7 @@
 %     \end{minipage}
 %     %}
 % \end{frame}
-\section{MILP formulations}
+\section{Mixed Integer Linear Programming (MILP) Formulations}
 \begin{frame}{The nested $p$-center problem: MILP formulation}
     %\vspace*{-23pt}
     \begin{minipage}[t]{0.40\linewidth}
@@ -543,7 +543,7 @@
                 \onslide<2->{
                  & z^h  \ldots  \,  \text{maximum \emph{distance} between any }                               \\
                  & \qquad \; \; \,  \text{\emph{customer \textit{i}} and its nearest}                         \\
-                 & \qquad \; \; \,  \text{\emph{open facility in period \textit{h}}}}
+                 & \qquad \; \; \,  \text{\emph{open facility in period \textit{h}}}} %facility or location
             \end{alignat*}
             \vspace{2pt}
         \end{block}
@@ -552,6 +552,7 @@
         %\setbeamerfont{block title}{size=\small}
         \setbeamerfont{block body}{size=\footnotesize}
         \begin{block}<3->{\nPCY\ based on \cite{GAAR2022}}
+            \vspace{-20pt}
             \begin{subequations}\label{eq:nPCY}
                 \begin{alignat}{4}
                      & \min         & \sum_{\inH}z^{h}                                                                          &                               &  &  &                                                             \\
@@ -561,6 +562,7 @@
                      &              & (y,z)                                           \in \left|V\right|\left|\mathcal H\right| & \times \mathbb{R}_{\geq 0}    &  &  &
                 \end{alignat}
             \end{subequations}
+            \vspace{-9pt}
         \end{block}
     \end{minipage}
 \end{frame}
@@ -733,7 +735,7 @@
 
 %\begin{frame}{Comparing complexity}
 \begin{frame}{Comparing formulations}
-    \begin{table}[]
+    \begin{table}
         \centering
         \caption{Comparison of complexity of the formulations}
         \label{tab:complexity}
@@ -745,8 +747,8 @@
         \end{tabular}%
     \end{table}\pause
     %Different formulations with have different linear programming $(\mathcal{LP})$-bounds. 
-    The \pCP\ version of formulation \nPCE\ has the best known linear programming $(\mathcal{LP})$-bounds for the \pCP,
-    while the \pCP\ versions of \nPC\ and \nPCY\ have equally but worse $\mathcal{LP}$-bounds.
+    The \pCP\ version of formulation \nPCE\ has the best known linear programming $LP$-bounds for the \pCP,
+    while the \pCP\ versions of \nPC\ and \nPCY\ have equally but worse $LP$-bounds.
     % \begin{itemize}
     % \item Different formulations with have different linear programming (\mathcal{LP}) bounds
     % \item \nPCY\ has the lowest number of variables but with \nPC\ the highest number of constraints
@@ -792,7 +794,7 @@
     \begin{lemma}\label{theorem:strength}
         Let $LB_h$ be a lower bound on the decision variable $z_h$ of (nPC2) for every $i \in \mathcal I, j \in \mathcal J, h \in \mathcal H$ then \pause
         \begin{equation}
-            z^h \geq max\{LB^h, d_{ij}\} - \sum_{j':d_{ij'} < d_{ij}} (\max \{\textit{$LB^h$}, d_{ij}\} - \max \{\textit{$LB^h$}, d_{ij'}\})y_{j'}^h  \label{eq:nPC2-lift} \tag{\emph{nL-OPT}}
+            z^h \geq max\{LB^h, d_{ij}\} - \sum_{j':d_{ij'} < d_{ij}} \left(\max \{\textit{$LB^h$}, d_{ij}\} - \max \{\textit{$LB^h$}, d_{ij'}\}\right)y_{j'}^h  \label{eq:nPC2-lift} \tag{\emph{nL-OPT}}
         \end{equation} \pause
         is a valid inequality for (nPC2), i.e., every feasible solution of (nPC2) fulfills \eqref{eq:nPC2-lift}.
         The theorem is based on Lemma 5 in \textcite{GAAR2022}.
@@ -815,7 +817,7 @@
         then $UB = H z^{'1*}$ is a valid upper bound on the optimal objective function value of \npCP. \\ \pause
         Then
         \begin{equation*}
-            \overline{z^h} = \frac{UB - \sum_{x = h+1}^{H}z'^{x*}}{h+1}
+            \overline{z^h} = \frac{UB - \sum_{x = h+1}^{H}z'^{x*}}{h}
         \end{equation*} \pause
         where $\overline{z^h}$ is a valid upper bound on the decision variable $z^h$ of the \npCP\ for $h \in \mathcal H$.
     \end{lemma}
@@ -845,7 +847,7 @@
         \begin{itemize}
             \item Solving \emph{$p$-center problem} with $p = p^H$
             \item Use optimal solution value for \emph{$p$-center problem} with $p = p^{H-1}$
-            \item Repeat for $p = p^{H-2}$
+            \item Repeat for remaining $p^h$
         \end{itemize}
         \item \nPCY \pause
         \begin{itemize}
@@ -907,7 +909,7 @@
         \item instance set \emph{TSPLIB} \cite{contardo2019scalable, GAAR2022}
               \begin{itemize}
                   \item 80 instances
-                  \item $\mathcal P = \left \{4, 5, 6\right \}$, $\left|V\right|$ from 100 and 900 nodes
+                  \item $\mathcal P = \left \{4, 5, 6\right \}$, $\left|V\right|$ from 51 and 1002 nodes
               \end{itemize}
     \end{itemize}
 \end{frame}
@@ -970,11 +972,11 @@
 \begin{frame}{Setting comparison on formulation \nPC}
     \begin{figure}
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[models runtime]{\includegraphics[width=\linewidth]{inoc_runtime_nPC1.pdf}\label{fig:nPC1_runtime}{}}
+            \subfloat[runtime]{\includegraphics[width=\linewidth]{inoc_runtime_nPC1.pdf}\label{fig:nPC1_runtime}{}}
         \end{minipage}
         \hfill
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[models optimality gap]{\includegraphics[width=\linewidth]{inoc_gap_nPC1.pdf}\label{fig:nPC1_gap}{}}
+            \subfloat[optimality gap \text{$[\frac{UB-LB}{UB}]$}]{\includegraphics[width=\linewidth]{inoc_gap_nPC1.pdf}\label{fig:nPC1_gap}{}}
         \end{minipage}
         \label{fig:nPC1}
         %\caption{Results of \nPC}\label{fig:x}
@@ -984,11 +986,11 @@
 \begin{frame}{Setting comparison on formulation \nPCY}
     \begin{figure}
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[models runtime]{\includegraphics[width=\linewidth]{inoc_runtime_nPC2.pdf}\label{fig:nPC2_runtime}{}}
+            \subfloat[runtime]{\includegraphics[width=\linewidth]{inoc_runtime_nPC2.pdf}\label{fig:nPC2_runtime}{}}
         \end{minipage}
         \hfill
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[models optimality gap]{\includegraphics[width=\linewidth]{inoc_gap_nPC2.pdf}\label{fig:nPC2_gap}{}}
+            \subfloat[optimality gap]{\includegraphics[width=\linewidth]{inoc_gap_nPC2.pdf}\label{fig:nPC2_gap}{}}
         \end{minipage}
         \label{fig:nPC2}
         %\caption{Results of \nPC}\label{fig:x}
@@ -998,11 +1000,11 @@
 \begin{frame}{Setting comparison on formulation \nPCE}
     \begin{figure}
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[models runtime]{\includegraphics[width=\linewidth]{inoc_runtime_nPC3.pdf}\label{fig:nPC3_runtime}{}}
+            \subfloat[runtime]{\includegraphics[width=\linewidth]{inoc_runtime_nPC3.pdf}\label{fig:nPC3_runtime}{}}
         \end{minipage}
         \hfill
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[models optimality gap]{\includegraphics[width=\linewidth]{inoc_gap_nPC3.pdf}\label{fig:nPC3_gap}{}}
+            \subfloat[optimality gap]{\includegraphics[width=\linewidth]{inoc_gap_nPC3.pdf}\label{fig:nPC3_gap}{}}
         \end{minipage}
         \label{fig:nPC3}
         %\caption{Results of \nPC}\label{fig:x}
@@ -1013,11 +1015,11 @@
 \begin{frame}{Formulation comparison on setting \sH}
     \begin{figure}
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[models runtime]{\includegraphics[width=\linewidth]{inoc_runtime_PH.pdf}\label{fig:PH_runtime}{}}
+            \subfloat[runtime]{\includegraphics[width=\linewidth]{inoc_runtime_PH.pdf}\label{fig:PH_runtime}{}}
         \end{minipage}
         \hfill
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[models optimality gap]{\includegraphics[width=\linewidth]{inoc_gap_PH.pdf}\label{fig:PH_gap}{}}
+            \subfloat[optimality gap]{\includegraphics[width=\linewidth]{inoc_gap_PH.pdf}\label{fig:PH_gap}{}}
         \end{minipage}
         \label{fig:PH}
         %\caption{Results of \nPC}\label{fig:x}
@@ -1029,7 +1031,7 @@
         \begin{minipage}[r]{.48\linewidth}
             \subfloat[Relative regret of the optimal solution value]{\includegraphics[width=\linewidth]{regret_obj.pdf}\label{fig:rel_regret}{}}
         \end{minipage}
-        \hfill
+        \hfill\pause
         \begin{minipage}[l]{.48\linewidth}
             \subfloat[Relative regret of \# of opened facilities]{\includegraphics[width=\linewidth]{regret_fac.pdf}\label{fig:rel_fac}{}}
         \end{minipage}
@@ -1044,9 +1046,9 @@
         \item \nPCE\ best performance in runtimes and optimality gap
         \item The \nPCY\ outperforms the \nPC
         \item Preprocessing brings a large speed up on all formulations
-        \item Starting heuristic improves optimality gap 
+        \item Starting heuristic little effect, shows good upper bound obtained in preprocessing
         \item Maximal relative regret of the optimal objective function value of 15\%
-        \item Maximal relative regret of number of opened facilities above 140\%
+        \item Maximal relative regret of number of opened facilities above 150\%
     \end{itemize}
 \end{frame}
 
