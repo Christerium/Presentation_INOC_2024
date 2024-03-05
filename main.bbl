@@ -142,82 +142,6 @@
       \field{pages}{106428}
       \range{pages}{1}
     \endentry
-    \entry{calik2013double}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=7bdd1ee20bb939069baa4726ce0e90d7}{%
-           family={Çal{ı}k},
-           familyi={Ç\bibinitperiod},
-           given={Hatice},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1d1b3b2d3019801b7b7335cc063b1526}{%
-           family={Tansel},
-           familyi={T\bibinitperiod},
-           given={Barbaros\bibnamedelima C.},
-           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{78a1392d72c50fbcc32554a5dbe88f27}
-      \strng{fullhash}{78a1392d72c50fbcc32554a5dbe88f27}
-      \strng{bibnamehash}{78a1392d72c50fbcc32554a5dbe88f27}
-      \strng{authorbibnamehash}{78a1392d72c50fbcc32554a5dbe88f27}
-      \strng{authornamehash}{78a1392d72c50fbcc32554a5dbe88f27}
-      \strng{authorfullhash}{78a1392d72c50fbcc32554a5dbe88f27}
-      \field{sortinit}{Ç}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Computers \& Operations Research}
-      \field{number}{12}
-      \field{title}{Double bound method for solving the p-center location problem}
-      \field{volume}{40}
-      \field{year}{2013}
-      \field{pages}{2991\bibrangedash 2999}
-      \range{pages}{9}
-    \endentry
-    \entry{chen2009new}{article}{}
-      \name{author}{2}{}{%
-        {{un=1,uniquepart=given,hash=ee41cb416d5a3df8948a0fcef2119886}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Doron},
-           giveni={D\bibinitperiod},
-           givenun=1}}%
-        {{un=1,uniquepart=given,hash=4f60fea1fb6c2242faae7a440a72931a}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Reuven},
-           giveni={R\bibinitperiod},
-           givenun=1}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{f712ef85e7d7a87d2f4582857ffe2cdd}
-      \strng{fullhash}{f712ef85e7d7a87d2f4582857ffe2cdd}
-      \strng{bibnamehash}{f712ef85e7d7a87d2f4582857ffe2cdd}
-      \strng{authorbibnamehash}{f712ef85e7d7a87d2f4582857ffe2cdd}
-      \strng{authornamehash}{f712ef85e7d7a87d2f4582857ffe2cdd}
-      \strng{authorfullhash}{f712ef85e7d7a87d2f4582857ffe2cdd}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Computers \& Operations Research}
-      \field{number}{5}
-      \field{title}{New relaxation-based algorithms for the optimal solution of the continuous and discrete p-center problems}
-      \field{volume}{36}
-      \field{year}{2009}
-      \field{pages}{1646\bibrangedash 1655}
-      \range{pages}{10}
-    \endentry
     \entry{conforti2014integer}{book}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=7c81773474602dfd70a1ef2592805d03}{%
@@ -274,49 +198,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Integer programming models}
       \field{year}{2014}
-    \endentry
-    \entry{contardo2019scalable}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=e830f9378c11bc3dd72b306ba53c77d4}{%
-           family={Contardo},
-           familyi={C\bibinitperiod},
-           given={Claudio},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5425f8b3958d872a4966e21944b95fc0}{%
-           family={Iori},
-           familyi={I\bibinitperiod},
-           given={Manuel},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0e1b1369ae9b9096777964039b142df9}{%
-           family={Kramer},
-           familyi={K\bibinitperiod},
-           given={Raphael},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{bf4a0031582a1f9d99823428975e7b2c}
-      \strng{fullhash}{bf4a0031582a1f9d99823428975e7b2c}
-      \strng{bibnamehash}{bf4a0031582a1f9d99823428975e7b2c}
-      \strng{authorbibnamehash}{bf4a0031582a1f9d99823428975e7b2c}
-      \strng{authornamehash}{bf4a0031582a1f9d99823428975e7b2c}
-      \strng{authorfullhash}{bf4a0031582a1f9d99823428975e7b2c}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Computers \& Operations Research}
-      \field{title}{A scalable exact algorithm for the vertex p-center problem}
-      \field{volume}{103}
-      \field{year}{2019}
-      \field{pages}{211\bibrangedash 220}
-      \range{pages}{10}
     \endentry
     \entry{wiley2013}{book}{}
       \name{author}{1}{}{%

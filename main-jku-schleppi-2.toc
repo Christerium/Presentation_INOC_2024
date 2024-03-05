@@ -1,0 +1,4 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{Related work}{26}{0}{1}
+\beamer@sectionintoc {2}{Mixed Integer Linear Programming formulations}{29}{0}{2}
+\beamer@sectionintoc {3}{Implementation and outline of the results}{47}{0}{3}

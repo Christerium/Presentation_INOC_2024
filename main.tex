@@ -40,7 +40,7 @@
 %% 
 %% Document class: This is a LaTeX beamer presentation.
 %% 
-\documentclass[utf8,aspectratio=169,ngerman,english]{beamer}
+\documentclass[utf8,aspectratio=1610,ngerman,english]{beamer}
 %% 
 %% The comma-separated list in square brackets are class options.
 %% Useful options that you might want to use:
@@ -183,6 +183,8 @@
 % \newcommand{\pCP}{\emph{(pCP)}}
 \def\Cplusplus{C\raisebox{0.5ex}{\tiny\textbf{++}}}
 
+\newtheorem{observation}{Observation}
+\newtheorem{proposition}{Proposition}
 \newcommand{\nPC}{\hyperref[eq:nPC]{\texttt{(nPC1)}}\xspace}
 \newcommand{\nPCE}{\hyperref[eq:nPCE]{\texttt{(nPC3)}}\xspace}
 \newcommand{\nPCY}{\hyperref[eq:nPCY]{\texttt{(nPC2)}}\xspace}
@@ -329,7 +331,7 @@
 \begin{frame}{The $p$-center problem \pCP: Definition}
     \begin{block}{Definition}
         \begin{itemize}
-            \item Given \pause
+            \item given \pause
                   \begin{itemize}
                       \item a set V of locations, \pause
                       \item \emph{$p$} $\in \mathbb{Z}$, and \pause
@@ -349,15 +351,15 @@
         \setbeamerfont{item}{size=\footnotesize}
         \setbeamerfont{subitem}{size=\footnotesize}
         \begin{itemize}
-            \item Given \pause
+            \item given 
             \begin{itemize}
-                \item a set of locations $V$
+                \item a set of locations $V$ \pause
                 \item a set of time periods $\mathcal{H} = \left\{1, \dots, H\right\}$ and \pause
                 \item a set of integers $\mathcal P = \left\{p^1, \dots, p^H\right\}$ indicating the number of facilities to open \pause
                 \item where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ \pause
             \end{itemize}
             \item the subsets $V^h \subseteq V$ with $|V^h| = p^h$ \pause
-            \item are called \emph{nested} iff $V^h  \subset V^{h+1}$ for $h = 1, \dots, H-1$
+            \item are called \emph{nested} iff $V^h  \subseteq V^{h+1}$ for $h = 1, \dots, H-1$
         \end{itemize}
     \end{block}\pause
     Introduced by \cite{Roodman1975} and used in e.g., \cite{albareda2009multi,conforti2014integer,bakker2024value} and reintroduced as nesting by \cite{McGarvey2022}
@@ -466,17 +468,19 @@
 %         \end{itemize} 
 %     \end{exampleblock} 
 % \end{frame}
+
+
 % (TODO) rework literature (nested) and (potential application)
-\begin{frame}{The nested $p$-center problem: Potential applications}
-\begin{itemize}
-    \setlength\itemsep{1em}
-    \item variant of the \emph{$p$-center problem}\pause % TODO ??
-    \item part of the \emph{multi-period} facility locations \pause % TODO ??
-    \item \emph{emergency} medical services \pause
-    \item relief actions in \emph{humanitarian crisis} \pause
-    \item \emph{expansion} into new markets/areas 
-\end{itemize}
-\end{frame}
+% \begin{frame}{The nested $p$-center problem: Potential applications}
+% \begin{itemize}
+%     \setlength\itemsep{1em}
+%     \item variant of the \emph{$p$-center problem}\pause % TODO ??
+%     \item part of the \emph{multi-period} facility locations \pause % TODO ??
+%     \item \emph{emergency} medical services \pause
+%     \item relief actions in \emph{humanitarian crisis} \pause
+%     \item \emph{expansion} into new markets/areas 
+% \end{itemize}
+% \end{frame}
 
 % \begin{frame}{$p$-center problem}
 %     \begin{itemize}
@@ -568,7 +572,7 @@
 \end{frame}
 
 \begin{frame}{The nested $p$-center problem: Compact MILP formulation}
-    \vspace*{-24pt}
+    %\vspace*{-24pt}
     \begin{minipage}[t]{0.40\linewidth}
         %\vspace{25pt}
         \setbeamerfont{block body}{size=\footnotesize}
@@ -580,12 +584,11 @@
                                           1 \, \dots \, \text{if \emph{location \textit{j}} is \emph{open} in} \\
                                           \qquad \; \,  \text{\emph{time period \textit{h}}}                   \\
                                           0 \, \dots \, \text{otherwise}
-                                      \end{cases} \\}
-                \onslide<2->{
+                                      \end{cases} \\
                  & z^h  \ldots  \,  \text{maximum \emph{distance} between any }                               \\
                  & \qquad \; \; \,  \text{\emph{customer \textit{i}} and its nearest}                         \\
                  & \qquad \; \; \,  \text{\emph{open facility in period \textit{h}}}\\}
-                \onslide<3->{
+                \onslide<2->{
                  & u_{k}^h \ldots \begin{cases}
                                           1 \, \dots \, \text{if \emph{$z^h \geq D_k$} in}   \\
                                           \qquad \; \,  \text{\emph{time period \textit{h}}} \\
@@ -598,8 +601,8 @@
     \begin{minipage}[t]{0.59\linewidth}
         %\setbeamerfont{block title}{size=\small}
         \setbeamerfont{block body}{size=\footnotesize}
-        \begin{block}<4->{\nPCE\ based on \cite{Elloumi2018}}
-            \vspace*{-10pt}
+        \begin{block}<3->{\nPCE\ based on \cite{Elloumi2018}}
+            \vspace*{-20pt}
             \begin{subequations}\label{eq:nPCE}
                 \begin{alignat*}{9}
                      & \min         &  &           &  & \sum_{\inH}z^{h}            &  &         &  &                           &  &                                                                                    \\
@@ -787,44 +790,84 @@
 %     A similar strengthening can be done for \eqref{eq:pc1N-zpush} in fromulation \nPC.
 % \end{frame}
 
-%(TODO) Ask about mentioning the \nPC here
+%(TODO) Ask about mentioning the \nPC here / maybe explain the strengthening trhough "there needs to be a distance d_ij where d_ij = z^h* for every h. 
+% if not ... / furthermore then obvioulsy any distances d_ij where d_ij < LB cannot be that "critical" distance 
+% The summation term cannot get lower than zero and therefore the right hand side of the constraint cannot get larger than d_ij
 
 \begin{frame}{Strengthening constraints \nPCY} \pause
     \vspace{-2pt}
     \begin{lemma}\label{theorem:strength}
-        Let $LB_h$ be a lower bound on the decision variable $z_h$ of (nPC2) for every $i \in \mathcal I, j \in \mathcal J, h \in \mathcal H$ then \pause
+        Let $LB_h$ be a lower bound on the decision variable $z_h$ of (nPC2) for every $i \in \mathcal I, j \in \mathcal J, h \in \mathcal H$ then constraints \pause
+        \begin{equation*}
+            z^{h} \geq d_{ij} - \sum_{j':d_{ij'} < d_{ij}}(d_{ij} - d_{ij'})y_{j'}^h 
+        \end{equation*}
+        can be replaced by \pause
         \begin{equation}
             z^h \geq max\{LB^h, d_{ij}\} - \sum_{j':d_{ij'} < d_{ij}} \left(\max \{\textit{$LB^h$}, d_{ij}\} - \max \{\textit{$LB^h$}, d_{ij'}\}\right)y_{j'}^h  \label{eq:nPC2-lift} \tag{\emph{nL-OPT}}
-        \end{equation} \pause
-        is a valid inequality for (nPC2), i.e., every feasible solution of (nPC2) fulfills \eqref{eq:nPC2-lift}.
+        \end{equation} 
         The theorem is based on Lemma 5 in \textcite{GAAR2022}.
     \end{lemma} 
     %A similar strengthening can be done for \nPC which is based on \cite{wiley2013}.
 \end{frame}
 
-\begin{frame}{Reducing set $\mathcal K$ in \nPCE} \pause
-    \begin{lemma}\label{lemma:setK}
+% (TODO) this does not tell the whole story (only for Subset Si) nothing about set K
+% \begin{frame}{Reducing set $\mathcal K$ in \nPCE} \pause
+%     \begin{lemma}\label{lemma:setK}
+%         Let $\underline{z^h}$ be a valid lower bound and $\overline{z^h}$ be a valid upper bound on the decision variable $z^h$ for $h \in \mathcal H$, then
+%         the distinct distance $D_k$ can only be the optimal distance for $z^h$ if $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds.  \\ \pause
+%         Therfore let set $S_i^h \subseteq S_i$ for $h \in \mathcal H$, where $S_i^h$ contains only the indices k where $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds.
+%     \end{lemma}
+%     Depending on the bounds $\underline{z^h}$ and $\overline{z^h}$ the sets $S_i^h$ can be much smaller than $S_i$.
+% \end{frame}
+
+% TODO still not happy about this reducing set K
+\begin{frame}{Reducing variables $u_k^h$ in \nPCE} \pause
+    \begin{observation}\label{obs:bounds}
+        \vspace{-8pt}
         Let $\underline{z^h}$ be a valid lower bound and $\overline{z^h}$ be a valid upper bound on the decision variable $z^h$ for $h \in \mathcal H$, then
-        the distinct distance $D_k$ can only be the optimal distance for $z^h$ if $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds.  \\ \pause
-        Therfore let set $S_i^h \subseteq S_i$ for $h \in \mathcal H$, where $S_i^h$ contains only the indices k where $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds.
-    \end{lemma}
-    Depending on the bounds $\underline{z^h}$ and $\overline{z^h}$ the sets $S_i^h$ can be much smaller than $S_i$.
+        the distinct distance $D_k$ can only be the optimal distance for $z^h$ if $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds. 
+    \end{observation}
+    \vspace{-2pt}\pause
+    \begin{observation}\label{obs:setVariables}
+        \vspace{-8pt}
+        Following Observation \ref{obs:bounds}, we observe that decision variables $u_h^k = 0$ for $k: D_k > \overline{z^h}$ and $u_h^k = 1$ for $k: D_k < \underline{z^h}$ in any optimal solution.
+    \end{observation}
+    \vspace{-2pt}\pause
+    \begin{proposition}\label{prop:reduceVariables}
+        \vspace{-8pt}
+        %Following Observation \ref{obs:setVariables}, we observe that for all $k$ where variables $u_k^h$ have been set to either zero or one, they are not necessary.
+        The decision variables $u_k^h$ which are zero or one following Observation \ref{obs:setVariables}, are redundant.
+    \end{proposition}
 \end{frame}
 
+% TODO ask about this observation / only tell them how we get to the UB, as it is 1. not so interesting and 2. just one possible way to obtain a valid UB 
 \begin{frame}{Obtaining bounds} \pause
-    \begin{lemma}\label{lemma:upperbounds}
-        Let $z'^{h*}$ be the optimal objective function value of \pCP\ with $p = p^h$ for $h \in \mathcal H = \{1, 2, \dots, H\}$ where $p^h > p^{h+1}$, \pause
-        then $UB = H z^{'1*}$ is a valid upper bound on the optimal objective function value of \npCP. \\ \pause
-        Then
-        \begin{equation*}
-            \overline{z^h} = \frac{UB - \sum_{x = h+1}^{H}z'^{x*}}{h}
-        \end{equation*} \pause
-        where $\overline{z^h}$ is a valid upper bound on the decision variable $z^h$ of the \npCP\ for $h \in \mathcal H$.
-    \end{lemma}
-    % \begin{lemma}\label{lemma:lowerbounds}
-    %     Let $z'^{*}$ be the optimal objective function value of \pCP\ for a certain $p'$. Then $z'^{*}$ is a valid lower bound $\underline{z^h}$ on the decision variable $z^h$ of \npCP\ with $p^h = p'$.
-    % \end{lemma}
+    \begin{observation}
+        For $\mathcal{H} = \left\{1\right\}$ the \npCP reduces to the \pCP where $p = p^1$, so the optimal objective value (${z'}^{h*}$) of the \pCP, where $p = p^h$ is a lower bound $\underline{z^h}$
+        on the decision variable $z^h$ of the \npCP.
+    \end{observation}\pause
+    \begin{proposition}
+        Given an valid upper bound $UB$ on the objective value of the \npCP and valid lower bounds $\underline{z^h}$ on the variable $z^h$ can be obtained by the following equation:
+        \begin{equation}
+            \overline{z^h} = \frac{UB - \sum_{x = h+1}^{H}\underline{z^h}}{h}
+        \end{equation}
+    \end{proposition} % TODO is this averaging argument?
 \end{frame}
+
+% \begin{frame}{Obtaining bounds} \pause
+%     \begin{lemma}\label{lemma:upperbounds}
+%         Let $z'^{h*}$ be the optimal objective function value of \pCP\ with $p = p^h$ for $h \in \mathcal H = \{1, 2, \dots, H\}$ where $p^h > p^{h+1}$, \pause
+%         then $UB = H z^{'1*}$ is a valid upper bound on the optimal objective function value of \npCP. \\ \pause
+%         Then
+%         \begin{equation*}
+%             \overline{z^h} = \frac{UB - \sum_{x = h+1}^{H}z'^{x*}}{h}
+%         \end{equation*} \pause
+%         where $\overline{z^h}$ is a valid upper bound on the decision variable $z^h$ of the \npCP\ for $h \in \mathcal H$.
+%     \end{lemma}
+%     % \begin{lemma}\label{lemma:lowerbounds}
+%     %     Let $z'^{*}$ be the optimal objective function value of \pCP\ for a certain $p'$. Then $z'^{*}$ is a valid lower bound $\underline{z^h}$ on the decision variable $z^h$ of \npCP\ with $p^h = p'$.
+%     % \end{lemma}
+% \end{frame}
 
 % \begin{frame}{Upper bound third formulation}
 %     \begin{itemize}
@@ -843,13 +886,13 @@
 \begin{frame}{Implementation}
     \begin{itemize}
         \item \emph{C++, CPLEX} 20.1 \pause
-        \item \emph{preprocessing} \pause
+        \item \emph{preprocessing}
         \begin{itemize}
             \item Solving \emph{$p$-center problem} with $p = p^H$
             \item Use optimal solution value for \emph{$p$-center problem} with $p = p^{H-1}$
-            \item Repeat for remaining $p^h$
-        \end{itemize}
-        \item \nPCY \pause
+            \item Repeat for remaining $p^h$ and calculate the upper bounds $\overline{z^h}$
+        \end{itemize} \pause
+        \item \nPCY 
         \begin{itemize}
             \item \emph{branch-and-cut} algorithm
             \item separation similar to \emph{fixedCustomer} from \cite{GAAR2022}
@@ -857,14 +900,13 @@
         \item \nPCE \pause
         \begin{itemize}
             \item \emph{branch-and-bound} algorithm
-            \item starting with the \emph{reduced} set $\mathcal{K}$
         \end{itemize}
     \end{itemize}
 \end{frame}
 \begin{frame}{Settings}
     \begin{itemize}
         \setlength\itemsep{1em}
-            \item \noPP: without \emph{preprocessing} or any \emph{lifting} \pause
+            \item \noPP: without \emph{preprocessing} and \emph{lifting} \pause
             \item \PP: with \emph{preprocessing} \pause
             \begin{itemize}
                 \item \nPCY: set upper bounds on $z^h$ and using lower bounds in \eqref{eq:nPC2-lift}
@@ -896,21 +938,21 @@
     \vspace*{-2pt}
     \begin{itemize}
         %\setlength\itemsep{1em}
-        \item computational setup
-        \begin{itemize}
-            \item single core of Intel Xeon X5570 with 2.93 GHz and 8 GB RAM
-            \item \emph{timelimit} of 3600 seconds
-        \end{itemize}\pause
-        \item instance set \emph{PMED} \cite{chen2009new,contardo2019scalable,calik2013double}
+        \item instance set \emph{PMED} %\cite{chen2009new,contardo2019scalable,calik2013double}
               \begin{itemize}
                 \item 40 instances
                 \item $\mathcal P = \left \{p, p+1, p+2\right \}$, $p$ from 5 to 200, $\left|V\right|$ from 100 and 900 nodes                  
               \end{itemize} \pause
-        \item instance set \emph{TSPLIB} \cite{contardo2019scalable, GAAR2022}
+        \item instance set \emph{TSPLIB} %\cite{contardo2019scalable, GAAR2022}
               \begin{itemize}
-                  \item 80 instances
-                  \item $\mathcal P = \left \{4, 5, 6\right \}$, $\left|V\right|$ from 51 and 1002 nodes
-              \end{itemize}
+                \item 80 instances
+                \item $\mathcal P = \left \{4, 5, 6\right \}$, $\left|V\right|$ from 51 and 1002 nodes
+              \end{itemize}\pause
+        \item computational setup
+            \begin{itemize}
+                \item single core of Intel Xeon X5570 with 2.93 GHz and 8 GB RAM
+                \item \emph{timelimit} of 3600 seconds
+            \end{itemize}
     \end{itemize}
 \end{frame}
 
