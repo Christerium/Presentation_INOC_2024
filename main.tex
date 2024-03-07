@@ -192,8 +192,8 @@
 \newcommand{\nPCYRN}{\hyperref[eq:nPCYRN]{\texttt{(nPCR2)}}\xspace}
 \newcommand{\tsplib}{\texttt{TSPlib}\xspace}
 \newcommand{\pmed}{\texttt{pmed}\xspace}
-\newcommand{\pCP}{$p$CP\xspace}
-\newcommand{\npCP}{n-$p$CP\xspace}
+\newcommand{\pCP}{($p$CP)\xspace}
+\newcommand{\npCP}{(n-$p$CP)\xspace}
 \newcommand{\PC}{\hyperref[eq:PC]{\texttt{(PC1)}}\xspace}
 \newcommand{\PCE}{\hyperref[eq:PCE]{\texttt{(PC3)}}\xspace}
 \newcommand{\PCY}{\hyperref[eq:PCY]{\texttt{(PC2)}}\xspace}
@@ -262,7 +262,7 @@
 \author{Christof Brandstetter \and Markus Sinnl}
 
 %% Command \institute{name}: sets the institute / author affiliation (style-breaking)
-\institute{Institute of Business Analytics and Technology Transformation / JKU Business School, \\Johannes Kepler University Linz}
+\institute{Institute of Business Analytics and Technology Transformation / JKU Business School, \\Johannes Kepler University Linz \\ This research was funded in whole, or in part, by the Austrian Science Fund (FWF) [P 35160-N]. }
 
 %% Command \institutecode{CODE}: sets the institute abbreviation/initials (used to load the institute logo file, if present)
 %\institutecode{INS}
@@ -273,7 +273,7 @@
 \date{\today}
 
 %% Command \partnerlogo[white=filename]{filename}: use filename as partner logo (leave filename blank to disable the partner logo), the optional argument ``white='' defines a separate file for use on dark background
-%\partnerlogo{our_partner_logo}
+\partnerlogo{logos/inoc.png}
 
 %% Command \footer{text}: sets the footer field
 %\footer{\insertshortsectiontitle} % the default
@@ -328,10 +328,10 @@
 %         \item \emph{nested $p$-center problem} \npCP: open $p^h$ number of \emph{nested} facilities in period $h$, such that the sum of the maximum distances between a customer and its closest open facility in this time period is minimized
 %     \end{itemize}
 % \end{frame}
-\begin{frame}{The $p$-center problem \pCP: Definition}
+\begin{frame}{The $p$-center problem \pCP:}
     \begin{block}{Definition}
-        \begin{itemize}
-            \item given \pause
+        \begin{itemize}\pause
+            \item given
                   \begin{itemize}
                       \item a set V of locations, \pause
                       \item \emph{$p$} $\in \mathbb{Z}$, and \pause
@@ -351,13 +351,13 @@
         \setbeamerfont{item}{size=\footnotesize}
         \setbeamerfont{subitem}{size=\footnotesize}
         \begin{itemize}
-            \item given 
-            \begin{itemize}
-                \item a set of locations $V$ \pause
-                \item a set of time periods $\mathcal{H} = \left\{1, \dots, H\right\}$ and \pause
-                \item a set of integers $\mathcal P = \left\{p^1, \dots, p^H\right\}$ indicating the number of facilities to open \pause
-                \item where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ \pause
-            \end{itemize}
+            \item given
+                  \begin{itemize}
+                      \item a set of locations $V$ \pause
+                      \item a set of time periods $\mathcal{H} = \left\{1, \dots, H\right\}$ and \pause
+                      \item a set of integers $\mathcal P = \left\{p^1, \dots, p^H\right\}$ indicating the number of facilities to open \pause
+                      \item where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ \pause
+                  \end{itemize}
             \item the subsets $V^h \subseteq V$ with $|V^h| = p^h$ \pause
             \item are called \emph{nested} iff $V^h  \subseteq V^{h+1}$ for $h = 1, \dots, H-1$
         \end{itemize}
@@ -415,7 +415,7 @@
 %     \end{minipage}
 % \end{frame}
 
-\begin{frame}{The nested \textit{p}-center problem: Definition}
+\begin{frame}{The nested \textit{p}-center problem}
     \setbeamerfont{item}{size=\footnotesize}
     \setbeamerfont{subitem}{size=\footnotesize}
     \begin{minipage}{0.48\textwidth}
@@ -442,14 +442,14 @@
                 %\item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq \mathcal J$ with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$, for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds
                 \item a feasible solution to the nested $p$-center problem consists of a set $\mathcal J^h \subseteq V$ \pause
                       \begin{itemize}
-                          \item with $\left\lvert \mathcal J^h \right\rvert = p^h$ for $h \in \mathcal H$,
-                          \item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h = 1, \dots, H-1$ holds \pause
+                          \item with $\left\lvert V^h \right\rvert = p^h$ for $h \in \mathcal H$,
+                          \item for which $V^h \subseteq V^{h+1}$ for $h = 1, \dots, H-1$ holds \pause
                                 %\item for which $\mathcal J^h \subseteq \mathcal J^{h+1}$ for $h \in \mathcal H \setminus \left \{H \right \}$ holds
                       \end{itemize}
                       %\item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$, where $d_h(\mathcal J^h) = \max_{i \in \mathcal I}\min_{j \in \mathcal J^h} d_{ij}$ for $h \in \mathcal H$
-                \item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d_h(\mathcal J^h)$,
+                \item the goal is to find a feasible solution which minimizes $\sum_{h = 1}^{H} d(V^h)$,
                       \begin{itemize}
-                          \item where $d_h(\mathcal J) = \max_{i \in \mathcal I}\min_{j \in \mathcal J} d_{ij}$ for $h \in \mathcal H$
+                          \item where $d(V^h) = \max_{i \in V}\min_{j \in V^h} d_{ij}$ for $h \in \mathcal H$
                       \end{itemize}
             \end{itemize}
             %\vspace*{3pt}
@@ -530,7 +530,7 @@
 %     %}
 % \end{frame}
 \section{Mixed Integer Linear Programming (MILP) Formulations}
-\begin{frame}{The nested $p$-center problem: MILP formulation}
+\begin{frame}{First formulation}
     %\vspace*{-23pt}
     \begin{minipage}[t]{0.40\linewidth}
         %\vspace{25pt}
@@ -547,7 +547,7 @@
                 \onslide<2->{
                  & z^h  \ldots  \,  \text{maximum \emph{distance} between any }                               \\
                  & \qquad \; \; \,  \text{\emph{customer \textit{i}} and its nearest}                         \\
-                 & \qquad \; \; \,  \text{\emph{open facility in period \textit{h}}}} %facility or location
+                 & \qquad \; \; \,  \text{\emph{open facility in period \textit{h}}}}                         %facility or location
             \end{alignat*}
             \vspace{2pt}
         \end{block}
@@ -559,11 +559,11 @@
             \vspace{-20pt}
             \begin{subequations}\label{eq:nPCY}
                 \begin{alignat}{4}
-                     & \min         & \sum_{\inH}z^{h}                                                                          &                               &  &  &                                                             \\
-                     & \text{ s.t.} & \sum_{j \in V}y_{j}^h                                                                     & =     p^{h}                   &  &  & \forall \inH                                                \\
-                     &              & z^{h} \geq d_{ij} - \sum_{j':d_{ij'} < d_{ij}}                                            & (d_{ij} - d_{ij'})y_{j'}^h \; &  &  & \forall i,j \in V, h \in \mathcal H                         \\
-                     &              & y_{j}^h \geq  y_j^{h-1}                                                                   &                               &  &  & \forall j \in V, \forall \inH \setminus \left \{1 \right \} \\
-                     &              & (y,z)                                           \in \left|V\right|\left|\mathcal H\right| & \times \mathbb{R}_{\geq 0}    &  &  &
+                     & \min         & \sum_{\inH}z^{h}                               &                                           &  &  &                                                             \\
+                     & \text{ s.t.} & \sum_{j \in V}y_{j}^h                          & =     p^{h}                               &  &  & \forall \inH                                                \\
+                     &              & z^{h} \geq d_{ij} - \sum_{j':d_{ij'} < d_{ij}} & (d_{ij} - d_{ij'})y_{j'}^h \;             &  &  & \forall i,j \in V, h \in \mathcal H                         \\
+                     &              & y_{j}^h \geq  y_j^{h-1}                        &                                           &  &  & \forall j \in V, \forall \inH \setminus \left \{1 \right \} \\
+                     &              & (y,z) \in \mathbb B^{|V||\mathcal H|}          & \times \mathbb{R}_{\geq 0}^{|\mathcal H|} &  &  &
                 \end{alignat}
             \end{subequations}
             \vspace{-9pt}
@@ -571,7 +571,7 @@
     \end{minipage}
 \end{frame}
 
-\begin{frame}{The nested $p$-center problem: Compact MILP formulation}
+\begin{frame}{Second formulation}
     %\vspace*{-24pt}
     \begin{minipage}[t]{0.40\linewidth}
         %\vspace{25pt}
@@ -605,13 +605,13 @@
             \vspace*{-20pt}
             \begin{subequations}\label{eq:nPCE}
                 \begin{alignat*}{9}
-                     & \min         &  &           &  & \sum_{\inH}z^{h}            &  &         &  &                           &  &                                                                                    \\
-                     & \text{ s.t.} &  &           &  & \sum_{j \in V}y_{j}^h =     &  & p^{h}   &  &                           &  & \forall \inH                                                                       \\
-                     &              &  & D_0 +     &  & \sum_{k=1}^{K} (D_k-        &  & D_{k-1} &  & )u^{h}_k \leq z^h \;      &  & \forall h \in \mathcal{H}                                                          \\
-                     &              &  & u^{h}_k + &  & \sum_{j:d_{ij}<D_k} y_{j}^h &  & \geq 1  &  & \,\forall i \in V,\forall &  & h \in \mathcal H, \forall k \in S_i \cup \left \{K \right \}                       \\
-                     &              &  &           &  & u^{h}_k \geq u_{k+1}^h      &  &         &  &                           &  & \forall h \in \mathcal{H}, \forall k \in \mathcal{K} \setminus \left \{K \right \} \\
-                     &              &  &           &  & y_{j}^h \geq y_j^{h-1}      &  &         &  &                           &  & \forall \inH \setminus \left \{1 \right \}                                         \\
-                     &              &  & (u,       &  & y,z) \in                    &  & |V|     &  & |K| \times |V|            &  & |\mathcal H| \times \mathbb{R}_{\geq 0}
+                     & \min         &  &           &  & \sum_{\inH}z^{h}            &  &                                      &  &                                    &  &                                                                                    \\
+                     & \text{ s.t.} &  &           &  & \sum_{j \in V}y_{j}^h =     &  & p^{h}                                &  &                                    &  & \forall \inH                                                                       \\
+                     &              &  & D_0 +     &  & \sum_{k=1}^{K} (D_k-        &  & D_{k-1})u^{h}_k                      &  & \leq z^h \;                        &  & \forall h \in \mathcal{H}                                                          \\
+                     &              &  & u^{h}_k + &  & \sum_{j:d_{ij}<D_k} y_{j}^h &  & \geq 1                               &  & \,\forall i \in V,\forall          &  & h \in \mathcal H, \forall k \in S_i \cup \left \{K \right \}                       \\
+                     &              &  &           &  & u^{h}_k \geq u_{k+1}^h      &  &                                      &  &                                    &  & \forall h \in \mathcal{H}, \forall k \in \mathcal{K} \setminus \left \{K \right \} \\
+                     &              &  &           &  & y_{j}^h \geq y_j^{h-1}      &  &                                      &  &                                    &  & \forall \inH \setminus \left \{1 \right \}                                         \\
+                     &              &  &           &  & (u,y,z)  \in                &  & \mathbb B^{|\mathcal K||\mathcal H|} &  & \times \mathbb B^{|V||\mathcal H|} &  & \times \mathbb{R}_{\geq 0}^{|\mathcal H|}
                 \end{alignat*}
             \end{subequations}
         \end{block}
@@ -737,31 +737,30 @@
 % \end{frame}
 
 %\begin{frame}{Comparing complexity}
-\begin{frame}{Comparing formulations}
-    \begin{table}
-        \centering
-        \caption{Comparison of complexity of the formulations}
-        \label{tab:complexity}
-        \begin{tabular}{l|ccc}
-            \hline
-                        & \nPC                                                     & \nPCY                                                     & \nPCE                                                                                        \\ \hline
-            Variables   & $\mathcal O(| \mathcal I || \mathcal J || \mathcal H |)$ & $\mathcal O (| \mathcal J || \mathcal H |)$               & $\mathcal O ((| \mathcal I | + | \mathcal K |) | \mathcal H |)$                              \\
-            Constraints & $\mathcal O(| \mathcal I || \mathcal J || \mathcal H |)$ & $\mathcal O (| \mathcal I || \mathcal J || \mathcal H |)$ & $\mathcal O (\min(| \mathcal I || \mathcal J |,| \mathcal I || \mathcal K |)| \mathcal H |)$ \\ \hline
-        \end{tabular}%
-    \end{table}\pause
-    %Different formulations with have different linear programming $(\mathcal{LP})$-bounds. 
-    The \pCP\ version of formulation \nPCE\ has the best known linear programming $LP$-bounds for the \pCP,
-    while the \pCP\ versions of \nPC\ and \nPCY\ have equally but worse $LP$-bounds.
-    % \begin{itemize}
-    % \item Different formulations with have different linear programming (\mathcal{LP}) bounds
-    % \item \nPCY\ has the lowest number of variables but with \nPC\ the highest number of constraints
-    % \item \nPCE\ has depending on $| \mathcal K |$ the smallest number of constraints and less variables than \nPC\ but more than \nPCY
-    % \end{itemize}
-\end{frame}
+% \begin{frame}{Comparing formulations}
+%     \begin{table}
+%         \centering
+%         \caption{Comparison of complexity of the formulations}
+%         \label{tab:complexity}
+%         \begin{tabular}{l|ccc}
+%             \hline
+%                         & \nPC                                                     & \nPCY                                                     & \nPCE                                                                                        \\ \hline
+%             Variables   & $\mathcal O(| \mathcal I || \mathcal J || \mathcal H |)$ & $\mathcal O (| \mathcal J || \mathcal H |)$               & $\mathcal O ((| \mathcal I | + | \mathcal K |) | \mathcal H |)$                              \\
+%             Constraints & $\mathcal O(| \mathcal I || \mathcal J || \mathcal H |)$ & $\mathcal O (| \mathcal I || \mathcal J || \mathcal H |)$ & $\mathcal O (\min(| \mathcal I || \mathcal J |,| \mathcal I || \mathcal K |)| \mathcal H |)$ \\ \hline
+%         \end{tabular}%
+%     \end{table}\pause
+%     %Different formulations with have different linear programming $(\mathcal{LP})$-bounds. 
+%     The \pCP\ version of formulation \nPCE\ has the best known linear programming $(LP)$-bounds,
+%     while the \pCP\ versions of \nPC\ and \nPCY\ have equally but worse $LP$-bounds.
+%     % \begin{itemize}
+%     % \item Different formulations with have different linear programming (\mathcal{LP}) bounds
+%     % \item \nPCY\ has the lowest number of variables but with \nPC\ the highest number of constraints
+%     % \item \nPCE\ has depending on $| \mathcal K |$ the smallest number of constraints and less variables than \nPC\ but more than \nPCY
+%     % \end{itemize}
+% \end{frame}
 
 \section{Improving the formulations}
 % (TODO) reduce the technicalities, not necessary at the conference
-
 
 % \begin{frame}{Reducing constraints \nPCY}
 %     \begin{alertblock}{Problem}
@@ -797,16 +796,16 @@
 \begin{frame}{Strengthening constraints \nPCY} \pause
     \vspace{-2pt}
     \begin{lemma}\label{theorem:strength}
-        Let $LB_h$ be a lower bound on the decision variable $z_h$ of (nPC2) for every $i \in \mathcal I, j \in \mathcal J, h \in \mathcal H$ then constraints \pause
+        Let $\underline{z^h}$ be a lower bound on the decision variable $z_h$ of (nPC2) for every $i \in \mathcal I, j \in \mathcal J, h \in \mathcal H$ then constraints \pause
         \begin{equation*}
-            z^{h} \geq d_{ij} - \sum_{j':d_{ij'} < d_{ij}}(d_{ij} - d_{ij'})y_{j'}^h 
+            z^{h} \geq d_{ij} - \sum_{j':d_{ij'} < d_{ij}}(d_{ij} - d_{ij'})y_{j'}^h
         \end{equation*}
         can be replaced by \pause
         \begin{equation}
-            z^h \geq max\{LB^h, d_{ij}\} - \sum_{j':d_{ij'} < d_{ij}} \left(\max \{\textit{$LB^h$}, d_{ij}\} - \max \{\textit{$LB^h$}, d_{ij'}\}\right)y_{j'}^h  \label{eq:nPC2-lift} \tag{\emph{nL-OPT}}
-        \end{equation} 
-        The theorem is based on Lemma 5 in \textcite{GAAR2022}.
-    \end{lemma} 
+            z^h \geq max\{\underline{z^h}, d_{ij}\} - \sum_{j':d_{ij'} < d_{ij}} \left(\max \{\underline{z^h}, d_{ij}\} - \max \{\underline{z^h}, d_{ij'}\}\right)y_{j'}^h  \label{eq:nPC2-lift} \tag{\emph{nL-OPT}}
+        \end{equation}
+        The lemma is based on Lemma 5 in \textcite{GAAR2022}.
+    \end{lemma}
     %A similar strengthening can be done for \nPC which is based on \cite{wiley2013}.
 \end{frame}
 
@@ -821,23 +820,23 @@
 % \end{frame}
 
 % TODO still not happy about this reducing set K
-\begin{frame}{Reducing variables $u_k^h$ in \nPCE} \pause
+\begin{frame}{Reducing the number of variables $u_k^h$ in \nPCE} \pause
     \begin{observation}\label{obs:bounds}
         \vspace{-8pt}
         Let $\underline{z^h}$ be a valid lower bound and $\overline{z^h}$ be a valid upper bound on the decision variable $z^h$ for $h \in \mathcal H$, then
-        the distinct distance $D_k$ can only be the optimal distance for $z^h$ if $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds. 
+        the distinct distance $D_k$ can only be the optimal distance for $z^h$ if $\underline{z^h} \leq D^k \leq \overline{z^h}$ holds.
     \end{observation}
-    \vspace{-2pt}\pause
+    %\vspace{-2pt}\pause
     \begin{observation}\label{obs:setVariables}
         \vspace{-8pt}
         Following Observation \ref{obs:bounds}, we observe that decision variables $u_h^k = 0$ for $k: D_k > \overline{z^h}$ and $u_h^k = 1$ for $k: D_k < \underline{z^h}$ in any optimal solution.
     \end{observation}
-    \vspace{-2pt}\pause
-    \begin{proposition}\label{prop:reduceVariables}
-        \vspace{-8pt}
+    \vspace{-10pt}\pause
+    \begin{block}{\vspace{-20pt}}\label{prop:reduceVariables}
+        \vspace{-6pt}
         %Following Observation \ref{obs:setVariables}, we observe that for all $k$ where variables $u_k^h$ have been set to either zero or one, they are not necessary.
         The decision variables $u_k^h$ which are zero or one following Observation \ref{obs:setVariables}, are redundant.
-    \end{proposition}
+    \end{block}
 \end{frame}
 
 % TODO ask about this observation / only tell them how we get to the UB, as it is 1. not so interesting and 2. just one possible way to obtain a valid UB 
@@ -887,32 +886,32 @@
     \begin{itemize}
         \item \emph{C++, CPLEX} 20.1 \pause
         \item \emph{preprocessing}
-        \begin{itemize}
-            \item Solving \emph{$p$-center problem} with $p = p^H$
-            \item Use optimal solution value for \emph{$p$-center problem} with $p = p^{H-1}$
-            \item Repeat for remaining $p^h$ and calculate the upper bounds $\overline{z^h}$
-        \end{itemize} \pause
-        \item \nPCY 
-        \begin{itemize}
-            \item \emph{branch-and-cut} algorithm
-            \item separation similar to \emph{fixedCustomer} from \cite{GAAR2022}
-        \end{itemize} \pause
+              \begin{itemize}
+                  \item Solving \emph{$p$-center problem} with $p = p^H$
+                  \item Use optimal solution value as lower bound for \emph{$p$-center problem} with $p = p^{H-1}$
+                  \item Repeat for remaining $p^h$ and calculate the upper bounds $\overline{z^h}$
+              \end{itemize} \pause
+        \item \nPCY
+              \begin{itemize}
+                  \item \emph{branch-and-cut} algorithm
+                  \item separation based on the \emph{fixedCustomer} separation scheme from \cite{GAAR2022}
+              \end{itemize} \pause
         \item \nPCE \pause
-        \begin{itemize}
-            \item \emph{branch-and-bound} algorithm
-        \end{itemize}
+              \begin{itemize}
+                  \item \emph{branch-and-bound} algorithm
+              \end{itemize}
     \end{itemize}
 \end{frame}
 \begin{frame}{Settings}
     \begin{itemize}
         \setlength\itemsep{1em}
-            \item \noPP: without \emph{preprocessing} and \emph{lifting} \pause
-            \item \PP: with \emph{preprocessing} \pause
-            \begin{itemize}
-                \item \nPCY: set upper bounds on $z^h$ and using lower bounds in \eqref{eq:nPC2-lift}
-                \item \nPCE: problem initialized on reduced set $\mathcal{K}$ 
-            \end{itemize}\pause
-            \item \sH: \PP with \emph{starting heuristic}
+        \item \noPP: without \emph{preprocessing} and without \emph{lifting} \pause
+        \item \PP: with \emph{preprocessing} \pause
+              \begin{itemize}
+                  \item \nPCY: set upper bounds on $z^h$ and using lower bounds in \eqref{eq:nPC2-lift}
+                  \item \nPCE: problem initialized on reduced number of $u_k^h$
+              \end{itemize}\pause
+        \item \sH: \PP with \emph{starting heuristic}
     \end{itemize}
 \end{frame}
 % \begin{frame}{Implementation}
@@ -940,19 +939,19 @@
         %\setlength\itemsep{1em}
         \item instance set \emph{PMED} %\cite{chen2009new,contardo2019scalable,calik2013double}
               \begin{itemize}
-                \item 40 instances
-                \item $\mathcal P = \left \{p, p+1, p+2\right \}$, $p$ from 5 to 200, $\left|V\right|$ from 100 and 900 nodes                  
+                  \item 40 instances
+                  \item $\mathcal P = \left \{p, p+1, p+2\right \}$, $p$ from 5 to 200, $\left|V\right|$ from 100 and 900 nodes
               \end{itemize} \pause
         \item instance set \emph{TSPLIB} %\cite{contardo2019scalable, GAAR2022}
               \begin{itemize}
-                \item 80 instances
-                \item $\mathcal P = \left \{4, 5, 6\right \}$, $\left|V\right|$ from 51 and 1002 nodes
+                  \item 50 instances
+                  \item $\mathcal P = \left \{4, 5, 6\right \}$, $\left|V\right|$ from 51 and 1002 nodes
               \end{itemize}\pause
         \item computational setup
-            \begin{itemize}
-                \item single core of Intel Xeon X5570 with 2.93 GHz and 8 GB RAM
-                \item \emph{timelimit} of 3600 seconds
-            \end{itemize}
+              \begin{itemize}
+                  \item single core of Intel Xeon X5570 with 2.93 GHz and 8 GB RAM
+                  \item \emph{timelimit} of 3600 seconds
+              \end{itemize}
     \end{itemize}
 \end{frame}
 
@@ -1011,28 +1010,14 @@
 %     \end{figure}
 % \end{frame}
 
-\begin{frame}{Setting comparison on formulation \nPC}
-    \begin{figure}
-        \begin{minipage}[c]{.48\linewidth}
-            \subfloat[runtime]{\includegraphics[width=\linewidth]{inoc_runtime_nPC1.pdf}\label{fig:nPC1_runtime}{}}
-        \end{minipage}
-        \hfill
-        \begin{minipage}[c]{.48\linewidth}
-            \subfloat[optimality gap \text{$[\frac{UB-LB}{UB}]$}]{\includegraphics[width=\linewidth]{inoc_gap_nPC1.pdf}\label{fig:nPC1_gap}{}}
-        \end{minipage}
-        \label{fig:nPC1}
-        %\caption{Results of \nPC}\label{fig:x}
-    \end{figure}
-\end{frame}
-
 \begin{frame}{Setting comparison on formulation \nPCY}
     \begin{figure}
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[runtime]{\includegraphics[width=\linewidth]{inoc_runtime_nPC2.pdf}\label{fig:nPC2_runtime}{}}
+            \subfloat[Runtimes]{\includegraphics[width=\linewidth]{inoc_runtime_nPC2.pdf}\label{fig:nPC2_runtime}{}}
         \end{minipage}
         \hfill
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[optimality gap]{\includegraphics[width=\linewidth]{inoc_gap_nPC2.pdf}\label{fig:nPC2_gap}{}}
+            \subfloat[Optimality gaps \text{$\left[\frac{UB-LB}{UB}100\right]$}]{\includegraphics[width=\linewidth]{inoc_gap_nPC2.pdf}\label{fig:nPC2_gap}{}}
         \end{minipage}
         \label{fig:nPC2}
         %\caption{Results of \nPC}\label{fig:x}
@@ -1042,11 +1027,11 @@
 \begin{frame}{Setting comparison on formulation \nPCE}
     \begin{figure}
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[runtime]{\includegraphics[width=\linewidth]{inoc_runtime_nPC3.pdf}\label{fig:nPC3_runtime}{}}
+            \subfloat[Runtimes]{\includegraphics[width=\linewidth]{inoc_runtime_nPC3.pdf}\label{fig:nPC3_runtime}{}}
         \end{minipage}
         \hfill
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[optimality gap]{\includegraphics[width=\linewidth]{inoc_gap_nPC3.pdf}\label{fig:nPC3_gap}{}}
+            \subfloat[Optimality gaps \text{$\left[\frac{UB-LB}{UB}100\right]$}]{\includegraphics[width=\linewidth]{inoc_gap_nPC3.pdf}\label{fig:nPC3_gap}{}}
         \end{minipage}
         \label{fig:nPC3}
         %\caption{Results of \nPC}\label{fig:x}
@@ -1057,11 +1042,11 @@
 \begin{frame}{Formulation comparison on setting \sH}
     \begin{figure}
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[runtime]{\includegraphics[width=\linewidth]{inoc_runtime_PH.pdf}\label{fig:PH_runtime}{}}
+            \subfloat[Runtimes]{\includegraphics[width=\linewidth]{inoc_runtime_PH.pdf}\label{fig:PH_runtime}{}}
         \end{minipage}
         \hfill
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[optimality gap]{\includegraphics[width=\linewidth]{inoc_gap_PH.pdf}\label{fig:PH_gap}{}}
+            \subfloat[Optimality gaps \text{$\left[\frac{UB-LB}{UB}100\right]$}]{\includegraphics[width=\linewidth]{inoc_gap_PH.pdf}\label{fig:PH_gap}{}}
         \end{minipage}
         \label{fig:PH}
         %\caption{Results of \nPC}\label{fig:x}
@@ -1071,11 +1056,11 @@
 \begin{frame}{Managerial insights}
     \begin{figure}
         \begin{minipage}[r]{.48\linewidth}
-            \subfloat[Relative regret of the optimal solution value]{\includegraphics[width=\linewidth]{regret_obj.pdf}\label{fig:rel_regret}{}}
+            \subfloat[Relative regrets of the optimal solution value]{\includegraphics[width=\linewidth]{regret_obj.pdf}\label{fig:rel_regret}{}}
         \end{minipage}
         \hfill\pause
         \begin{minipage}[l]{.48\linewidth}
-            \subfloat[Relative regret of \# of opened facilities]{\includegraphics[width=\linewidth]{regret_fac.pdf}\label{fig:rel_fac}{}}
+            \subfloat[Relative regrets of \# of opened facilities]{\includegraphics[width=\linewidth]{regret_fac.pdf}\label{fig:rel_fac}{}}
         \end{minipage}
         \label{fig:manage}
         %\caption{On a subset of instances: Only if the problem was solved to optimality}
@@ -1117,6 +1102,20 @@
     %\setbeamerfont{bibliography item}{size={\footnotesize}}
     %\AtNextBibliography{\footnotesize}
     \printbibliography
+\end{frame}
+
+\begin{frame}{Setting comparison on formulation \nPC}
+    \begin{figure}
+        \begin{minipage}[c]{.48\linewidth}
+            \subfloat[Runtimes]{\includegraphics[width=\linewidth]{inoc_runtime_nPC1.pdf}\label{fig:nPC1_runtime}{}}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[c]{.48\linewidth}
+            \subfloat[Optimality gaps \text{$[\frac{UB-LB}{UB}]$}]{\includegraphics[width=\linewidth]{inoc_gap_nPC1.pdf}\label{fig:nPC1_gap}{}}
+        \end{minipage}
+        \label{fig:nPC1}
+        %\caption{Results of \nPC}\label{fig:x}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{The nested $p$-center problem: Classical MILP formulation}

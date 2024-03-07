@@ -692,6 +692,17 @@ INPUT ./main.nav
 INPUT ./main.nav
 INPUT main.nav
 INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT ./logos/inoc.png
+INPUT ./logos/inoc.png
+INPUT ./logos/inoc.png
+INPUT ./logos/inoc.png
+INPUT ./logos/inoc.png
+INPUT ./logos/inoc.png
+INPUT ./logos/inoc.png
+INPUT ./logos/inoc.png
+INPUT ./logos/inoc.png
+INPUT ./logos/inoc.png
+INPUT ./logos/inoc.png
 INPUT /home/user/.miktex/texmfs/install/tex/latex/lm/ot1lmr.fd
 INPUT /home/user/.miktex/texmfs/install/tex/latex/lm/ot1lmr.fd
 INPUT /home/user/.miktex/texmfs/install/tex/latex/lm/ot1lmr.fd
@@ -908,71 +919,28 @@ INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvbo8t.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/vf/adobe/helvetic/phvbo8t.vf
 INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvbo8r.tfm
+INPUT /home/user/.miktex/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT /home/user/.miktex/texmfs/install/tex/latex/inconsolata/t1zi4.fd
 INPUT /home/user/.miktex/texmfs/install/tex/latex/inconsolata/t1zi4.fd
 INPUT /home/user/.miktex/texmfs/install/tex/latex/inconsolata/t1zi4.fd
 INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/inconsolata/t1-zi4r-0.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/enc/dvips/inconsolata/i4-t1-0.enc
-INPUT /home/user/.miktex/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/inconsolata/t1-zi4r-0.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/lm/rm-lmr5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/lm/rm-lmr5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eurm5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eurm5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/lm/lmsy5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/lm/lmsy5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eusm5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eusm5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/euex7.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/euex7.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvro8t.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvro8t.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/eulervm/zeurm5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/eulervm/zeurm5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/lm/rm-lmr5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eurm5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/lm/lmsy5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eusm5.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/euex7.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvr8t.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvro8t.tfm
-INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/eulervm/zeurm5.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/inconsolata/t1-zi4b-0.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
 INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT /home/user/.miktex/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
 INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/vf/adobe/helvetic/phvro8t.vf
 INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/inconsolata/t1-zi4r-0.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /home/user/.miktex/texmfs/install/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /home/user/.miktex/texmfs/install/fonts/tfm/public/inconsolata/t1-zi4r-0.tfm
-INPUT ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf
-INPUT ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf
-INPUT ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf
-INPUT ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf
-INPUT ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf
-INPUT ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf
-INPUT ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf
-INPUT ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf
-INPUT ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf
-INPUT ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf
 INPUT ../../Master Thesis/final_plots/inoc_runtime_nPC2.pdf
 INPUT ../../Master Thesis/final_plots/inoc_runtime_nPC2.pdf
 INPUT ../../Master Thesis/final_plots/inoc_runtime_nPC2.pdf
@@ -1019,6 +987,16 @@ INPUT ../../Master Thesis/final_plots/regret_obj.pdf
 INPUT ../../Master Thesis/final_plots/regret_fac.pdf
 INPUT ../../Master Thesis/final_plots/regret_fac.pdf
 INPUT ../../Master Thesis/final_plots/regret_fac.pdf
+INPUT ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf
+INPUT ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf
+INPUT ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf
+INPUT ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf
+INPUT ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf
+INPUT ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf
+INPUT ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf
+INPUT ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf
+INPUT ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf
+INPUT ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf
 OUTPUT main.nav
 OUTPUT main.toc
 OUTPUT main.snm

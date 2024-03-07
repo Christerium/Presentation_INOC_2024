@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.9)  5 MAR 2024 16:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.9)  7 MAR 2024 09:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1619,6 +1619,15 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
  (main.nav)
+<logos/inoc.png, id=44, 361.35pt x 218.8175pt>
+File: logos/inoc.png Graphic file (type png)
+<use logos/inoc.png>
+Package pdftex.def Info: logos/inoc.png  used on input line 276.
+(pdftex.def)             Requested size: 54.06024pt x 32.73439pt.
+File: logos/inoc.png Graphic file (type png)
+<use logos/inoc.png>
+Package pdftex.def Info: logos/inoc.png  used on input line 276.
+(pdftex.def)             Requested size: 16.442pt x 9.95845pt.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 311.
  (/home/user/.miktex/texmfs/install/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1698,7 +1707,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <11> not available
 {/home/user/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc} <./logos/jku_k_white.pdf> <./logos/jku_en_white.pdf
 
 pdfTeX warning: pdflatex (file ./logos/jku_en_white.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
+> <./logos/inoc.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 347.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1762,7 +1771,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 ] [14
 
 ]
-<images/Rplot01.pdf, id=213, 578.16pt x 433.62pt>
+<images/Rplot01.pdf, id=216, 578.16pt x 433.62pt>
 File: images/Rplot01.pdf Graphic file (type pdf)
 <use images/Rplot01.pdf>
 Package pdftex.def Info: images/Rplot01.pdf  used on input line 375.
@@ -1821,19 +1830,16 @@ Overfull \vbox (8.91512pt too high) detected at line 619
 
 [30
 
-]
-LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 11.0pt on input line 760.
- [31
-
-] [32
-
-] [33
+] [31
 
 ]
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 14.0pt on input line 811.
- [34
+(Font)              scaled to size 14.0pt on input line 810.
+ [32
+
+] [33
+
+] [34
 
 ] [35
 
@@ -1851,7 +1857,10 @@ LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
 
 ] [42
 
-] [43
+]
+LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
+(Font)              scaled to size 11.0pt on input line 904.
+ [43
 
 ] [44
 
@@ -1861,16 +1870,16 @@ LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
 
 ] [47
 
-] [48
+]
+LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
+(Font)              scaled to size 10.0pt on input line 916.
+ [48
 
 ] [49
 
 ] [50
 
-]
-LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.0pt on input line 917.
- [51
+] [51
 
 ] [52
 
@@ -1880,104 +1889,98 @@ LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
 
 ] [55
 
-] [56
-
-] [57
-
-] [58
-
 ]
-<../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf, id=643, 433.62pt x 289.08pt>
-File: ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf Graphic file (type pdf)
-<use ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf  used on input line 1026.
-(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
-<../../Master Thesis/final_plots/inoc_gap_nPC1.pdf, id=644, 433.62pt x 289.08pt>
-File: ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf Graphic file (type pdf)
-<use ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf  used on input line 1026.
-(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
- [59
-
- <../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf> <../../Master Thesis/final_plots/inoc_gap_nPC1.pdf>]
-<../../Master Thesis/final_plots/inoc_runtime_nPC2.pdf, id=667, 433.62pt x 289.08pt>
+<../../Master Thesis/final_plots/inoc_runtime_nPC2.pdf, id=608, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/inoc_runtime_nPC2.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/inoc_runtime_nPC2.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_nPC2.pdf  used on input line 1040.
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_nPC2.pdf  used on input line 1025.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
-<../../Master Thesis/final_plots/inoc_gap_nPC2.pdf, id=668, 433.62pt x 289.08pt>
+<../../Master Thesis/final_plots/inoc_gap_nPC2.pdf, id=609, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/inoc_gap_nPC2.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/inoc_gap_nPC2.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_nPC2.pdf  used on input line 1040.
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_nPC2.pdf  used on input line 1025.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
- [60
+ [56
 
  <../../Master Thesis/final_plots/inoc_runtime_nPC2.pdf> <../../Master Thesis/final_plots/inoc_gap_nPC2.pdf>]
-<../../Master Thesis/final_plots/inoc_runtime_nPC3.pdf, id=691, 433.62pt x 289.08pt>
+<../../Master Thesis/final_plots/inoc_runtime_nPC3.pdf, id=632, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/inoc_runtime_nPC3.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/inoc_runtime_nPC3.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_nPC3.pdf  used on input line 1054.
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_nPC3.pdf  used on input line 1039.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
-<../../Master Thesis/final_plots/inoc_gap_nPC3.pdf, id=692, 433.62pt x 289.08pt>
+<../../Master Thesis/final_plots/inoc_gap_nPC3.pdf, id=633, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/inoc_gap_nPC3.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/inoc_gap_nPC3.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_nPC3.pdf  used on input line 1054.
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_nPC3.pdf  used on input line 1039.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
- [61
+ [57
 
  <../../Master Thesis/final_plots/inoc_runtime_nPC3.pdf> <../../Master Thesis/final_plots/inoc_gap_nPC3.pdf>]
-<../../Master Thesis/final_plots/inoc_runtime_PH.pdf, id=716, 433.62pt x 289.08pt>
+<../../Master Thesis/final_plots/inoc_runtime_PH.pdf, id=656, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/inoc_runtime_PH.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/inoc_runtime_PH.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_PH.pdf  used on input line 1069.
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_PH.pdf  used on input line 1054.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
-<../../Master Thesis/final_plots/inoc_gap_PH.pdf, id=717, 433.62pt x 289.08pt>
+<../../Master Thesis/final_plots/inoc_gap_PH.pdf, id=657, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/inoc_gap_PH.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/inoc_gap_PH.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_PH.pdf  used on input line 1069.
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_PH.pdf  used on input line 1054.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
- [62
+ [58
 
  <../../Master Thesis/final_plots/inoc_runtime_PH.pdf> <../../Master Thesis/final_plots/inoc_gap_PH.pdf>]
-<../../Master Thesis/final_plots/regret_obj.pdf, id=739, 433.62pt x 289.08pt>
+<../../Master Thesis/final_plots/regret_obj.pdf, id=679, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/regret_obj.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/regret_obj.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/regret_obj.pdf  used on input line 1083.
+Package pdftex.def Info: ../../Master Thesis/final_plots/regret_obj.pdf  used on input line 1068.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
-<../../Master Thesis/final_plots/regret_fac.pdf, id=740, 433.62pt x 289.08pt>
+<../../Master Thesis/final_plots/regret_fac.pdf, id=680, 433.62pt x 289.08pt>
 File: ../../Master Thesis/final_plots/regret_fac.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/regret_fac.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/regret_fac.pdf  used on input line 1083.
+Package pdftex.def Info: ../../Master Thesis/final_plots/regret_fac.pdf  used on input line 1068.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
- [63
+ [59
 
  <../../Master Thesis/final_plots/regret_obj.pdf> <../../Master Thesis/final_plots/regret_fac.pdf>]
 File: ../../Master Thesis/final_plots/regret_obj.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/regret_obj.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/regret_obj.pdf  used on input line 1083.
+Package pdftex.def Info: ../../Master Thesis/final_plots/regret_obj.pdf  used on input line 1068.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
 File: ../../Master Thesis/final_plots/regret_fac.pdf Graphic file (type pdf)
 <use ../../Master Thesis/final_plots/regret_fac.pdf>
-Package pdftex.def Info: ../../Master Thesis/final_plots/regret_fac.pdf  used on input line 1083.
+Package pdftex.def Info: ../../Master Thesis/final_plots/regret_fac.pdf  used on input line 1068.
 (pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
- [64
+ [60
 
-] [65
+] [61
 
-] [66
+] [62
+
+] [63
+
+] [64
+
+
+]
+<../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf, id=745, 433.62pt x 289.08pt>
+File: ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf Graphic file (type pdf)
+<use ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf>
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf  used on input line 1119.
+(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
+<../../Master Thesis/final_plots/inoc_gap_nPC1.pdf, id=746, 433.62pt x 289.08pt>
+File: ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf Graphic file (type pdf)
+<use ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf>
+Package pdftex.def Info: ../../Master Thesis/final_plots/inoc_gap_nPC1.pdf  used on input line 1119.
+(pdftex.def)             Requested size: 198.02942pt x 132.02121pt.
+ [65
+
+ <../../Master Thesis/final_plots/inoc_runtime_nPC1.pdf> <../../Master Thesis/final_plots/inoc_gap_nPC1.pdf>] [66
 
 ] [67
 
 ] [68
 
-
 ] [69
-
-] [70
-
-] [71
-
-] [72
 
 ]
 \tf@nav=\write7
@@ -1997,7 +2000,7 @@ L3 programming layer <2023-12-11>
 
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 2.25pt have occurred.
+(Font)              up to 1.26pt have occurred.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2012,17 +2015,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58466 strings out of 474496
- 1338322 string characters out of 5749163
- 2226394 words of memory out of 5000000
- 79547 multiletter control sequences out of 15000+600000
- 728555 words of font info for 245 fonts, out of 8000000 for 9000
+ 58435 strings out of 474496
+ 1338205 string characters out of 5749163
+ 2227298 words of memory out of 5000000
+ 79523 multiletter control sequences out of 15000+600000
+ 703337 words of font info for 212 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  128i,27n,123p,1167b,2463s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/user/.miktex/texmfs/install/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex10.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/euex9.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eurm10.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmex10.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy10.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy5.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy6.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy8.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/lm/lmsy9.pfb></home/user/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/user/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvb8a.pfb></home/user/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvbo8a.pfb></home/user/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb></home/user/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (72 pages, 1805876 bytes).
+Output written on main.pdf (69 pages, 1822534 bytes).
 PDF statistics:
- 958 PDF objects out of 1000 (max. 8388607)
- 183 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 921 PDF objects out of 1000 (max. 8388607)
+ 176 named destinations out of 1000 (max. 500000)
+ 191 words of extra memory for PDF output out of 10000 (max. 10000000)
 
