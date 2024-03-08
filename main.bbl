@@ -142,6 +142,38 @@
       \field{pages}{106428}
       \range{pages}{1}
     \endentry
+    \entry{Beasley1985}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=83c82c1c88cae2c11dbf51e4cabc1f4e}{%
+           family={Beasley},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{83c82c1c88cae2c11dbf51e4cabc1f4e}
+      \strng{fullhash}{83c82c1c88cae2c11dbf51e4cabc1f4e}
+      \strng{bibnamehash}{83c82c1c88cae2c11dbf51e4cabc1f4e}
+      \strng{authorbibnamehash}{83c82c1c88cae2c11dbf51e4cabc1f4e}
+      \strng{authornamehash}{83c82c1c88cae2c11dbf51e4cabc1f4e}
+      \strng{authorfullhash}{83c82c1c88cae2c11dbf51e4cabc1f4e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Journal of Operational Research}
+      \field{number}{2}
+      \field{title}{A note on solving large p-median problems}
+      \field{volume}{21}
+      \field{year}{1985}
+      \field{pages}{270\bibrangedash 273}
+      \range{pages}{4}
+    \endentry
     \entry{conforti2014integer}{book}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=7c81773474602dfd70a1ef2592805d03}{%
@@ -198,6 +230,49 @@
       \field{labeltitlesource}{title}
       \field{title}{Integer programming models}
       \field{year}{2014}
+    \endentry
+    \entry{contardo2019scalable}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e830f9378c11bc3dd72b306ba53c77d4}{%
+           family={Contardo},
+           familyi={C\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5425f8b3958d872a4966e21944b95fc0}{%
+           family={Iori},
+           familyi={I\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e1b1369ae9b9096777964039b142df9}{%
+           family={Kramer},
+           familyi={K\bibinitperiod},
+           given={Raphael},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{bf4a0031582a1f9d99823428975e7b2c}
+      \strng{fullhash}{bf4a0031582a1f9d99823428975e7b2c}
+      \strng{bibnamehash}{bf4a0031582a1f9d99823428975e7b2c}
+      \strng{authorbibnamehash}{bf4a0031582a1f9d99823428975e7b2c}
+      \strng{authornamehash}{bf4a0031582a1f9d99823428975e7b2c}
+      \strng{authorfullhash}{bf4a0031582a1f9d99823428975e7b2c}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Operations Research}
+      \field{title}{A scalable exact algorithm for the vertex p-center problem}
+      \field{volume}{103}
+      \field{year}{2019}
+      \field{pages}{211\bibrangedash 220}
+      \range{pages}{10}
     \endentry
     \entry{wiley2013}{book}{}
       \name{author}{1}{}{%
@@ -266,6 +341,38 @@
       \field{pages}{78\bibrangedash 98}
       \range{pages}{21}
     \endentry
+    \entry{Hakimi1964}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e92cfae69b4769fbdb981fb07e7c3d40}{%
+           family={Hakimi},
+           familyi={H\bibinitperiod},
+           given={S.\bibnamedelimi Louis},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {informs}%
+      }
+      \strng{namehash}{e92cfae69b4769fbdb981fb07e7c3d40}
+      \strng{fullhash}{e92cfae69b4769fbdb981fb07e7c3d40}
+      \strng{bibnamehash}{e92cfae69b4769fbdb981fb07e7c3d40}
+      \strng{authorbibnamehash}{e92cfae69b4769fbdb981fb07e7c3d40}
+      \strng{authornamehash}{e92cfae69b4769fbdb981fb07e7c3d40}
+      \strng{authorfullhash}{e92cfae69b4769fbdb981fb07e7c3d40}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Operations Research}
+      \field{number}{3}
+      \field{title}{Optimum locations of switching centers and the absolute centers and medians of a graph}
+      \field{volume}{12}
+      \field{year}{1964}
+      \field{pages}{450\bibrangedash 459}
+      \range{pages}{10}
+    \endentry
     \entry{McGarvey2022}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=368a488a70b402df6a547ead88254e66}{%
@@ -303,6 +410,38 @@
       \field{year}{2022}
       \field{pages}{497\bibrangedash 514}
       \range{pages}{18}
+    \endentry
+    \entry{Reinelt1991}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=38b844c9f4a823467f2581c274534664}{%
+           family={Reinelt},
+           familyi={R\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {INFORMS}%
+      }
+      \strng{namehash}{38b844c9f4a823467f2581c274534664}
+      \strng{fullhash}{38b844c9f4a823467f2581c274534664}
+      \strng{bibnamehash}{38b844c9f4a823467f2581c274534664}
+      \strng{authorbibnamehash}{38b844c9f4a823467f2581c274534664}
+      \strng{authornamehash}{38b844c9f4a823467f2581c274534664}
+      \strng{authorfullhash}{38b844c9f4a823467f2581c274534664}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ORSA Journal on Computing}
+      \field{number}{4}
+      \field{title}{TSPLIB—A traveling salesman problem library}
+      \field{volume}{3}
+      \field{year}{1991}
+      \field{pages}{376\bibrangedash 384}
+      \range{pages}{9}
     \endentry
     \entry{Roodman1975}{article}{}
       \name{author}{2}{}{%

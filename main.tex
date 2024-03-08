@@ -6,7 +6,7 @@
 %% 
 %% The above lines help editors like TeXstudio to automatically choose the right tools
 %% to compile your LaTeX source file. If your tool does not support these magic comments,
-%% you will need to make appropriate manual choices.
+%% You will need to make appropriate manual choices.
 %% 
 %% You can safely use "pdflatex" instead of "xelatex" if you prefer the pdfLaTeX toolchain.
 %% However, pdfLaTeX will not be able to deliver the professional font experience that you
@@ -169,7 +169,8 @@
     citestyle=authoryear,
     sortcites=true, 
     firstinits=true,
-    sortcites=true
+    sortcites=true,
+    natbib
 ]{biblatex}
 \usepackage{animate}
 \usepackage[caption=false]{subfig}
@@ -200,8 +201,8 @@
 \newcommand{\inI}{i \in \mathcal I}
 \newcommand{\inJ}{j \in \mathcal J}
 \newcommand{\inH}{h \in \mathcal H}
-\newcommand{\noPP}{\texttt{noPP}\xspace}
-\newcommand{\PP}{\texttt{PP}\xspace}
+\newcommand{\noPP}{\texttt{B}\xspace}
+\newcommand{\PP}{\texttt{P}\xspace}
 \newcommand{\sH}{\texttt{PH}\xspace}
 \newcommand{\prio}{\texttt{PHB}\xspace}
 
@@ -259,7 +260,7 @@
 
 %% Command \author[short authors]{authors}: sets the presentation authors (multiple authors may be separated with \and)
 %\author{Christof Brandstetter \and Supervisor: Univ.-Prof. DI Markus Sinnl, BSc PhD}
-\author{Christof Brandstetter \and Markus Sinnl}
+\author{\underline{Christof Brandstetter} \and Markus Sinnl}
 
 %% Command \institute{name}: sets the institute / author affiliation (style-breaking)
 \institute{Institute of Business Analytics and Technology Transformation / JKU Business School, \\Johannes Kepler University Linz \\ This research was funded in whole, or in part, by the Austrian Science Fund (FWF) [P 35160-N]. }
@@ -344,9 +345,10 @@
                   \end{itemize}
         \end{itemize}
     \end{block}
+    \citet{Hakimi1964,Elloumi2018,contardo2019scalable,GAAR2022}
 \end{frame}
-% TODO ask markus about the definition for nesting, especially about the need of redifining the V and iff
-\begin{frame}{The nesting property}
+% TODO ask Markus about the definition for nesting, especially about the need of redifining the V and iff
+\begin{frame}{The nesting property for location problems}
     \begin{block}{Definition}
         \setbeamerfont{item}{size=\footnotesize}
         \setbeamerfont{subitem}{size=\footnotesize}
@@ -362,15 +364,15 @@
             \item are called \emph{nested} iff $V^h  \subseteq V^{h+1}$ for $h = 1, \dots, H-1$
         \end{itemize}
     \end{block}\pause
-    Introduced by \cite{Roodman1975} and used in e.g., \cite{albareda2009multi,conforti2014integer,bakker2024value} and reintroduced as nesting by \cite{McGarvey2022}
+    Introduced by \citet{Roodman1975} and used in e.g., \citet{albareda2009multi,conforti2014integer,bakker2024value} and reintroduced as nesting by \citet{McGarvey2022}
 \end{frame}
 
-\begin{frame}{$p$-center problem vs nested $p$-center problem for $\mathcal P = \{4, 5, 6\}$}
+\begin{frame}{$p$-center problem vs nested $p$-center problem}
     \centering
     %    \vspace{-10pt}
     \begin{figure}
         \includegraphics[width=0.55\linewidth]{images/Rplot01.pdf}
-        %        \caption{Feasible solution for the nested and the non-nested $p$-center problem with $p = p^h = 4, 5, 6$}
+        \caption{Optimal solution of \pCP with $p=4,5,6$ and \npCP with $\mathcal P = \{4,5,6\}$}
     \end{figure}
 \end{frame}
 
@@ -420,8 +422,9 @@
     \setbeamerfont{subitem}{size=\footnotesize}
     \begin{minipage}{0.48\textwidth}
         \begin{block}{Definition part I}
-            \vspace*{2pt}
+            \vspace*{13pt}
             \begin{itemize}
+                \setlength\itemsep{1em}
                 \item given a set of locations $V$, \pause
                 \item time periods $\mathcal H = \left \{1,\dots,H \right \}$, \pause
                       %\item integers $\mathcal P = \left \{p^1, \dots p^H \right \}$ where $p^h \leq p^{h+1}$ for $h = 1, \dots, H-1$ and $p^H \leq \left\lvert \mathcal J \right\rvert$ 
@@ -432,7 +435,7 @@
                       \end{itemize} \pause
                 \item distances $d_{ij} \geq 0$ between each $i \in V$ and $j \in V$ \pause
             \end{itemize}
-            \vspace*{2pt}
+            \vspace{13pt}
         \end{block}
     \end{minipage}
     \begin{minipage}{0.48\textwidth}
@@ -451,6 +454,7 @@
                       \begin{itemize}
                           \item where $d(V^h) = \max_{i \in V}\min_{j \in V^h} d_{ij}$ for $h \in \mathcal H$
                       \end{itemize}
+                \item objective function can be seen as sum of absolute regrets of nestedness over time periods
             \end{itemize}
             %\vspace*{3pt}
         \end{block}
@@ -529,8 +533,8 @@
 %     \end{minipage}
 %     %}
 % \end{frame}
-\section{Mixed Integer Linear Programming (MILP) Formulations}
-\begin{frame}{First formulation}
+\section{Mixed Integer Linear Programming (MILP) formulations}
+\begin{frame}{Formulation \nPCY}
     %\vspace*{-23pt}
     \begin{minipage}[t]{0.40\linewidth}
         %\vspace{25pt}
@@ -555,13 +559,13 @@
     \begin{minipage}[t]{0.59\linewidth}
         %\setbeamerfont{block title}{size=\small}
         \setbeamerfont{block body}{size=\footnotesize}
-        \begin{block}<3->{\nPCY\ based on \cite{GAAR2022}}
+        \begin{block}<3->{\nPCY\ based on \citet{GAAR2022}}
             \vspace{-20pt}
             \begin{subequations}\label{eq:nPCY}
                 \begin{alignat}{4}
                      & \min         & \sum_{\inH}z^{h}                               &                                           &  &  &                                                             \\
                      & \text{ s.t.} & \sum_{j \in V}y_{j}^h                          & =     p^{h}                               &  &  & \forall \inH                                                \\
-                     &              & z^{h} \geq d_{ij} - \sum_{j':d_{ij'} < d_{ij}} & (d_{ij} - d_{ij'})y_{j'}^h \;             &  &  & \forall i,j \in V, h \in \mathcal H                         \\
+                     &              & z^{h} \geq d_{ij} - \sum_{j':d_{ij'} < d_{ij}} & (d_{ij} - d_{ij'})y_{j'}^h \;             &  &  & \forall i,j \in V, h \in \mathcal H                         \label{eq:nPCY-zpush}\\
                      &              & y_{j}^h \geq  y_j^{h-1}                        &                                           &  &  & \forall j \in V, \forall \inH \setminus \left \{1 \right \} \\
                      &              & (y,z) \in \mathbb B^{|V||\mathcal H|}          & \times \mathbb{R}_{\geq 0}^{|\mathcal H|} &  &  &
                 \end{alignat}
@@ -571,37 +575,61 @@
     \end{minipage}
 \end{frame}
 
-\begin{frame}{Second formulation}
+\begin{frame}{Formulation \nPCE}
     %\vspace*{-24pt}
+    % \begin{minipage}[t]{0.40\linewidth}
+    %     %\vspace{25pt}
+    %     \setbeamerfont{block body}{size=\footnotesize}
+    %     \begin{block}<1->{Decision variables}
+    %         \vspace*{-7pt}
+    %         \begin{alignat*}{2}
+    %             \onslide<1->{
+    %              & y_{j}^h \ldots \begin{cases}
+    %                                       1 \, \dots \, \text{if \emph{location \textit{j}} is \emph{open} in} \\
+    %                                       \qquad \; \,  \text{\emph{time period \textit{h}}}                   \\
+    %                                       0 \, \dots \, \text{otherwise}
+    %                                   \end{cases} \\
+    %              & z^h  \ldots  \,  \text{maximum \emph{distance} between any }                               \\
+    %              & \qquad \; \; \,  \text{\emph{customer \textit{i}} and its nearest}                         \\
+    %              & \qquad \; \; \,  \text{\emph{open facility in period \textit{h}}}\\}
+    %             \onslide<2->{
+    %              & u_{k}^h \ldots \begin{cases}
+    %                                       1 \, \dots \, \text{if \emph{$z^h \geq D_k$} in}   \\
+    %                                       \qquad \; \,  \text{\emph{time period \textit{h}}} \\
+    %                                       0 \, \dots \, \text{otherwise}
+    %                                   \end{cases} }
+    %         \end{alignat*}
+    %         \vspace{11pt}
+    %     \end{block}
+    % \end{minipage}
     \begin{minipage}[t]{0.40\linewidth}
         %\vspace{25pt}
         \setbeamerfont{block body}{size=\footnotesize}
-        \begin{block}<1->{Decision variables}
-            \vspace*{-7pt}
+        \begin{block}<1->{Variables and sets}
+            \vspace*{7pt}
             \begin{alignat*}{2}
                 \onslide<1->{
-                 & y_{j}^h \ldots \begin{cases}
-                                          1 \, \dots \, \text{if \emph{location \textit{j}} is \emph{open} in} \\
-                                          \qquad \; \,  \text{\emph{time period \textit{h}}}                   \\
-                                          0 \, \dots \, \text{otherwise}
-                                      \end{cases} \\
-                 & z^h  \ldots  \,  \text{maximum \emph{distance} between any }                               \\
-                 & \qquad \; \; \,  \text{\emph{customer \textit{i}} and its nearest}                         \\
-                 & \qquad \; \; \,  \text{\emph{open facility in period \textit{h}}}\\}
-                \onslide<2->{
-                 & u_{k}^h \ldots \begin{cases}
+                    & u_{k}^h \ldots &&\begin{cases}
                                           1 \, \dots \, \text{if \emph{$z^h \geq D_k$} in}   \\
                                           \qquad \; \,  \text{\emph{time period \textit{h}}} \\
                                           0 \, \dots \, \text{otherwise}
-                                      \end{cases} }
+                                      \end{cases} }\\
+                \onslide<2->{
+                    & \mathcal K \ldots &&\text{set of indices } k \\ 
+                    &                   &&\text{ for distinct distances }D_k
+                }\\
+                \onslide<3->{
+                    & S_i \ldots &&\text{set of indices } k \text{ for customer } i \text{,}\\
+                    &            &&\text{for which there exists a } d_{ij}=D_k
+                }
             \end{alignat*}
-            \vspace{11pt}
+            \vspace{20pt}
         \end{block}
     \end{minipage}
     \begin{minipage}[t]{0.59\linewidth}
         %\setbeamerfont{block title}{size=\small}
         \setbeamerfont{block body}{size=\footnotesize}
-        \begin{block}<3->{\nPCE\ based on \cite{Elloumi2018}}
+        \begin{block}<4->{\nPCE\ based on \citet{Elloumi2018}}
             \vspace*{-20pt}
             \begin{subequations}\label{eq:nPCE}
                 \begin{alignat*}{9}
@@ -764,14 +792,14 @@
 
 % \begin{frame}{Reducing constraints \nPCY}
 %     \begin{alertblock}{Problem}
-%         Formulation \nPCY has becomes too large for large instances because there are too many \eqref{eq:pc2N-zpush} constraints
+%         Formulation \nPCY has become too large for large instances because there are too many \eqref{eq:pc2N-zpush} constraints
 %     \end{alertblock}
 %     \begin{exampleblock}{Solution}
 %         Not all of them are necessary (instance dependent), they are added in a branch-and-cut algorithm based on \cite{GAAR2022}\\
 %         \vspace{-13pt}
 %         \begin{itemize}
 %             \item Starting with a subset of inequalities (i.e. only for a subset of customers and facilities)
-%             \item Iteratively seperating the cuts 
+%             \item Iteratively separating the cuts 
 %         \end{itemize}
 %     \end{exampleblock}
 % \end{frame}
@@ -789,14 +817,14 @@
 %     A similar strengthening can be done for \eqref{eq:pc1N-zpush} in fromulation \nPC.
 % \end{frame}
 
-%(TODO) Ask about mentioning the \nPC here / maybe explain the strengthening trhough "there needs to be a distance d_ij where d_ij = z^h* for every h. 
+%(TODO) Ask about mentioning the \nPC here / maybe explain the strengthening through "there needs to be a distance d_ij where d_ij = z^h* for every h. 
 % if not ... / furthermore then obvioulsy any distances d_ij where d_ij < LB cannot be that "critical" distance 
-% The summation term cannot get lower than zero and therefore the right hand side of the constraint cannot get larger than d_ij
+% The summation term cannot get lower than zero and therefore the right-hand side of the constraint cannot get larger than d_ij
 
-\begin{frame}{Strengthening constraints \nPCY} \pause
+\begin{frame}{Strengthening constraints of \nPCY} \pause
     \vspace{-2pt}
     \begin{lemma}\label{theorem:strength}
-        Let $\underline{z^h}$ be a lower bound on the decision variable $z_h$ of (nPC2) for every $i \in \mathcal I, j \in \mathcal J, h \in \mathcal H$ then constraints \pause
+        Let $\underline{z^h}$ be a lower bound on the decision variable $z_h$ of (nPC2) for a given $h$ then for every $i \in \mathcal I, j \in \mathcal J$ constraints \pause
         \begin{equation*}
             z^{h} \geq d_{ij} - \sum_{j':d_{ij'} < d_{ij}}(d_{ij} - d_{ij'})y_{j'}^h
         \end{equation*}
@@ -804,12 +832,12 @@
         \begin{equation}
             z^h \geq max\{\underline{z^h}, d_{ij}\} - \sum_{j':d_{ij'} < d_{ij}} \left(\max \{\underline{z^h}, d_{ij}\} - \max \{\underline{z^h}, d_{ij'}\}\right)y_{j'}^h  \label{eq:nPC2-lift} \tag{\emph{nL-OPT}}
         \end{equation}
-        The lemma is based on Lemma 5 in \textcite{GAAR2022}.
     \end{lemma}
+    The lemma is based on Lemma 5 in \citet{GAAR2022} for the \pCP.
     %A similar strengthening can be done for \nPC which is based on \cite{wiley2013}.
 \end{frame}
 
-% (TODO) this does not tell the whole story (only for Subset Si) nothing about set K
+% (TODO) This does not tell the whole story (only for Subset Si) nothing about set K
 % \begin{frame}{Reducing set $\mathcal K$ in \nPCE} \pause
 %     \begin{lemma}\label{lemma:setK}
 %         Let $\underline{z^h}$ be a valid lower bound and $\overline{z^h}$ be a valid upper bound on the decision variable $z^h$ for $h \in \mathcal H$, then
@@ -831,12 +859,13 @@
         \vspace{-8pt}
         Following Observation \ref{obs:bounds}, we observe that decision variables $u_h^k = 0$ for $k: D_k > \overline{z^h}$ and $u_h^k = 1$ for $k: D_k < \underline{z^h}$ in any optimal solution.
     \end{observation}
-    \vspace{-10pt}\pause
-    \begin{block}{\vspace{-20pt}}\label{prop:reduceVariables}
-        \vspace{-6pt}
-        %Following Observation \ref{obs:setVariables}, we observe that for all $k$ where variables $u_k^h$ have been set to either zero or one, they are not necessary.
-        The decision variables $u_k^h$ which are zero or one following Observation \ref{obs:setVariables}, are redundant.
-    \end{block}
+    $\Longrightarrow $ these variables can be removed
+    % \vspace{-10pt}\pause
+    % \begin{block}{\vspace{-20pt}}\label{prop:reduceVariables}
+    %     \vspace{-6pt}
+    %     %Following Observation \ref{obs:setVariables}, we observe that for all $k$ where variables $u_k^h$ have been set to either zero or one, they are not necessary.
+    %     The decision variables $u_k^h$ which are zero or one following Observation \ref{obs:setVariables}, are redundant.
+    % \end{block}
 \end{frame}
 
 % TODO ask about this observation / only tell them how we get to the UB, as it is 1. not so interesting and 2. just one possible way to obtain a valid UB 
@@ -848,7 +877,7 @@
     \begin{proposition}
         Given an valid upper bound $UB$ on the objective value of the \npCP and valid lower bounds $\underline{z^h}$ on the variable $z^h$ can be obtained by the following equation:
         \begin{equation}
-            \overline{z^h} = \frac{UB - \sum_{x = h+1}^{H}\underline{z^h}}{h}
+            \overline{z^h} = \frac{UB - \sum_{{h'} = h+1}^{H}\underline{z^{h'}}}{h}
         \end{equation}
     \end{proposition} % TODO is this averaging argument?
 \end{frame}
@@ -881,7 +910,7 @@
 % \end{frame}
 
 
-\section{Implementation}
+\section{Computational results}
 \begin{frame}{Implementation}
     \begin{itemize}
         \item \emph{C++, CPLEX} 20.1 \pause
@@ -890,30 +919,21 @@
                   \item Solving \emph{$p$-center problem} with $p = p^H$
                   \item Use optimal solution value as lower bound for \emph{$p$-center problem} with $p = p^{H-1}$
                   \item Repeat for remaining $p^h$ and calculate the upper bounds $\overline{z^h}$
+                  \item can be used to obtain a starting solution
               \end{itemize} \pause
+        \item Staring heuristic
         \item \nPCY
               \begin{itemize}
-                  \item \emph{branch-and-cut} algorithm
-                  \item separation based on the \emph{fixedCustomer} separation scheme from \cite{GAAR2022}
+                  \item \emph{branch-and-cut} separating of (\ref{eq:nPCY-zpush})/(\ref{eq:nPC2-lift})
+                  \item separation based on the \emph{fixedCustomer} separation scheme from \citet{GAAR2022}
               \end{itemize} \pause
-        \item \nPCE \pause
-              \begin{itemize}
-                  \item \emph{branch-and-bound} algorithm
-              \end{itemize}
+        % \item \nPCE \pause
+        %       \begin{itemize}
+        %           \item \emph{branch-and-bound} algorithm
+        %       \end{itemize}
     \end{itemize}
 \end{frame}
-\begin{frame}{Settings}
-    \begin{itemize}
-        \setlength\itemsep{1em}
-        \item \noPP: without \emph{preprocessing} and without \emph{lifting} \pause
-        \item \PP: with \emph{preprocessing} \pause
-              \begin{itemize}
-                  \item \nPCY: set upper bounds on $z^h$ and using lower bounds in \eqref{eq:nPC2-lift}
-                  \item \nPCE: problem initialized on reduced number of $u_k^h$
-              \end{itemize}\pause
-        \item \sH: \PP with \emph{starting heuristic}
-    \end{itemize}
-\end{frame}
+
 % \begin{frame}{Implementation}
 %     \begin{itemize}
 %         \item Implemented in \Cplusplus\ using the CPLEX API of CPLEX 20.1.0.0
@@ -932,26 +952,39 @@
 %     \end{itemize}
 % \end{frame}
 
-\section{Results}
+%\section{Results}
 \begin{frame}{Instance from literature}
     \vspace*{-2pt}
     \begin{itemize}
-        %\setlength\itemsep{1em}
-        \item instance set \emph{PMED} %\cite{chen2009new,contardo2019scalable,calik2013double}
+        \setlength\itemsep{1em}
+        \item instance set \emph{PMED} \citet{Beasley1985} %\cite{chen2009new,contardo2019scalable,calik2013double}
               \begin{itemize}
                   \item 40 instances
                   \item $\mathcal P = \left \{p, p+1, p+2\right \}$, $p$ from 5 to 200, $\left|V\right|$ from 100 and 900 nodes
               \end{itemize} \pause
-        \item instance set \emph{TSPLIB} %\cite{contardo2019scalable, GAAR2022}
+        \item instance set \emph{TSPLIB} \citet{Reinelt1991} %\cite{contardo2019scalable, GAAR2022}
               \begin{itemize}
                   \item 50 instances
                   \item $\mathcal P = \left \{4, 5, 6\right \}$, $\left|V\right|$ from 51 and 1002 nodes
               \end{itemize}\pause
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Settings}
+    \begin{itemize}
+        \setlength\itemsep{1em}
         \item computational setup
               \begin{itemize}
                   \item single core of Intel Xeon X5570 with 2.93 GHz and 8 GB RAM
                   \item \emph{timelimit} of 3600 seconds
               \end{itemize}
+        \item \noPP: no \emph{preprocessing}, no \emph{cut lifting/variable removing} \pause
+        \item \PP: with \emph{preprocessing} and  \pause
+              \begin{itemize}
+                  \item \nPCY: set upper bounds on $z^h$ and using lower bounds in \eqref{eq:nPC2-lift}
+                  \item \nPCE: problem initialized on the reduced number of $u_k^h$
+              \end{itemize}\pause
+        \item \sH: \emph{preprocessing}, \emph{cut lifting/variable removing}, \emph{starting heuristic}
     \end{itemize}
 \end{frame}
 
@@ -1013,11 +1046,11 @@
 \begin{frame}{Setting comparison on formulation \nPCY}
     \begin{figure}
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[Runtimes]{\includegraphics[width=\linewidth]{inoc_runtime_nPC2.pdf}\label{fig:nPC2_runtime}{}}
+            \subfloat[Runtimes]{\includegraphics[width=\linewidth]{inoc_runtime_nPCY.pdf}\label{fig:nPC2_runtime}{}}
         \end{minipage}
         \hfill
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[Optimality gaps \text{$\left[\frac{UB-LB}{UB}100\right]$}]{\includegraphics[width=\linewidth]{inoc_gap_nPC2.pdf}\label{fig:nPC2_gap}{}}
+            \subfloat[Optimality gaps \text{$\left[\frac{UB-LB}{UB}100\right]$}]{\includegraphics[width=\linewidth]{inoc_gap_nPCY.pdf}\label{fig:nPC2_gap}{}}
         \end{minipage}
         \label{fig:nPC2}
         %\caption{Results of \nPC}\label{fig:x}
@@ -1027,11 +1060,11 @@
 \begin{frame}{Setting comparison on formulation \nPCE}
     \begin{figure}
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[Runtimes]{\includegraphics[width=\linewidth]{inoc_runtime_nPC3.pdf}\label{fig:nPC3_runtime}{}}
+            \subfloat[Runtimes]{\includegraphics[width=\linewidth]{inoc_runtime_nPCE.pdf}\label{fig:nPC3_runtime}{}}
         \end{minipage}
         \hfill
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[Optimality gaps \text{$\left[\frac{UB-LB}{UB}100\right]$}]{\includegraphics[width=\linewidth]{inoc_gap_nPC3.pdf}\label{fig:nPC3_gap}{}}
+            \subfloat[Optimality gaps \text{$\left[\frac{UB-LB}{UB}100\right]$}]{\includegraphics[width=\linewidth]{inoc_gap_nPCE.pdf}\label{fig:nPC3_gap}{}}
         \end{minipage}
         \label{fig:nPC3}
         %\caption{Results of \nPC}\label{fig:x}
@@ -1070,12 +1103,13 @@
 
 \begin{frame}{Conclusion}
     \begin{itemize}
-        \item \nPCE\ best performance in runtimes and optimality gap
-        \item The \nPCY\ outperforms the \nPC
-        \item Preprocessing brings a large speed up on all formulations
-        \item Starting heuristic little effect, shows good upper bound obtained in preprocessing
-        \item Maximal relative regret of the optimal objective function value of 15\%
-        \item Maximal relative regret of number of opened facilities above 150\%
+        \item introduced nested $p$-center problem
+        \item three mixed integer formulations
+        \item improvement of formulations
+        \item preprocessing brings a large speed up on all formulations
+        \item starting heuristic little effect, shows good upper bound obtained in preprocessing
+        \item nested facility location with uncertainty interesting for future work
+        \item or nested maximum coverage problem
     \end{itemize}
 \end{frame}
 
@@ -1084,8 +1118,8 @@
 %     \setlength\itemsep{1em}
 %         \item comparing the results between \nPC\ and \nPCY\ and \nPCE\ \pause
 %         \item comparing the different lifting methods  \pause
-%         \item analysing the solutions of the nested and comparing it to the standard $p$-center problem \pause
-%         \item analysing the results regarding managerial insights
+%         \item analyzing the solutions of the nested and comparing it to the standard $p$-center problem \pause
+%         \item analyzing the results regarding managerial insights
 %     \end{itemize}
 % \end{frame}
 
@@ -1107,18 +1141,18 @@
 \begin{frame}{Setting comparison on formulation \nPC}
     \begin{figure}
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[Runtimes]{\includegraphics[width=\linewidth]{inoc_runtime_nPC1.pdf}\label{fig:nPC1_runtime}{}}
+            \subfloat[Runtimes]{\includegraphics[width=\linewidth]{inoc_runtime_nPC.pdf}\label{fig:nPC1_runtime}{}}
         \end{minipage}
         \hfill
         \begin{minipage}[c]{.48\linewidth}
-            \subfloat[Optimality gaps \text{$[\frac{UB-LB}{UB}]$}]{\includegraphics[width=\linewidth]{inoc_gap_nPC1.pdf}\label{fig:nPC1_gap}{}}
+            \subfloat[Optimality gaps \text{$[\frac{UB-LB}{UB}]$}]{\includegraphics[width=\linewidth]{inoc_gap_nPC.pdf}\label{fig:nPC1_gap}{}}
         \end{minipage}
         \label{fig:nPC1}
         %\caption{Results of \nPC}\label{fig:x}
     \end{figure}
 \end{frame}
 
-\begin{frame}{The nested $p$-center problem: Classical MILP formulation}
+\begin{frame}{Formulation \nPC}
     \vspace*{-23pt}
     \begin{minipage}[t]{0.48\textwidth}
         %\vspace{25pt}
@@ -1149,7 +1183,7 @@
     \begin{minipage}[t]{0.48\textwidth}
         %\setbeamerfont{block title}{size=\small}
         \setbeamerfont{block body}{size=\footnotesize}
-        \begin{block}<4->{\nPC\ based on \cite{wiley2013}}
+        \begin{block}<4->{\nPC\ based on \citet{wiley2013}}
             \vspace*{-12pt}
             \begin{subequations}
                 \begin{alignat}{3}

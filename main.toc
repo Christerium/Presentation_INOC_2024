@@ -1,5 +1,4 @@
 \babel@toc {english}{}\relax 
-\beamer@sectionintoc {1}{Mixed Integer Linear Programming (MILP) Formulations}{24}{0}{1}
-\beamer@sectionintoc {2}{Improving the formulations}{31}{0}{2}
-\beamer@sectionintoc {3}{Implementation}{42}{0}{3}
-\beamer@sectionintoc {4}{Results}{52}{0}{4}
+\beamer@sectionintoc {1}{Mixed Integer Linear Programming (MILP) formulations}{24}{0}{1}
+\beamer@sectionintoc {2}{Improving the formulations}{32}{0}{2}
+\beamer@sectionintoc {3}{Computational results}{42}{0}{3}
