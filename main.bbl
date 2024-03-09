@@ -174,63 +174,6 @@
       \field{pages}{270\bibrangedash 273}
       \range{pages}{4}
     \endentry
-    \entry{conforti2014integer}{book}{}
-      \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=7c81773474602dfd70a1ef2592805d03}{%
-           family={Conforti},
-           familyi={C\bibinitperiod},
-           given={Michele},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6097c8dac72c605fecb566085a6f17b0}{%
-           family={Cornuéjols},
-           familyi={C\bibinitperiod},
-           given={Gérard},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5e906349369476ab81211faadb61fe98}{%
-           family={Zambelli},
-           familyi={Z\bibinitperiod},
-           given={Giacomo},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7c81773474602dfd70a1ef2592805d03}{%
-           family={Conforti},
-           familyi={C\bibinitperiod},
-           given={Michele},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6097c8dac72c605fecb566085a6f17b0}{%
-           family={Cornuéjols},
-           familyi={C\bibinitperiod},
-           given={Gérard},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5e906349369476ab81211faadb61fe98}{%
-           family={Zambelli},
-           familyi={Z\bibinitperiod},
-           given={Giacomo},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{6b8b6432909ed0b3896577f679c9d248}
-      \strng{fullhash}{b4b38f21c09b2f1b177f087751a3a9ea}
-      \strng{bibnamehash}{b4b38f21c09b2f1b177f087751a3a9ea}
-      \strng{authorbibnamehash}{b4b38f21c09b2f1b177f087751a3a9ea}
-      \strng{authornamehash}{6b8b6432909ed0b3896577f679c9d248}
-      \strng{authorfullhash}{b4b38f21c09b2f1b177f087751a3a9ea}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Integer programming models}
-      \field{year}{2014}
-    \endentry
     \entry{contardo2019scalable}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=e830f9378c11bc3dd72b306ba53c77d4}{%
